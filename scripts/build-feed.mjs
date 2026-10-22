@@ -163,6 +163,55 @@ async function advisoryChecks() {
   return out;
 }
 
+// ---------- automatic entry-rule change notices (UK government change log) ----------
+// Every UK travel advice page has a dated change log. When a note mentions entry rules or visas,
+// we publish a notice for that country automatically, linked to the official page, for 45 days.
+// Runs with no human involved, so phones hear about rule changes even if nobody edits sources/.
+const WATCH_DAYS = 45;
+const ENTRY_NOTE = /entry requirements|visa|entry rules/i;
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const prettyDate = (iso) => `${MONTHS[Number(iso.slice(5, 7)) - 1]} ${Number(iso.slice(8, 10))}, ${iso.slice(0, 4)}`;
+const addDays = (iso, n) => new Date(Date.parse(iso + 'T00:00:00Z') + n * 86400000).toISOString().slice(0, 10);
+
+async function ukEntryChanges() {
+  const slugs = read('uk-slugs.json'); // ISO2 -> gov.uk slug
+  const entries = Object.entries(slugs);
+  const out = [];
+  let reached = 0;
+  const queue = [...entries];
+  async function worker() {
+    while (queue.length) {
+      const [iso, slug] = queue.shift();
+      try {
+        const res = await fetch(`https://www.gov.uk/api/content/foreign-travel-advice/${slug}`, { headers: { 'User-Agent': UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
+        if (!res.ok) continue;
+        const j = await res.json();
+        reached++;
+        const name = j.details?.country?.name || j.title || iso;
+        const hits = (j.details?.change_history ?? [])
+          .filter((c) => c?.note && c?.public_timestamp && ENTRY_NOTE.test(c.note))
+          .map((c) => ({ note: c.note.replace(/\s+/g, ' ').trim(), date: c.public_timestamp.slice(0, 10) }))
+          .filter((c) => daysBetween(c.date, today) <= WATCH_DAYS)
+          .sort((a, b) => b.date.localeCompare(a.date));
+        if (!hits.length) continue;
+        const latest = hits[0];
+        out.push({
+          id: `auto-uk-${iso.toLowerCase()}-${latest.date}`,
+          dests: [iso],
+          until: addDays(latest.date, WATCH_DAYS),
+          level: daysBetween(latest.date, today) <= 14 ? 'warning' : 'info',
+          title: `${name} changed its entry rules (${prettyDate(latest.date)})`,
+          body: `UK government update: "${latest.note}" Changes like this often affect other passports too, so check the official entry rules for your passport before you book or travel.`,
+          source: `https://www.gov.uk/foreign-travel-advice/${slug}/entry-requirements`,
+          auto: true,
+        });
+      } catch {}
+    }
+  }
+  await Promise.all(Array.from({ length: 6 }, worker));
+  return { notices: out.sort((a, b) => a.id.localeCompare(b.id)), reached, total: entries.length };
+}
+
 // ---------- main ----------
 const passports = await loadPassports();
 const overrides = read('overrides.json').rules;
@@ -170,7 +219,27 @@ const notices = read('notices.json').notices;
 const visas = read('visas.json');
 const meta = read('meta.json');
 
-const feed = { schema: 1, generatedAt: new Date().toISOString(), passports, overrides, notices, visas, meta };
+// Automatic notices. If gov.uk can't be reached today, keep yesterday's automatic notices.
+let autoNotices = [];
+let ukWatch = 'skipped (offline)';
+const prevFeed = existsSync(join(ROOT, 'feed.json')) ? JSON.parse(readFileSync(join(ROOT, 'feed.json'), 'utf8')) : null;
+const prevAuto = (prevFeed?.notices ?? []).filter((n) => n.auto && (!n.until || n.until >= today));
+if (OFFLINE) {
+  autoNotices = prevAuto;
+} else {
+  const uk = await ukEntryChanges();
+  if (uk.reached >= uk.total * 0.8) {
+    autoNotices = uk.notices;
+    ukWatch = `${uk.reached}/${uk.total} countries read, ${uk.notices.length} recent entry-rule changes`;
+  } else {
+    autoNotices = prevAuto;
+    ukWatch = `only ${uk.reached}/${uk.total} countries read, kept yesterday's ${prevAuto.length} notices`;
+    flag('warning', 'auto-watch', `Could only read ${uk.reached} of ${uk.total} UK travel advice pages. Automatic entry-rule notices were not refreshed today.`);
+  }
+}
+const allNotices = [...notices, ...autoNotices];
+
+const feed = { schema: 1, generatedAt: new Date().toISOString(), passports, overrides, notices: allNotices, visas, meta };
 const errs = validate(feed);
 if (errs.length) {
   console.error('Feed NOT written. Fix these first:\n- ' + errs.join('\n- '));
@@ -194,7 +263,7 @@ if (!OFFLINE) {
 }
 
 writeFileSync(feedPath, JSON.stringify(feed));
-const health = { checkedAt: new Date().toISOString(), feedGeneratedAt: feed.generatedAt, passportsDate: passports.date, passportCount: Object.keys(passports.data).length, overrides: overrides.length, notices: notices.length, visaGuides: visas.length, linksChecked, advisories, problems, notes };
+const health = { checkedAt: new Date().toISOString(), feedGeneratedAt: feed.generatedAt, passportsDate: passports.date, passportCount: Object.keys(passports.data).length, overrides: overrides.length, notices: notices.length, autoNotices: autoNotices.length, ukWatch, visaGuides: visas.length, linksChecked, advisories, problems, notes };
 writeFileSync(join(ROOT, 'health.json'), JSON.stringify(health, null, 2) + '\n');
 
 const md = [
@@ -203,7 +272,9 @@ const md = [
   `Checked ${health.checkedAt.slice(0, 16).replace('T', ' ')} UTC. Feed generated ${feed.generatedAt.slice(0, 16).replace('T', ' ')} UTC.`,
   '',
   `- Passport dataset: ${health.passportCount} passports, dated ${passports.date}`,
-  `- Overrides: ${overrides.length}, notices: ${notices.length}, visa guides: ${visas.length}`,
+  `- Overrides: ${overrides.length}, notices: ${notices.length} hand-written + ${autoNotices.length} automatic, visa guides: ${visas.length}`,
+  `- Automatic entry-rule watch (UK gov change log): ${ukWatch}`,
+  ...(autoNotices.length ? ['', '## Automatic entry-rule notices live in the app', '', ...autoNotices.map((n) => `- **${n.dests[0]}**: ${n.title}. ${n.body.match(/"(.*)"/)?.[1] ?? ''}`)] : []),
   `- Advisory feeds: ${typeof advisories === 'string' ? advisories : Object.entries(advisories).map(([k, v]) => `${k} ${v}`).join(', ')}`,
   `- Links checked: ${linksChecked}`,
   '',
