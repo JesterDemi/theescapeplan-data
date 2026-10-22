@@ -1,0 +1,377 @@
+[
+  {
+    "code": "AL",
+    "summary": "Many nationalities can visit visa-free for up to 90 days in any 180. US citizens can currently stay up to 1 year visa-free. Longer stays use the Unique Permit, which combines residence and work.",
+    "categories": [
+      {
+        "name": "Unique Permit: Digital nomad",
+        "forWho": "Remote workers employed by or contracting for companies outside Albania.",
+        "processing": "Often several weeks. Confirm current times on e-Albania.",
+        "documents": [
+          "Work contract or client agreements from abroad",
+          "Albanian bank account",
+          "Local address or lease"
+        ]
+      },
+      {
+        "name": "Unique Permit: Employment or self-employment",
+        "forWho": "People hired locally or running their own business in Albania.",
+        "processing": "Often several weeks."
+      },
+      {
+        "name": "Residence: Pensioner",
+        "forWho": "Retirees with a pension from abroad.",
+        "processing": "Often several weeks.",
+        "documents": [
+          "Proof of pension income"
+        ]
+      },
+      {
+        "name": "Residence: Property owner",
+        "forWho": "People who own real estate in Albania.",
+        "processing": "Often several weeks.",
+        "documents": [
+          "Property ownership certificate"
+        ]
+      }
+    ],
+    "generalDocuments": [
+      "Valid passport (check the minimum validity rule)",
+      "Completed application form",
+      "Recent passport photos",
+      "Proof of income or funds",
+      "Health insurance",
+      "Criminal record check (often needs an apostille)",
+      "Proof of accommodation"
+    ],
+    "officialLinks": [
+      {
+        "label": "e-Albania (permit applications)",
+        "url": "https://e-albania.al"
+      },
+      {
+        "label": "Ministry for Europe and Foreign Affairs: visa regime",
+        "url": "https://punetejashtme.gov.al/en/regjimi-i-vizave-per-te-huajt/"
+      },
+      {
+        "label": "US Embassy Albania: entering and residing",
+        "url": "https://al.usembassy.gov/entering-and-residing/"
+      }
+    ],
+    "reviewed": "2026-10"
+  },
+  {
+    "code": "ES",
+    "summary": "Schengen country. Non-EU visitors get up to 90 days in any 180. For longer stays you apply for a national visa at the Spanish consulate for where you live.",
+    "categories": [
+      {
+        "name": "Digital nomad (telework) visa",
+        "forWho": "Remote workers for companies outside Spain, with a degree or 3+ years of experience.",
+        "processing": "Consulates cite a 10-day legal decision term, which can be extended if they ask for more documents.",
+        "documents": [
+          "Proof of remote work relationship",
+          "Degree or proof of 3+ years experience",
+          "Income of at least 200% of the Spanish minimum wage"
+        ]
+      },
+      {
+        "name": "Non-lucrative residence visa",
+        "forWho": "People living off savings or passive income who will not work in Spain.",
+        "processing": "Varies by consulate.",
+        "documents": [
+          "Proof of sufficient passive income or savings",
+          "Medical certificate"
+        ]
+      },
+      {
+        "name": "Work visa",
+        "forWho": "People with a job offer from a Spanish employer.",
+        "processing": "Employer gets authorization first, then you apply at the consulate."
+      },
+      {
+        "name": "Student visa",
+        "forWho": "People enrolled in a recognized course in Spain.",
+        "processing": "Varies by consulate."
+      }
+    ],
+    "generalDocuments": [
+      "Valid passport (check the minimum validity rule)",
+      "Completed application form",
+      "Recent passport photos",
+      "Proof of income or funds",
+      "Health insurance",
+      "Criminal record check (often needs an apostille)",
+      "Proof of accommodation"
+    ],
+    "officialLinks": [
+      {
+        "label": "Ministry of Foreign Affairs (find your consulate)",
+        "url": "https://www.exteriores.gob.es"
+      },
+      {
+        "label": "Example: Digital nomad visa (Consulate in London)",
+        "url": "https://www.exteriores.gob.es/Consulados/londres/en/ServiciosConsulares/Paginas/Consular/Digital-Nomad-Visa.aspx"
+      }
+    ],
+    "reviewed": "2026-10"
+  },
+  {
+    "code": "PT",
+    "summary": "Schengen country. For long stays you get a national (D) visa at a consulate, then finish your residence permit with AIMA in Portugal.",
+    "categories": [
+      {
+        "name": "D7: Passive income visa",
+        "forWho": "Retirees and people with steady passive income.",
+        "processing": "Legal decision target is about 60 days from a complete application. Real timelines often run longer.",
+        "documents": [
+          "Proof of regular passive income",
+          "Portuguese tax number (NIF)",
+          "Portuguese bank account (often requested)"
+        ]
+      },
+      {
+        "name": "D8: Digital nomad visa",
+        "forWho": "Remote workers earning from outside Portugal.",
+        "processing": "About 60 days legal target, often longer in practice.",
+        "documents": [
+          "Proof of remote work",
+          "Proof of income for the last months"
+        ]
+      },
+      {
+        "name": "D1: Work visa",
+        "forWho": "People with a job contract in Portugal.",
+        "processing": "Varies."
+      },
+      {
+        "name": "D4: Study visa",
+        "forWho": "Students accepted by a Portuguese institution.",
+        "processing": "Varies."
+      }
+    ],
+    "generalDocuments": [
+      "Valid passport (check the minimum validity rule)",
+      "Completed application form",
+      "Recent passport photos",
+      "Proof of income or funds",
+      "Health insurance",
+      "Criminal record check (often needs an apostille)",
+      "Proof of accommodation"
+    ],
+    "officialLinks": [
+      {
+        "label": "Portal das Comunidades: national visas",
+        "url": "https://vistos.mne.gov.pt/en/national-visas/general-information"
+      },
+      {
+        "label": "AIMA (residence permits)",
+        "url": "https://aima.gov.pt"
+      }
+    ],
+    "reviewed": "2026-10"
+  },
+  {
+    "code": "MX",
+    "summary": "Visitors from many countries can enter without a visa, and the officer decides how many days you get (up to 180). To live there, you apply for residence at a Mexican consulate abroad, then finish the process with INM in Mexico.",
+    "categories": [
+      {
+        "name": "Temporary resident (economic solvency)",
+        "forWho": "People who can show income or savings above the consulate threshold. First card is usually 1 year, renewable up to 4 years total.",
+        "processing": "Consulates cite 1 to 10 business days from the appointment. You then have 30 days after entry to finish at INM.",
+        "documents": [
+          "Bank statements (usually 6 or 12 months) or proof of income"
+        ]
+      },
+      {
+        "name": "Temporary resident (family unity)",
+        "forWho": "Family of Mexican citizens or residents.",
+        "processing": "Similar to above.",
+        "documents": [
+          "Marriage or birth certificates"
+        ]
+      },
+      {
+        "name": "Permanent resident",
+        "forWho": "Retirees with higher pension income, or people with close family ties.",
+        "processing": "Similar to above."
+      }
+    ],
+    "generalDocuments": [
+      "Valid passport",
+      "Visa application form",
+      "Passport photo",
+      "Proof for your category",
+      "Consular fee"
+    ],
+    "officialLinks": [
+      {
+        "label": "Mexican consulates (SRE)",
+        "url": "https://consulmex.sre.gob.mx"
+      },
+      {
+        "label": "National Migration Institute (INM)",
+        "url": "https://www.gob.mx/inm"
+      }
+    ],
+    "reviewed": "2026-10"
+  },
+  {
+    "code": "CA",
+    "summary": "Most visitors need either an eTA or a visitor visa. Living in Canada long term usually means a work or study permit, or permanent residence through Express Entry or a provincial program.",
+    "categories": [
+      {
+        "name": "Visitor (eTA or visitor visa)",
+        "forWho": "Short visits, usually up to 6 months.",
+        "processing": "eTA is often fast. Visitor visa times vary by country."
+      },
+      {
+        "name": "Work permit",
+        "forWho": "People with a job offer or an eligible open work permit.",
+        "processing": "Varies a lot. Use the official processing time tool."
+      },
+      {
+        "name": "Study permit",
+        "forWho": "Students accepted at a designated learning institution.",
+        "processing": "Varies. Use the official tool."
+      },
+      {
+        "name": "Express Entry (permanent residence)",
+        "forWho": "Skilled workers ranked by points (age, language, education, experience).",
+        "processing": "Use the official tool for current times."
+      },
+      {
+        "name": "Provincial Nominee Program",
+        "forWho": "People nominated by a province or territory.",
+        "processing": "Varies by province."
+      }
+    ],
+    "generalDocuments": [
+      "Valid passport",
+      "Proof of funds",
+      "Language test results (for PR)",
+      "Education credential assessment (for PR)",
+      "Police certificates",
+      "Medical exam (for some applications)"
+    ],
+    "officialLinks": [
+      {
+        "label": "Immigration and citizenship (IRCC)",
+        "url": "https://www.canada.ca/en/services/immigration-citizenship.html"
+      },
+      {
+        "label": "Check current processing times",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html"
+      }
+    ],
+    "reviewed": "2026-10"
+  },
+  {
+    "code": "DE",
+    "summary": "Schengen country. For long stays most non-EU nationals get a national visa before arriving, then a residence permit from the local foreigners office.",
+    "categories": [
+      {
+        "name": "Opportunity Card (Chancenkarte)",
+        "forWho": "Skilled workers looking for a job in Germany. Points based.",
+        "processing": "Several weeks, sometimes up to a few months. Valid up to 1 year.",
+        "documents": [
+          "Degree or 2+ years vocational training",
+          "German A1 or English B2",
+          "Proof of funds (blocked account or similar)"
+        ]
+      },
+      {
+        "name": "EU Blue Card",
+        "forWho": "Graduates with a qualifying job offer above the salary threshold.",
+        "processing": "Varies by embassy."
+      },
+      {
+        "name": "Skilled worker visa",
+        "forWho": "People with recognized qualifications and a job offer.",
+        "processing": "Varies by embassy."
+      },
+      {
+        "name": "Freelance or self-employment visa",
+        "forWho": "Freelancers and business founders.",
+        "processing": "Varies by embassy.",
+        "documents": [
+          "Business plan or client letters",
+          "Proof of funds"
+        ]
+      },
+      {
+        "name": "Student visa",
+        "forWho": "Students admitted to a German university.",
+        "processing": "Varies by embassy."
+      }
+    ],
+    "generalDocuments": [
+      "Valid passport (check the minimum validity rule)",
+      "Completed application form",
+      "Recent passport photos",
+      "Proof of income or funds",
+      "Health insurance",
+      "Criminal record check (often needs an apostille)",
+      "Proof of accommodation"
+    ],
+    "officialLinks": [
+      {
+        "label": "Make it in Germany (official portal)",
+        "url": "https://www.make-it-in-germany.com/en/"
+      },
+      {
+        "label": "Federal Foreign Office: visas",
+        "url": "https://www.auswaertiges-amt.de/en/visa-service"
+      }
+    ],
+    "reviewed": "2026-10"
+  },
+  {
+    "code": "TH",
+    "summary": "Since 15 Sep 2026 visa-free visits are 30 days for most passports (down from 60), for tourism only. Most visas are applied for online through the Thai e-Visa system. Long-stay options include the DTV for remote workers and the LTR for higher earners.",
+    "categories": [
+      {
+        "name": "Destination Thailand Visa (DTV)",
+        "forWho": "Remote workers, freelancers, and people doing Thai soft power activities like Muay Thai or cooking courses.",
+        "processing": "Usually a few weeks. Since 31 Aug 2026 you must apply to the Thai embassy or consulate for your country of nationality or residence, not from a neighboring country.",
+        "documents": [
+          "Proof of remote work or course enrollment",
+          "Bank statement showing at least 500,000 THB",
+          "Criminal record certificate (required since 31 Aug 2026)"
+        ]
+      },
+      {
+        "name": "Long-Term Resident (LTR) visa",
+        "forWho": "Wealthy retirees, remote workers with high income, and highly skilled professionals.",
+        "processing": "Varies. Applications go through the Board of Investment."
+      },
+      {
+        "name": "Non-immigrant O (retirement)",
+        "forWho": "Retirees aged 50+ meeting the financial requirement.",
+        "processing": "Varies by embassy."
+      },
+      {
+        "name": "Education (ED) visa",
+        "forWho": "Students enrolled at a recognized school.",
+        "processing": "Varies by embassy."
+      }
+    ],
+    "generalDocuments": [
+      "Passport valid 6+ months",
+      "Recent photo",
+      "Completed application form",
+      "Recent bank statements",
+      "Proof of stay or ties to Thailand"
+    ],
+    "officialLinks": [
+      {
+        "label": "Thailand e-Visa (official)",
+        "url": "https://www.thaievisa.go.th"
+      },
+      {
+        "label": "LTR visa (Board of Investment)",
+        "url": "https://ltr.boi.go.th"
+      }
+    ],
+    "reviewed": "2026-10"
+  }
+]
