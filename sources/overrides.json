@@ -1,0 +1,52 @@
+{
+  "_help": "Corrections layered on top of the passport dataset. For each passport+destination the FIRST matching rule wins. match.code/match.days narrow a rule to what the dataset currently says. set.code: F visa free, A visa on arrival, T eTA, E e-visa, R visa required, N no admission. Dates are YYYY-MM-DD; 'from' is inclusive, 'until' is the last day the rule applies.",
+  "rules": [
+    {
+      "id": "th-2026-15day",
+      "dest": "TH",
+      "from": "2026-09-15",
+      "passports": ["MU", "SC"],
+      "set": { "code": "F", "days": 15 },
+      "source": "https://www.thaievisa.go.th",
+      "refs": ["https://www.thailandelite.net/thailand-30-day-visa-exemption-2026"]
+    },
+    {
+      "id": "th-2026-removed",
+      "dest": "TH",
+      "from": "2026-09-15",
+      "passports": ["AL", "AD", "CO", "CU", "DM", "DO", "EC", "GT", "JM", "XK", "MX", "MC", "MA", "PA", "PG", "SM", "LK", "TO", "TT", "UY", "UZ"],
+      "match": { "code": "F", "days": 60 },
+      "set": { "code": "E" },
+      "source": "https://www.thaievisa.go.th",
+      "refs": ["https://www.thailandelite.net/thailand-30-day-visa-exemption-2026"]
+    },
+    {
+      "id": "th-2026-voa",
+      "dest": "TH",
+      "from": "2026-09-15",
+      "passports": ["AZ", "BY", "RS"],
+      "set": { "code": "A", "days": 15 },
+      "source": "https://www.thaievisa.go.th",
+      "refs": ["https://www.thailandelite.net/thailand-30-day-visa-exemption-2026"]
+    },
+    {
+      "id": "th-2026-30day",
+      "dest": "TH",
+      "from": "2026-09-15",
+      "match": { "code": "F", "days": 60 },
+      "set": { "code": "F", "days": 30 },
+      "source": "https://www.thaievisa.go.th",
+      "refs": ["https://www.thailandelite.net/thailand-30-day-visa-exemption-2026"]
+    },
+    {
+      "id": "cn-2026-gb-ca",
+      "dest": "CN",
+      "from": "2026-02-17",
+      "until": "2026-12-31",
+      "passports": ["GB", "CA"],
+      "set": { "code": "F", "days": 30 },
+      "source": "https://english.shanghai.gov.cn/en-PolicyLibrary-EntryExit/20260818/8aa6aa1bc34b4228be0c87a14c75875f.html",
+      "refs": ["https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260215/9e4dbfd583784790b858810119fceb05.html"]
+    }
+  ]
+}
