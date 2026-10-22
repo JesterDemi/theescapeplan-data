@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-22T14:41:55.765Z",
+  "checkedAt": "2026-10-22T14:49:50.051Z",
   "feedGeneratedAt": "2026-10-22T14:41:19.068Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
@@ -11,23 +11,25 @@
     "US": "ok",
     "UK": "ok",
     "CA": "ok",
-    "AU": "error: The operation was aborted due to timeout"
+    "AU": "error: ETIMEDOUT"
   },
   "problems": [
     {
       "level": "warning",
-      "area": "passports",
-      "message": "Passport dataset is 247 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
-    },
-    {
-      "level": "warning",
       "area": "links",
-      "message": "Link check failed (error: UNABLE_TO_VERIFY_LEAF_SIGNATURE): https://aima.gov.pt"
+      "message": "Link check failed (error: ETIMEDOUT): https://english.shanghai.gov.cn/en-PolicyLibrary-EntryExit/20260818/8aa6aa1bc34b4228be0c87a14c75875f.html"
     },
     {
       "level": "warning",
       "area": "advisories",
-      "message": "AU advisory feed: error: The operation was aborted due to timeout. The app falls back to cached/bundled levels; check whether the endpoint moved."
+      "message": "AU advisory feed: error: ETIMEDOUT. The app falls back to cached/bundled levels; check whether the endpoint moved."
+    }
+  ],
+  "notes": [
+    {
+      "level": "note",
+      "area": "passports",
+      "message": "Passport dataset is 247 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
     }
   ]
 }
