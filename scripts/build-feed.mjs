@@ -135,7 +135,8 @@ async function linkChecks(feed) {
   for (const [u, s] of results) {
     if (s === 403 || s === 429 || s === 405) continue; // bot walls on gov sites, not a dead link
     if (typeof s === 'string' && /CERT|SIGNATURE|SSL|TLS/i.test(s)) continue; // site's own TLS setup; browsers still open it
-    if (typeof s !== 'number' || s >= 400) flag('warning', 'links', `Link check failed (${s}): ${u}`);
+    if (typeof s === 'string') flag('note', 'links', `Could not connect from GitHub's servers (${s}): ${u}. Usually a regional block; check it opens in a browser.`);
+    else if (s >= 400) flag('warning', 'links', `Link check failed (HTTP ${s}): ${u}`);
   }
   return results.length;
 }
@@ -156,7 +157,8 @@ async function advisoryChecks() {
       if (out[k] === 'ok') break;
       await new Promise((r) => setTimeout(r, 5000));
     }
-    if (out[k] !== 'ok') flag('warning', 'advisories', `${k} advisory feed: ${out[k]}. The app falls back to cached/bundled levels; check whether the endpoint moved.`);
+    if (out[k].startsWith('error:')) flag('note', 'advisories', `${k} advisory feed could not be reached from GitHub's servers (${out[k]}). Phones fetch it directly, so this is usually a block on GitHub's network.`);
+    else if (out[k] !== 'ok') flag('warning', 'advisories', `${k} advisory feed: ${out[k]}. The app falls back to cached/bundled levels; check whether the endpoint moved.`);
   }
   return out;
 }
