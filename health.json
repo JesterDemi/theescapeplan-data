@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-22T14:41:55.765Z",
+  "feedGeneratedAt": "2026-10-22T14:41:19.068Z",
+  "passportsDate": "2026-02-17",
+  "passportCount": 199,
+  "overrides": 5,
+  "notices": 2,
+  "visaGuides": 7,
+  "linksChecked": 18,
+  "advisories": {
+    "US": "ok",
+    "UK": "ok",
+    "CA": "ok",
+    "AU": "error: The operation was aborted due to timeout"
+  },
+  "problems": [
+    {
+      "level": "warning",
+      "area": "passports",
+      "message": "Passport dataset is 247 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+    },
+    {
+      "level": "warning",
+      "area": "links",
+      "message": "Link check failed (error: UNABLE_TO_VERIFY_LEAF_SIGNATURE): https://aima.gov.pt"
+    },
+    {
+      "level": "warning",
+      "area": "advisories",
+      "message": "AU advisory feed: error: The operation was aborted due to timeout. The app falls back to cached/bundled levels; check whether the endpoint moved."
+    }
+  ]
+}
