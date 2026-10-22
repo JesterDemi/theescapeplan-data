@@ -169,6 +169,7 @@ async function advisoryChecks() {
 // Runs with no human involved, so phones hear about rule changes even if nobody edits sources/.
 const WATCH_DAYS = 45;
 const ENTRY_NOTE = /entry requirements|visa|entry rules/i;
+const VISA_CHANGE = /visa|\bETA\b|travel authori[sz]ation|exempt|permit|no longer|new (rules|requirement)/i;
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const prettyDate = (iso) => `${MONTHS[Number(iso.slice(5, 7)) - 1]} ${Number(iso.slice(8, 10))}, ${iso.slice(0, 4)}`;
 const addDays = (iso, n) => new Date(Date.parse(iso + 'T00:00:00Z') + n * 86400000).toISOString().slice(0, 10);
@@ -199,9 +200,9 @@ async function ukEntryChanges() {
           id: `auto-uk-${iso.toLowerCase()}-${latest.date}`,
           dests: [iso],
           until: addDays(latest.date, WATCH_DAYS),
-          level: daysBetween(latest.date, today) <= 14 ? 'warning' : 'info',
-          title: `${name} changed its entry rules (${prettyDate(latest.date)})`,
-          body: `UK government update: "${latest.note}" Changes like this often affect other passports too, so check the official entry rules for your passport before you book or travel.`,
+          level: daysBetween(latest.date, today) <= 14 && VISA_CHANGE.test(latest.note) ? 'warning' : 'info',
+          title: `Official entry info for ${name} was updated (${prettyDate(latest.date)})`,
+          body: `UK government note: "${latest.note}" Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel.`,
           source: `https://www.gov.uk/foreign-travel-advice/${slug}/entry-requirements`,
           auto: true,
         });
@@ -274,7 +275,6 @@ const md = [
   `- Passport dataset: ${health.passportCount} passports, dated ${passports.date}`,
   `- Overrides: ${overrides.length}, notices: ${notices.length} hand-written + ${autoNotices.length} automatic, visa guides: ${visas.length}`,
   `- Automatic entry-rule watch (UK gov change log): ${ukWatch}`,
-  ...(autoNotices.length ? ['', '## Automatic entry-rule notices live in the app', '', ...autoNotices.map((n) => `- **${n.dests[0]}**: ${n.title}. ${n.body.match(/"(.*)"/)?.[1] ?? ''}`)] : []),
   `- Advisory feeds: ${typeof advisories === 'string' ? advisories : Object.entries(advisories).map(([k, v]) => `${k} ${v}`).join(', ')}`,
   `- Links checked: ${linksChecked}`,
   '',
@@ -282,5 +282,6 @@ const md = [
   '',
   notes.length ? '## Notes\n\n' + notes.map((p) => `- **${p.area}**: ${p.message}`).join('\n') + '\n' : '',
 ].join('\n');
-writeFileSync(join(ROOT, 'HEALTH.md'), md);
+const autoList = autoNotices.length ? '\n## Automatic entry-info notices live in the app\n\n' + autoNotices.map((n) => `- **${n.dests[0]}** (${n.level}): ${n.title}. ${n.body.match(/"(.*)"/)?.[1] ?? ''}`).join('\n') + '\n' : '';
+writeFileSync(join(ROOT, 'HEALTH.md'), md + autoList);
 console.log(md);
