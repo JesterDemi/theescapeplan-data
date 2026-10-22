@@ -7,6 +7,13 @@ A GitHub Action runs daily. It rebuilds `feed.json`, checks every official link 
 government advisory feeds, and writes `HEALTH.md`. If anything needs attention it opens an issue
 called **Data needs attention** (GitHub emails you), and closes it again once everything passes.
 
+## What happens with nobody touching it
+
+- Every day the job reads the UK government's change log for all ~200 countries. Any country that changed its
+  entry or visa rules in the last 45 days automatically gets a notice in the app, linked to the official page.
+- If the open passport dataset publishes new data, it's pulled in automatically.
+- Travel advisories are read live by the phones from 4 governments.
+
 ## Files you edit (in `sources/`)
 
 | File | What it is |
@@ -15,6 +22,7 @@ called **Data needs attention** (GitHub emails you), and closes it again once ev
 | `notices.json` | Short warnings shown on a country's entry card (policy ending, tourism-only, etc). |
 | `visas.json` | The long-stay visa guides. Bump `reviewed` (YYYY-MM) every time you re-check one. |
 | `meta.json` | Shared notes, like the Schengen EES/ETIAS line. Update `checked` when you re-check it. |
+| `uk-slugs.json` | Country code to gov.uk page name, used by the automatic watch. Rarely changes. |
 
 Every override and notice needs an `https://` source, ideally a government page. The build refuses
 to publish a broken feed, so a typo can't break the app; the old feed just stays live.
