@@ -1,12 +1,14 @@
 {
-  "checkedAt": "2026-10-22T15:00:39.062Z",
-  "feedGeneratedAt": "2026-10-22T14:41:19.068Z",
+  "checkedAt": "2026-10-22T16:11:00.175Z",
+  "feedGeneratedAt": "2026-10-22T16:06:58.689Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 5,
   "notices": 2,
+  "autoNotices": 17,
+  "ukWatch": "202/202 countries read, 17 recent entry-rule changes",
   "visaGuides": 7,
-  "linksChecked": 18,
+  "linksChecked": 35,
   "advisories": {
     "US": "ok",
     "UK": "ok",
