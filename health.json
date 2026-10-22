@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-22T14:49:50.051Z",
+  "checkedAt": "2026-10-22T15:00:39.062Z",
   "feedGeneratedAt": "2026-10-22T14:41:19.068Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
@@ -13,23 +13,17 @@
     "CA": "ok",
     "AU": "error: ETIMEDOUT"
   },
-  "problems": [
-    {
-      "level": "warning",
-      "area": "links",
-      "message": "Link check failed (error: ETIMEDOUT): https://english.shanghai.gov.cn/en-PolicyLibrary-EntryExit/20260818/8aa6aa1bc34b4228be0c87a14c75875f.html"
-    },
-    {
-      "level": "warning",
-      "area": "advisories",
-      "message": "AU advisory feed: error: ETIMEDOUT. The app falls back to cached/bundled levels; check whether the endpoint moved."
-    }
-  ],
+  "problems": [],
   "notes": [
     {
       "level": "note",
       "area": "passports",
       "message": "Passport dataset is 247 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+    },
+    {
+      "level": "note",
+      "area": "advisories",
+      "message": "AU advisory feed could not be reached from GitHub's servers (error: ETIMEDOUT). Phones fetch it directly, so this is usually a block on GitHub's network."
     }
   ]
 }
