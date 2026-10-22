@@ -1,0 +1,52 @@
+name: Daily data check
+
+on:
+  schedule:
+    - cron: '17 6 * * *'   # every day, 06:17 UTC
+  push:
+    paths: ['sources/**', 'scripts/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: daily-data
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build feed and run checks
+        run: node scripts/build-feed.mjs
+
+      - name: Commit feed and health report
+        run: |
+          git config user.name "escape-plan-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add feed.json health.json HEALTH.md
+          git diff --cached --quiet || git commit -m "Daily data update $(date -u +%F)"
+          git push
+
+      - name: Open or update the "Data needs attention" issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count=$(node -e "console.log(require('./health.json').problems.length)")
+          existing=$(gh issue list --label data-health --state open --json number --jq '.[0].number')
+          if [ "$count" -gt 0 ]; then
+            gh label create data-health --color D93F0B --force >/dev/null 2>&1 || true
+            if [ -n "$existing" ]; then
+              gh issue edit "$existing" --body-file HEALTH.md
+              gh issue comment "$existing" --body "Still $count item(s) on $(date -u +%F)."
+            else
+              gh issue create --title "Data needs attention" --label data-health --body-file HEALTH.md
+            fi
+          elif [ -n "$existing" ]; then
+            gh issue close "$existing" --comment "All checks passed on $(date -u +%F)."
+          fi
