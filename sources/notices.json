@@ -1,0 +1,23 @@
+{
+  "_help": "Short notes shown on a country's entry card. dests is required. passports is optional (omit = everyone). level: info or warning. Dates YYYY-MM-DD, until is the last day shown.",
+  "notices": [
+    {
+      "id": "th-2026-rules",
+      "dests": ["TH"],
+      "from": "2026-09-15",
+      "level": "warning",
+      "title": "Thailand cut visa-free stays on Sep 15, 2026",
+      "body": "Most visa-free stays dropped from 60 to 30 days, and 21 nationalities now need an e-visa. Visa-free entry is for tourism only, so remote work or business needs a proper visa such as the DTV. One 30-day extension may be granted at an immigration office at the officer's discretion.",
+      "source": "https://www.thaievisa.go.th"
+    },
+    {
+      "id": "cn-2026-visa-free-end",
+      "dests": ["CN"],
+      "until": "2026-12-31",
+      "level": "info",
+      "title": "China's visa-free trial runs through Dec 31, 2026",
+      "body": "Many passports (including the UK and Canada since Feb 17, 2026) can visit China visa-free for up to 30 days under a trial policy that is currently set to end Dec 31, 2026. Check before booking travel for 2027.",
+      "source": "https://english.shanghai.gov.cn/en-PolicyLibrary-EntryExit/20260818/8aa6aa1bc34b4228be0c87a14c75875f.html"
+    }
+  ]
+}
