@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-22T16:21:48.218Z",
-  "feedGeneratedAt": "2026-10-22T16:17:50.891Z",
+  "checkedAt": "2026-10-23T11:46:15.268Z",
+  "feedGeneratedAt": "2026-10-23T11:42:16.198Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 5,
@@ -20,7 +20,7 @@
     {
       "level": "note",
       "area": "passports",
-      "message": "Passport dataset is 247 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+      "message": "Passport dataset is 248 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
     },
     {
       "level": "note",
