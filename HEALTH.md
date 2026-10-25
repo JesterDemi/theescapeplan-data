@@ -1,19 +1,18 @@
 # Data health
 
-Checked 2026-10-24 11:08 UTC. Feed generated 2026-10-24 11:04 UTC.
+Checked 2026-10-25 11:37 UTC. Feed generated 2026-10-25 11:33 UTC.
 
 - Passport dataset: 199 passports, dated 2026-02-17
-- Overrides: 5, notices: 2 hand-written + 18 automatic, visa guides: 7
-- Automatic entry-rule watch (UK gov change log): 202/202 countries read, 18 recent entry-rule changes
+- Overrides: 5, notices: 2 hand-written + 17 automatic, visa guides: 7
+- Automatic entry-rule watch (UK gov change log): 202/202 countries read, 17 recent entry-rule changes
 - Advisory feeds: US ok, UK ok, CA ok, AU error: ETIMEDOUT
-- Links checked: 36
+- Links checked: 35
 
 Everything looks good.
 
 ## Notes
 
-- **passports**: Passport dataset is 249 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes.
-- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://vistos.mne.gov.pt/en/national-visas/general-information. Usually a regional block; check it opens in a browser.
+- **passports**: Passport dataset is 250 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes.
 - **advisories**: AU advisory feed could not be reached from GitHub's servers (error: ETIMEDOUT). Phones fetch it directly, so this is usually a block on GitHub's network.
 
 ## Automatic entry-info notices live in the app
@@ -26,7 +25,6 @@ Everything looks good.
 - **IN** (info): Official entry info for India was updated (Oct 7, 2026). This travel advice has been reviewed for accuracy, with minor amendments made throughout, including updated information on access permits, scams, trekking in India, air and rail travel, India-Pakistan border area and Western India and healthcare in India (‘Entry requirements’,‘Safety and security’ and ‘Health’ pages).
 - **KE** (info): Official entry info for Kenya was updated (Oct 16, 2026). New information about Ebola screening (‘Entry requirements’ page).
 - **KZ** (warning): Official entry info for Kazakhstan was updated (Oct 13, 2026). Addition of information about Electronic Travel Authorisation (ETA) (‘Entry requirements’ page).
-- **MG** (info): Official entry info for Madagascar was updated (Sep 9, 2026). Addition of information on Ebola entry requirements (‘Entry requirements’ page)
 - **MW** (info): Official entry info for Malawi was updated (Oct 20, 2026). New information about foreign currency rules (‘Entry requirements’ page).
 - **NG** (info): Official entry info for Nigeria was updated (Sep 28, 2026). Updated information about Ebola screening ('Entry requirements' page).
 - **PA** (info): Official entry info for Panama was updated (Oct 7, 2026). Updated information about border control checks and curfews (‘Entry requirements’ and ‘Safety and security’ pages).

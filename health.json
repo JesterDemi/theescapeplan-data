@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-10-24T11:08:37.448Z",
-  "feedGeneratedAt": "2026-10-24T11:04:23.466Z",
+  "checkedAt": "2026-10-25T11:37:27.701Z",
+  "feedGeneratedAt": "2026-10-25T11:33:28.583Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 5,
   "notices": 2,
-  "autoNotices": 18,
-  "ukWatch": "202/202 countries read, 18 recent entry-rule changes",
+  "autoNotices": 17,
+  "ukWatch": "202/202 countries read, 17 recent entry-rule changes",
   "visaGuides": 7,
-  "linksChecked": 36,
+  "linksChecked": 35,
   "advisories": {
     "US": "ok",
     "UK": "ok",
@@ -20,12 +20,7 @@
     {
       "level": "note",
       "area": "passports",
-      "message": "Passport dataset is 249 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
-    },
-    {
-      "level": "note",
-      "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://vistos.mne.gov.pt/en/national-visas/general-information. Usually a regional block; check it opens in a browser."
+      "message": "Passport dataset is 250 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
     },
     {
       "level": "note",
