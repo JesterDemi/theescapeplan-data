@@ -1,6 +1,6 @@
 # Data health
 
-Checked 2026-10-26 06:52 UTC. Feed generated 2026-10-26 06:48 UTC.
+Checked 2026-10-26 13:10 UTC. Feed generated 2026-10-26 06:48 UTC.
 
 - Passport dataset: 199 passports, dated 2026-02-17
 - Overrides: 5, notices: 3 hand-written + 17 automatic, visa guides: 7
