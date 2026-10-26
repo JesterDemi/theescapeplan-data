@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-25T11:37:27.701Z",
-  "feedGeneratedAt": "2026-10-25T11:33:28.583Z",
+  "checkedAt": "2026-10-26T04:00:36.324Z",
+  "feedGeneratedAt": "2026-10-26T03:56:36.920Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 5,
@@ -15,12 +15,18 @@
     "CA": "ok",
     "AU": "error: ETIMEDOUT"
   },
-  "problems": [],
+  "problems": [
+    {
+      "level": "warning",
+      "area": "links",
+      "message": "Link check failed (HTTP 502): https://consulmex.sre.gob.mx"
+    }
+  ],
   "notes": [
     {
       "level": "note",
       "area": "passports",
-      "message": "Passport dataset is 250 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+      "message": "Passport dataset is 251 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
     },
     {
       "level": "note",

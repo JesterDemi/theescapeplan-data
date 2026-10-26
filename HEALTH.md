@@ -1,6 +1,6 @@
 # Data health
 
-Checked 2026-10-25 11:37 UTC. Feed generated 2026-10-25 11:33 UTC.
+Checked 2026-10-26 04:00 UTC. Feed generated 2026-10-26 03:56 UTC.
 
 - Passport dataset: 199 passports, dated 2026-02-17
 - Overrides: 5, notices: 2 hand-written + 17 automatic, visa guides: 7
@@ -8,11 +8,13 @@ Checked 2026-10-25 11:37 UTC. Feed generated 2026-10-25 11:33 UTC.
 - Advisory feeds: US ok, UK ok, CA ok, AU error: ETIMEDOUT
 - Links checked: 35
 
-Everything looks good.
+## Needs attention
+
+- **links**: Link check failed (HTTP 502): https://consulmex.sre.gob.mx
 
 ## Notes
 
-- **passports**: Passport dataset is 250 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes.
+- **passports**: Passport dataset is 251 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes.
 - **advisories**: AU advisory feed could not be reached from GitHub's servers (error: ETIMEDOUT). Phones fetch it directly, so this is usually a block on GitHub's network.
 
 ## Automatic entry-info notices live in the app
