@@ -199,6 +199,7 @@ async function ukEntryChanges() {
         out.push({
           id: `auto-uk-${iso.toLowerCase()}-${latest.date}`,
           dests: [iso],
+          from: latest.date,
           until: addDays(latest.date, WATCH_DAYS),
           level: daysBetween(latest.date, today) <= 14 && VISA_CHANGE.test(latest.note) ? 'warning' : 'info',
           title: `Official entry info for ${name} was updated (${prettyDate(latest.date)})`,
