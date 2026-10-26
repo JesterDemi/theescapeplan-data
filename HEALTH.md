@@ -1,16 +1,14 @@
 # Data health
 
-Checked 2026-10-26 04:00 UTC. Feed generated 2026-10-26 03:56 UTC.
+Checked 2026-10-26 06:52 UTC. Feed generated 2026-10-26 06:48 UTC.
 
 - Passport dataset: 199 passports, dated 2026-02-17
-- Overrides: 5, notices: 2 hand-written + 17 automatic, visa guides: 7
+- Overrides: 5, notices: 3 hand-written + 17 automatic, visa guides: 7
 - Automatic entry-rule watch (UK gov change log): 202/202 countries read, 17 recent entry-rule changes
 - Advisory feeds: US ok, UK ok, CA ok, AU error: ETIMEDOUT
-- Links checked: 35
+- Links checked: 36
 
-## Needs attention
-
-- **links**: Link check failed (HTTP 502): https://consulmex.sre.gob.mx
+Everything looks good.
 
 ## Notes
 

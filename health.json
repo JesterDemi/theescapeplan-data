@@ -1,27 +1,21 @@
 {
-  "checkedAt": "2026-10-26T04:00:36.324Z",
-  "feedGeneratedAt": "2026-10-26T03:56:36.920Z",
+  "checkedAt": "2026-10-26T06:52:06.119Z",
+  "feedGeneratedAt": "2026-10-26T06:48:05.624Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 5,
-  "notices": 2,
+  "notices": 3,
   "autoNotices": 17,
   "ukWatch": "202/202 countries read, 17 recent entry-rule changes",
   "visaGuides": 7,
-  "linksChecked": 35,
+  "linksChecked": 36,
   "advisories": {
     "US": "ok",
     "UK": "ok",
     "CA": "ok",
     "AU": "error: ETIMEDOUT"
   },
-  "problems": [
-    {
-      "level": "warning",
-      "area": "links",
-      "message": "Link check failed (HTTP 502): https://consulmex.sre.gob.mx"
-    }
-  ],
+  "problems": [],
   "notes": [
     {
       "level": "note",
