@@ -18,6 +18,16 @@
       "title": "China's visa-free trial runs through Dec 31, 2026",
       "body": "Many passports (including the UK and Canada since Feb 17, 2026) can visit China visa-free for up to 30 days under a trial policy that is currently set to end Dec 31, 2026. Check before booking travel for 2027.",
       "source": "https://english.shanghai.gov.cn/en-PolicyLibrary-EntryExit/20260818/8aa6aa1bc34b4228be0c87a14c75875f.html"
+    },
+    {
+      "id": "kz-2026-qazeta",
+      "dests": ["KZ"],
+      "from": "2026-10-26",
+      "until": "2027-12-31",
+      "level": "warning",
+      "title": "Kazakhstan's QazETA becomes mandatory Jul 1, 2027",
+      "body": "Visa-free visitors should get a free QazETA travel authorization at qazeta.kz at least 72 hours before arriving. It's phased in: Aktau airport and some land borders from Nov 1, 2026, Astana and Almaty airports from Jan 1, 2027, and all other entry points from Mar 1, 2027. Until Jul 1, 2027 you won't be turned away without one, but after that you can be. It's valid 180 days for multiple entries and doesn't extend your visa-free stay.",
+      "source": "https://kz.usembassy.gov/services/electronic-travel-authorization-qazeta/"
     }
   ]
 }
