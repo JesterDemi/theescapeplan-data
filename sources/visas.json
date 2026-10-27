@@ -52,12 +52,12 @@
         "url": "https://www.govern.ad/ca/ministeris-i-secretaries-d-estat/ministeri-de-justicia-i-interior/departament-d-immigracio"
       },
       {
-        "label": "Residence authorization application and fact sheet (PDF)",
-        "url": "https://govern.ad/documents/d/guest/t2_g024_2023-09-27_sollicitud_dautoritzacio_de_residencia"
-      },
-      {
         "label": "Self-employed residence and work application (PDF)",
         "url": "https://govern.ad/documents/d/guest/t2g027"
+      },
+      {
+        "label": "UK government: Andorra entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/andorra/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -633,6 +633,10 @@
       {
         "label": "Official e-visa portal",
         "url": "https://evisa.gov.az/en/"
+      },
+      {
+        "label": "UK government: Azerbaijan entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/azerbaijan/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -984,6 +988,10 @@
       {
         "label": "NPRA: Golden Residency for resident employees and retirees",
         "url": "https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/"
+      },
+      {
+        "label": "UK government: Bahrain entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/bahrain/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -1117,10 +1125,6 @@
       {
         "label": "Government of Bermuda: residence permit application",
         "url": "https://www.gov.bm/services/residence-permit-application"
-      },
-      {
-        "label": "Economic Investment Residential Certificate policy (PDF)",
-        "url": "https://www.gov.bm/sites/default/files/2024-06/The-Economic-Investment-Residential-Certificate-Policy-June%202024.pdf"
       },
       {
         "label": "Immigration fees",
@@ -1380,6 +1384,10 @@
       {
         "label": "Department of Immigration (permits and forms)",
         "url": "https://www.doi.gov.bt/?p=648"
+      },
+      {
+        "label": "UK government: Bhutan entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/bhutan/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -1440,8 +1448,8 @@
         "url": "https://gov.bw/residency-and-work/residence-permit-application"
       },
       {
-        "label": "Botswana Government: immigration and civil registration",
-        "url": "https://www.gov.bw/immigration-civil-registration?txterm=115"
+        "label": "UK government: Botswana entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/botswana/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -1616,7 +1624,7 @@
     ],
     "officialLinks": [
       {
-        "label": "UK government: DRC entry requirements",
+        "label": "UK government: Democratic Republic of the Congo entry requirements",
         "url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-congo/entry-requirements"
       }
     ],
@@ -1898,8 +1906,8 @@
         "url": "https://www.evisacam.cm"
       },
       {
-        "label": "Embassy of Cameroon in the US: e-visa requirements",
-        "url": "https://www.cameroonembassyusa.org/main23/Images/documents_folder/EVisaRequirements.pdf"
+        "label": "UK government: Cameroon entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/cameroon/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -2284,10 +2292,6 @@
       "Proof of accommodation"
     ],
     "officialLinks": [
-      {
-        "label": "Ministry of Interior: Civil Registry and Migration Department, digital nomads",
-        "url": "https://moi.gov.cy/moi/CRMD/crmd.nsf/All/BF9908B541BFF7D3C22587EA003CD306"
-      },
       {
         "label": "UK government: Cyprus entry requirements",
         "url": "https://www.gov.uk/foreign-travel-advice/cyprus/entry-requirements"
@@ -3142,6 +3146,10 @@
       {
         "label": "US State Department: Micronesia travel information",
         "url": "https://travel.state.gov/en/international-travel/travel-advisories/federated-states-of-micronesia.html"
+      },
+      {
+        "label": "UK government: Micronesia entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/federated-states-of-micronesia/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -3931,6 +3939,10 @@
       {
         "label": "INM: Migration and Foreigners Law (PDF)",
         "url": "https://www.inm.gob.hn/Ley_de_Migraciones_y_extranjeria_Honduras[1].pdf"
+      },
+      {
+        "label": "UK government: Honduras entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/honduras/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -4397,12 +4409,12 @@
         "url": "https://island.is/en/o/directorate-of-immigration"
       },
       {
-        "label": "Long-term visa for remote workers",
-        "url": "https://island.is/en/get-long-term-visa-for-remote-workers"
-      },
-      {
         "label": "Residence permit based on work",
         "url": "https://island.is/en/permit-based-on-work"
+      },
+      {
+        "label": "UK government: Iceland entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/iceland/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -4461,7 +4473,7 @@
     "officialLinks": [
       {
         "label": "Visa for Italy (Ministry of Foreign Affairs)",
-        "url": "https://vistoperitalia.esteri.it/home/en"
+        "url": "https://vistoperitalia.esteri.it/"
       },
       {
         "label": "Example: Digital nomad visa (Embassy in Dublin)",
@@ -5342,12 +5354,12 @@
         "url": "https://www.immigration.gov.lk/pages_e.php?id=18"
       },
       {
-        "label": "Golden Paradise Visa (official)",
-        "url": "https://eservices.immigration.gov.lk/golden-paradise-visa.html"
-      },
-      {
         "label": "Sri Lanka ETA (official)",
         "url": "https://www.eta.gov.lk"
+      },
+      {
+        "label": "UK government: Sri Lanka entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -5565,10 +5577,6 @@
       {
         "label": "Guichet.lu: immigration",
         "url": "https://guichet.public.lu/en/citoyens/immigration.html"
-      },
-      {
-        "label": "Guichet.lu: self-employed worker residence",
-        "url": "https://guichet.public.lu/en/citoyens/immigration/plus-3-mois/ressortissant-tiers/travailleur-independant/independant.html"
       }
     ],
     "reviewed": "2026-10"
@@ -6433,6 +6441,10 @@
       {
         "label": "Economic Development Board",
         "url": "https://www.edbmauritius.org/"
+      },
+      {
+        "label": "UK government: Mauritius entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/mauritius/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -6701,6 +6713,10 @@
       {
         "label": "SENAMI (National Migration Service)",
         "url": "https://www.senami.gov.mz/"
+      },
+      {
+        "label": "UK government: Mozambique entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/mozambique/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -7127,6 +7143,10 @@
       {
         "label": "Nauru Department of Justice: residence visa form",
         "url": "https://justice.gov.nr/wp-content/uploads/2023/12/Application-Form-Residence-Visa.pdf"
+      },
+      {
+        "label": "UK government: Nauru entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/nauru/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -7250,6 +7270,10 @@
       {
         "label": "Royal Oman Police (visas and residence)",
         "url": "https://www.rop.gov.om/english/"
+      },
+      {
+        "label": "UK government: Oman entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/oman/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -7680,7 +7704,7 @@
         "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/israel-west-bank-and-gaza-travel-advisory.html"
       },
       {
-        "label": "UK government: Palestine entry requirements",
+        "label": "UK government: Palestinian Territories entry requirements",
         "url": "https://www.gov.uk/foreign-travel-advice/the-occupied-palestinian-territories/entry-requirements"
       }
     ],
@@ -7892,6 +7916,10 @@
       {
         "label": "Ministry of Interior: Qatar visas",
         "url": "https://portal.moi.gov.qa/qatarvisas"
+      },
+      {
+        "label": "UK government: Qatar entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/qatar/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -8586,6 +8614,10 @@
       {
         "label": "Ministry of Foreign Affairs: stay and residence permits",
         "url": "https://esteri.sm/pub1/EsteriSM/en/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html"
+      },
+      {
+        "label": "UK government: San Marino entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/san-marino/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -9822,6 +9854,10 @@
       {
         "label": "MFA of Uzbekistan: consular and visa info",
         "url": "https://m.mfa.uz/en/consular/visa/"
+      },
+      {
+        "label": "UK government: Uzbekistan entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
@@ -9855,7 +9891,7 @@
       },
       {
         "label": "Visa for Italy (Italian Foreign Ministry)",
-        "url": "https://vistoperitalia.esteri.it/home/en"
+        "url": "https://vistoperitalia.esteri.it/"
       }
     ],
     "reviewed": "2026-10"
@@ -9908,6 +9944,10 @@
       {
         "label": "SVG Consulate: info for non-nationals",
         "url": "https://svgconsulate.vc/non-nationals.php"
+      },
+      {
+        "label": "UK government: Saint Vincent and Grenadines entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/st-vincent-and-the-grenadines/entry-requirements"
       }
     ],
     "reviewed": "2026-10"
