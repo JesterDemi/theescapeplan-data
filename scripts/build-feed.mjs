@@ -131,7 +131,17 @@ async function linkChecks(feed) {
   for (const x of feed.notices) urls.add(x.source);
   for (const s of feed.meta?.schengen?.sources ?? []) urls.add(s);
   const list = [...urls].filter(Boolean);
-  const results = await Promise.all(list.map(async (u) => [u, await head(u)]));
+  // Check a few at a time. Hundreds of parallel requests make GitHub's runner time out
+  // and every slow gov site shows up as a false 'could not connect'.
+  const results = [];
+  let next = 0;
+  const worker = async () => {
+    while (next < list.length) {
+      const u = list[next++];
+      results.push([u, await head(u)]);
+    }
+  };
+  await Promise.all(Array.from({ length: 12 }, worker));
   for (const [u, s] of results) {
     if (s === 403 || s === 429 || s === 405) continue; // bot walls on gov sites, not a dead link
     if (typeof s === 'string' && /CERT|SIGNATURE|SSL|TLS/i.test(s)) continue; // site's own TLS setup; browsers still open it
