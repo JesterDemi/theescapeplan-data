@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-10-26T13:10:49.065Z",
-  "feedGeneratedAt": "2026-10-26T06:48:05.624Z",
+  "checkedAt": "2026-10-27T12:18:51.895Z",
+  "feedGeneratedAt": "2026-10-27T12:14:50.110Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 5,
   "notices": 3,
-  "autoNotices": 17,
-  "ukWatch": "202/202 countries read, 17 recent entry-rule changes",
+  "autoNotices": 19,
+  "ukWatch": "202/202 countries read, 19 recent entry-rule changes",
   "visaGuides": 7,
-  "linksChecked": 36,
+  "linksChecked": 38,
   "advisories": {
     "US": "ok",
     "UK": "ok",
@@ -20,7 +20,7 @@
     {
       "level": "note",
       "area": "passports",
-      "message": "Passport dataset is 251 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+      "message": "Passport dataset is 252 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
     },
     {
       "level": "note",
