@@ -113,6 +113,20 @@ function freshness(feed) {
 }
 
 // ---------- network checks (warnings) ----------
+// Some gov sites answer 200 with a "page not found" page. Read the title so those get caught too.
+const SOFT_404 = /\b404\b|not found|page not found|no encontrada|no existe|introuvable|n'existe pas|nicht gefunden|non trovata|não encontrada|niet gevonden|^\s*(error|errore|erreur)\b/i;
+async function pageTitle(url) {
+  try {
+    const res = await fetch(url, { redirect: 'follow', headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) });
+    if (!res.ok || !/html/i.test(res.headers.get('content-type') || '')) return '';
+    const html = (await res.text()).slice(0, 300000);
+    const m = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+    return m ? m[1].replace(/\s+/g, ' ').trim() : '';
+  } catch {
+    return '';
+  }
+}
+
 async function head(url) {
   for (const method of ['HEAD', 'GET']) {
     try {
@@ -138,14 +152,20 @@ async function linkChecks(feed) {
   const worker = async () => {
     while (next < list.length) {
       const u = list[next++];
-      results.push([u, await head(u)]);
+      let s = await head(u);
+      if (typeof s === 'number' && s < 400) {
+        const title = await pageTitle(u);
+        if (title && SOFT_404.test(title)) s = `soft404: ${title.slice(0, 80)}`;
+      }
+      results.push([u, s]);
     }
   };
   await Promise.all(Array.from({ length: 12 }, worker));
   for (const [u, s] of results) {
     if (s === 403 || s === 429 || s === 405) continue; // bot walls on gov sites, not a dead link
     if (typeof s === 'string' && /CERT|SIGNATURE|SSL|TLS/i.test(s)) continue; // site's own TLS setup; browsers still open it
-    if (typeof s === 'string') flag('note', 'links', `Could not connect from GitHub's servers (${s}): ${u}. Usually a regional block; check it opens in a browser.`);
+    if (typeof s === 'string' && s.startsWith('soft404')) flag('warning', 'links', `Link opens but looks like an error page (title: "${s.slice(9)}"): ${u}`);
+    else if (typeof s === 'string') flag('note', 'links', `Could not connect from GitHub's servers (${s}): ${u}. Usually a regional block; check it opens in a browser.`);
     else if (s >= 400) flag('warning', 'links', `Link check failed (HTTP ${s}): ${u}`);
   }
   return results.length;
