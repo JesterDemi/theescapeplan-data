@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The Escape Plan: Cuba travel alerts</title>
+<link>https://theescapeplan.org</link>
+<description>Travel advisory changes and entry-rule updates for Cuba.</description>
+<language>en-us</language>
+<atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/cu.xml" rel="self" type="application/rss+xml"/>
+<item><title>Official entry info for Cuba was updated (Sep 25, 2026)</title><link>https://www.gov.uk/foreign-travel-advice/cuba/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-cu-2026-09-25</guid><pubDate>Fri, 25 Sep 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;This travel advice has been reviewed for accuracy with changes made throughout, including protests in Cuba, power outages and fuel and water shortages, travel disruption, international card transactions, travel insurance, visa requirements, travelling to the USA from Cuba, taking money into Cuba, crime, money, taxis, emergency medical numbers and healthcare in Cuba (‘Warnings and insurance’, ‘Entry requirements’, ‘Safety and security’ and ‘Health’ pages).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+</channel>
+</rss>

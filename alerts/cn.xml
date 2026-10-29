@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The Escape Plan: China travel alerts</title>
+<link>https://theescapeplan.org</link>
+<description>Travel advisory changes and entry-rule updates for China.</description>
+<language>en-us</language>
+<atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/cn.xml" rel="self" type="application/rss+xml"/>
+<item><title>China's visa-free trial runs through Dec 31, 2026</title><link>https://english.shanghai.gov.cn/en-PolicyLibrary-EntryExit/20260818/8aa6aa1bc34b4228be0c87a14c75875f.html</link><guid isPermaLink="false">entry-cn-2026-visa-free-end</guid><pubDate>Wed, 28 Oct 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>Many passports (including the UK and Canada since Feb 17, 2026) can visit China visa-free for up to 30 days under a trial policy that is currently set to end Dec 31, 2026. Check before booking travel for 2027. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+</channel>
+</rss>

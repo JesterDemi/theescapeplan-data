@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The Escape Plan: Kazakhstan travel alerts</title>
+<link>https://theescapeplan.org</link>
+<description>Travel advisory changes and entry-rule updates for Kazakhstan.</description>
+<language>en-us</language>
+<atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/kz.xml" rel="self" type="application/rss+xml"/>
+<item><title>Kazakhstan's QazETA becomes mandatory Jul 1, 2027</title><link>https://kz.usembassy.gov/services/electronic-travel-authorization-qazeta/</link><guid isPermaLink="false">entry-kz-2026-qazeta</guid><pubDate>Mon, 26 Oct 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>Visa-free visitors should get a free QazETA travel authorization at qazeta.kz at least 72 hours before arriving. It's phased in: Aktau airport and some land borders from Nov 1, 2026, Astana and Almaty airports from Jan 1, 2027, and all other entry points from Mar 1, 2027. Until Jul 1, 2027 you won't be turned away without one, but after that you can be. It's valid 180 days for multiple entries and doesn't extend your visa-free stay. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+<item><title>Official entry info for Kazakhstan was updated (Oct 13, 2026)</title><link>https://www.gov.uk/foreign-travel-advice/kazakhstan/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-kz-2026-10-13</guid><pubDate>Tue, 13 Oct 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;Addition of information about Electronic Travel Authorisation (ETA) (‘Entry requirements’ page).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+</channel>
+</rss>

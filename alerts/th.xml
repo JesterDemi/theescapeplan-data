@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The Escape Plan: Thailand travel alerts</title>
+<link>https://theescapeplan.org</link>
+<description>Travel advisory changes and entry-rule updates for Thailand.</description>
+<language>en-us</language>
+<atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/th.xml" rel="self" type="application/rss+xml"/>
+<item><title>Official entry info for Thailand was updated (Oct 12, 2026)</title><link>https://www.gov.uk/foreign-travel-advice/thailand/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-th-2026-10-12</guid><pubDate>Mon, 12 Oct 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;Updated information about visa requirements for travellers entering Thailand by land or air (‘Entry requirements’ page).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+<item><title>Thailand cut visa-free stays on Sep 15, 2026</title><link>https://www.thaievisa.go.th</link><guid isPermaLink="false">entry-th-2026-rules</guid><pubDate>Tue, 15 Sep 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>Most visa-free stays dropped from 60 to 30 days, and 21 nationalities now need an e-visa. Visa-free entry is for tourism only, so remote work or business needs a proper visa such as the DTV. One 30-day extension may be granted at an immigration office at the officer's discretion. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+</channel>
+</rss>

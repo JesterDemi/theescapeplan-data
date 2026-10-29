@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The Escape Plan: Algeria travel alerts</title>
+<link>https://theescapeplan.org</link>
+<description>Travel advisory changes and entry-rule updates for Algeria.</description>
+<language>en-us</language>
+<atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/dz.xml" rel="self" type="application/rss+xml"/>
+<item><title>Official entry info for Algeria was updated (Sep 25, 2026)</title><link>https://www.gov.uk/foreign-travel-advice/algeria/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-dz-2026-09-25</guid><pubDate>Fri, 25 Sep 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;Updated information about customs rules, terrorism in Algeria, political situation and personal ID (‘Entry requirements’ and ‘Safety and security’ pages).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+</channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The Escape Plan: Ethiopia travel alerts</title>
+<link>https://theescapeplan.org</link>
+<description>Travel advisory changes and entry-rule updates for Ethiopia.</description>
+<language>en-us</language>
+<atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/et.xml" rel="self" type="application/rss+xml"/>
+<item><title>Official entry info for Ethiopia was updated (Sep 25, 2026)</title><link>https://www.gov.uk/foreign-travel-advice/ethiopia/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-et-2026-09-25</guid><pubDate>Fri, 25 Sep 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;New information about health screening on arrival, updated information about conflict and violence and the removal of information about elections and Danakil desert ('Entry requirements', Safety and security’ and ‘Regional risks’ pages).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+</channel>
+</rss>
