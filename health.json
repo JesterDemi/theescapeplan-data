@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-28T13:04:30.125Z",
-  "feedGeneratedAt": "2026-10-28T12:57:56.723Z",
+  "checkedAt": "2026-10-29T13:11:20.871Z",
+  "feedGeneratedAt": "2026-10-29T13:04:37.281Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 5,
@@ -24,11 +24,6 @@
     {
       "level": "warning",
       "area": "links",
-      "message": "Link check failed (HTTP 522): https://www.inm.gob.hn/Ley_de_Migraciones_y_extranjeria_Honduras[1].pdf"
-    },
-    {
-      "level": "warning",
-      "area": "links",
       "message": "Link check failed (HTTP 503): https://pmoffice.gov.vc/pmoffice/index.php/faq"
     }
   ],
@@ -36,7 +31,12 @@
     {
       "level": "note",
       "area": "passports",
-      "message": "Passport dataset is 253 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+      "message": "Passport dataset is 254 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: ECONNRESET): https://migration.gov.az/en/page/73. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -66,12 +66,12 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.mfa.gov.dz. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://evisacuba.cu/. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: fetch failed): https://www.evisa.gov.kh. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.mfa.gov.dz. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -91,6 +91,16 @@
     {
       "level": "note",
       "area": "links",
+      "message": "Could not connect from GitHub's servers (error: fetch failed): https://www.evisa.gov.kh. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.inm.gob.hn/Ley_de_Migraciones_y_extranjeria_Honduras[1].pdf. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
       "message": "Could not connect from GitHub's servers (error: ETIMEDOUT): https://passport.govmu.org. Usually a regional block; check it opens in a browser."
     },
     {
@@ -101,12 +111,12 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.senami.gov.mz/. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: ECONNREFUSED): https://portal.moi.gov.qa/qatarvisas. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: ECONNREFUSED): https://portal.moi.gov.qa/qatarvisas. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.senami.gov.mz/. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -126,7 +136,7 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: ENOTFOUND): https://www.samoaimmigration.gov.ws/. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -136,7 +146,7 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: ENOTFOUND): https://www.samoaimmigration.gov.ws/. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
