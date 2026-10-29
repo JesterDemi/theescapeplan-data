@@ -49,3 +49,19 @@ After editing on github.com, the Action runs automatically and the change is liv
 
 - Short-stay rules: [imorte/passport-index-data](https://github.com/imorte/passport-index-data) (MIT), plus the overrides here.
 - Advisories are fetched live by the app from the US, UK, Canadian and Australian governments.
+
+## Discord alert feeds (RSS)
+
+Every 4 hours the `Discord alert feeds` Action reads the four government advisory feeds with the
+app's own parser (`shared/advisoryParse.ts`, copied from the app) and the entry-rule notices in
+`feed.json`, then publishes RSS feeds. Same data and same rules as the app, so Discord and the
+app always agree.
+
+- Every country: `https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/all.xml`
+- One country (ISO code, lowercase): `https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/al.xml`
+
+Add the URL to an RSS module in Discord (for example Physalia's Social alerts). Safety rules:
+the first run only saves current levels, a feed that is down never counts as a change, and if
+more than 40 countries move at once nothing is posted (that means a feed broke, not the world).
+When the app's `src/lib/advisoryParse.ts`, `src/data/advisorySnapshot.ts` or `src/data/countries.ts`
+change, copy them into `shared/` (only the two import paths at the top of advisoryParse differ).
