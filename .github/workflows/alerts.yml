@@ -1,0 +1,35 @@
+name: Discord alert feeds
+
+on:
+  schedule:
+    - cron: '41 */4 * * *'   # every 4 hours
+  push:
+    paths: ['shared/**', 'scripts/build-alerts.mjs', 'feed.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: daily-data
+
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build alert feeds (same advisory rules as the app)
+        run: node --experimental-strip-types scripts/build-alerts.mjs
+
+      - name: Commit alert feeds
+        run: |
+          git config user.name "escape-plan-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add alerts
+          git diff --cached --quiet && exit 0
+          git commit -m "Alert feeds $(date -u +'%F %H:%M') [skip ci]"
+          git pull --rebase
+          git push
