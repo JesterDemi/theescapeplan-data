@@ -6,5 +6,6 @@
 <description>Travel advisory changes and entry-rule updates for United States.</description>
 <language>en-us</language>
 <atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/us.xml" rel="self" type="application/rss+xml"/>
+<item><title>Official entry info for USA was updated (Oct 30, 2026)</title><link>https://www.gov.uk/foreign-travel-advice/usa/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-us-2026-10-30</guid><pubDate>Fri, 30 Oct 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;Updated information about Ebola (‘Entry requirements’ page).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
 </channel>
 </rss>
