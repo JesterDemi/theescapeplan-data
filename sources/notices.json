@@ -28,6 +28,45 @@
       "title": "Kazakhstan's QazETA becomes mandatory Jul 1, 2027",
       "body": "Visa-free visitors should get a free QazETA travel authorization at qazeta.kz at least 72 hours before arriving. It's phased in: Aktau airport and some land borders from Nov 1, 2026, Astana and Almaty airports from Jan 1, 2027, and all other entry points from Mar 1, 2027. Until Jul 1, 2027 you won't be turned away without one, but after that you can be. It's valid 180 days for multiple entries and doesn't extend your visa-free stay.",
       "source": "https://kz.usembassy.gov/services/electronic-travel-authorization-qazeta/"
+    },
+    {
+      "id": "us-2026-ebola-attestation",
+      "dests": ["US"],
+      "from": "2026-11-02",
+      "until": "2026-12-18",
+      "level": "warning",
+      "title": "US flights require an Ebola travel form starting Nov 3, 2026",
+      "body": "Everyone flying to the US, including US citizens and people just connecting, must sign a CDC form saying they haven't been in the Democratic Republic of the Congo in the last 21 days. Airlines must refuse boarding without it. It covers flights leaving at or after 11:59 pm EST on Nov 3 and is set to run through Dec 18, 2026 unless the CDC changes it. Ask your airline how it collects the form. Separately, foreign nationals who were in the DRC, Uganda or South Sudan in the last 21 days face US entry restrictions.",
+      "source": "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html"
+    },
+    {
+      "id": "th-2026-land-entries",
+      "dests": ["TH"],
+      "from": "2026-09-15",
+      "level": "info",
+      "title": "Thailand limits visa-free land entries to 2 a year",
+      "body": "Since Sep 15, 2026, visa-free visitors can generally enter Thailand at land borders no more than twice per calendar year. The limit doesn't generally apply to arrivals by air, and passports from Malaysia, Brunei, Indonesia and Singapore are exempt from it.",
+      "source": "https://www.tatnews.org/2026/09/thailand-introduces-new-30-day-and-15-day-visa-exemption-rules-from-15-september/"
+    },
+    {
+      "id": "mn-2026-visa-free-end",
+      "dests": ["MN"],
+      "until": "2026-12-31",
+      "passports": ["AU", "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU", "MT", "MC", "NL", "NZ", "NO", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "CH", "GB"],
+      "level": "info",
+      "title": "Mongolia's temporary visa-free entry runs through Dec 31, 2026",
+      "body": "Your passport can visit Mongolia visa-free for up to 30 days for tourism under a temporary policy that is currently set to end Dec 31, 2026. No extension has been announced yet, so check before booking travel for 2027.",
+      "source": "https://www.gov.uk/foreign-travel-advice/mongolia/entry-requirements"
+    },
+    {
+      "id": "kr-2026-keta-exemption-end",
+      "dests": ["KR"],
+      "until": "2026-12-31",
+      "passports": ["AU", "AT", "BE", "CA", "DK", "FI", "FR", "DE", "IT", "JP", "NL", "NZ", "NO", "PL", "SG", "ES", "SE", "GB", "US", "HK", "MO", "TW"],
+      "level": "info",
+      "title": "South Korea's K-ETA exemption runs through Dec 31, 2026",
+      "body": "Your passport doesn't need a K-ETA travel authorization to visit South Korea right now, but that temporary exemption is currently set to end Dec 31, 2026. It has been extended before, but no extension has been announced yet, so check before booking travel for 2027.",
+      "source": "https://www.k-eta.go.kr/portal/board/viewboarddetail.do?bbsSn=299706"
     }
   ]
 }
