@@ -1,45 +1,49 @@
 # Data health
 
-Checked 2026-11-03 14:24 UTC. Feed generated 2026-11-02 06:44 UTC.
+Checked 2026-11-04 14:42 UTC. Feed generated 2026-11-04 14:35 UTC.
 
 - Passport dataset: 199 passports, dated 2026-02-17
-- Overrides: 5, notices: 7 hand-written + 20 automatic, visa guides: 205
-- Automatic entry-rule watch (UK gov change log): 202/202 countries read, 20 recent entry-rule changes
+- Overrides: 5, notices: 7 hand-written + 22 automatic, visa guides: 205
+- Automatic entry-rule watch (UK gov change log): 202/202 countries read, 22 recent entry-rule changes
 - Advisory feeds: US ok, UK ok, CA ok, AU error: ETIMEDOUT
 - Links checked: 471
 
 ## Needs attention
 
+- **links**: Link check failed (HTTP 404): https://migracion.go.cr/regularizacion/
 - **links**: Link check failed (HTTP 404): https://mvr.gov.mk/default
+- **links**: Link check failed (HTTP 500): https://publicservice.govt.lc/ministries/education/work-permit-unit-labour-relations-
 
 ## Notes
 
-- **passports**: Passport dataset is 259 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes.
-- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://evisa.ao. Usually a regional block; check it opens in a browser.
+- **passports**: Passport dataset is 260 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.doi.gov.bt/?p=648. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.mfa.gov.bt/?p=9196. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: ECONNRESET): https://doj.gov.fm/justice/fsm_doi.html. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.doi.gov.bt/?p=648. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://evisacuba.cu/. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://extranjeria.igm.gob.gt/index.php/component/content/article/residencias-permanentes?catid=8. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://extranjeria.igm.gob.gt/index.php/component/content/article/residencias-temporales?catid=8. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: fetch failed): https://www.evisa.gov.kh. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: fetch failed): https://en.mfa.ir. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: fetch failed): https://evisa.mfa.ir/en/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://investorvisa.mise.gov.it/index.php/en/. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: ETIMEDOUT): https://passport.govmu.org. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: ENETUNREACH): https://www.senami.gov.mz/. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: ENOTFOUND): http://naurugov.nr/about-nauru/visiting-nauru/visa-requirements.aspx. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: fetch failed): https://evisa.mfa.ir/en/. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: fetch failed): https://en.mfa.ir. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.inm.gob.hn/Ley_de_Migraciones_y_extranjeria_Honduras[1].pdf. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: ETIMEDOUT): https://passport.govmu.org. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://digitalnomads.gov.me/article/legal-status-for-nomads. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.gov.me/en/mup. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: ETIMEDOUT): https://portal.moi.gov.qa/qatarvisas. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: ENOTFOUND): http://naurugov.nr/about-nauru/visiting-nauru/visa-requirements.aspx. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.senami.gov.mz/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://eservices.mhaiss.gov.na/. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: ENOTFOUND): https://www.gov.tv. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.rop.gov.om/english/. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: ECONNREFUSED): https://portal.moi.gov.qa/qatarvisas. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: ENOTFOUND): https://www.gov.tv. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: ENOTFOUND): https://m.mfa.uz/en/consular/visa/. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: ENOTFOUND): https://www.samoaimmigration.gov.ws/. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.evisa.sy/home-content. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.gov.sz/index.php/services-sp-22242747/visa. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: ENOTFOUND): https://www.samoaimmigration.gov.ws/. Usually a regional block; check it opens in a browser.
 - **advisories**: AU advisory feed could not be reached from GitHub's servers (error: ETIMEDOUT). Phones fetch it directly, so this is usually a block on GitHub's network.
 
 ## Automatic entry-info notices live in the app
@@ -53,12 +57,14 @@ Checked 2026-11-03 14:24 UTC. Feed generated 2026-11-02 06:44 UTC.
 - **IN** (info): Official entry info for India was updated (Oct 7, 2026). This travel advice has been reviewed for accuracy, with minor amendments made throughout, including updated information on access permits, scams, trekking in India, air and rail travel, India-Pakistan border area and Western India and healthcare in India (‘Entry requirements’,‘Safety and security’ and ‘Health’ pages).
 - **KE** (info): Official entry info for Kenya was updated (Oct 28, 2026). Updated information about Ebola screening, with details of how to access automated health information and guidance from the Kenyan authorities (‘Entry requirements’ page).
 - **KZ** (warning): Official entry info for Kazakhstan was updated (Oct 30, 2026). Updated information about Electronic Travel Authorisation (ETA) ('Entry requirements' page).
+- **MG** (info): Official entry info for Madagascar was updated (Nov 3, 2026). Updated information about Ebola including entry requirements and health screening (‘Entry requirements’ page).
 - **MW** (info): Official entry info for Malawi was updated (Oct 20, 2026). New information about foreign currency rules (‘Entry requirements’ page).
 - **NG** (info): Official entry info for Nigeria was updated (Oct 28, 2026). Updated information about Ebola screening and Healthcare in Nigeria (‘Entry requirements’ and ‘Health’ pages).
 - **PA** (info): Official entry info for Panama was updated (Oct 7, 2026). Updated information about border control checks and curfews (‘Entry requirements’ and ‘Safety and security’ pages).
 - **SB** (info): Official entry info for Solomon Islands was updated (Oct 12, 2026). New information about Solomon Islands’ new electronic visa system (see ‘Visa requirements' on the ‘Entry requirements’ page).
 - **SC** (info): Official entry info for Seychelles was updated (Oct 23, 2026). New information about Ebola health measures for entry into Seychelles (‘Entry requirements’ page).
 - **SV** (info): Official entry info for El Salvador was updated (Oct 27, 2026). New information about Ebola-related health measures and quarantine requirements for some travellers (‘Entry requirements’ page).
+- **TD** (warning): Official entry info for Chad was updated (Nov 4, 2026). This travel advice has been reviewed for accuracy with changes made throughout, including updated information about applying for a visa, terrorism in Chad, terrorist kidnapping, political situation, robbery, protecting yourself and your belongings, Ramadan, driving standards and security, travelling outside N'Djamena, regional risks, health risks you may face in Chad, including Dengue and emergency numbers if your require police, ambulance or fire services ('Entry requirements', 'Safety and security', 'Regional risks', 'Health' and 'Getting help' pages).
 - **TH** (info): Official entry info for Thailand was updated (Oct 12, 2026). Updated information about visa requirements for travellers entering Thailand by land or air (‘Entry requirements’ page).
 - **TM** (warning): Official entry info for Turkmenistan was updated (Oct 21, 2026). Updated information about COVID-19 rules, applying for visas, transit visas and taking cash into Turkmenistan (‘Entry requirements’ page).
 - **TZ** (info): Official entry info for Tanzania was updated (Oct 20, 2026). Updated information about Ebola screening measures for all travellers arriving into Tanzania, addition of information about the risk of protests on 29 October and new information about the risks of bringing cannabidiol (CBD) products into Tanzania (‘Entry requirements’ and ‘Safety and security’ pages).
