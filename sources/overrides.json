@@ -47,6 +47,24 @@
       "set": { "code": "F", "days": 30 },
       "source": "https://english.shanghai.gov.cn/en-PolicyLibrary-EntryExit/20260818/8aa6aa1bc34b4228be0c87a14c75875f.html",
       "refs": ["https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260215/9e4dbfd583784790b858810119fceb05.html"]
+    },
+    {
+      "id": "sa-2026-tourist-visa-4",
+      "dest": "SA",
+      "from": "2026-11-05",
+      "passports": ["MX", "MK", "BA", "RS"],
+      "set": { "code": "A", "days": 90 },
+      "source": "https://visa.visitsaudi.com",
+      "refs": ["https://saudigazette.com.sa/article/666018/saudi-arabia/saudi-arabia-expands-tourist-visa-eligibility-to-four-new-countries", "https://gulfnews.com/world/gulf/saudi/saudi-arabia-expands-tourist-visa-to-4-more-countries-1.500737942"]
+    },
+    {
+      "id": "id-2026-visa-free-kz-mo-by",
+      "dest": "ID",
+      "from": "2026-07-09",
+      "passports": ["KZ", "MO", "BY"],
+      "set": { "code": "F", "days": 30 },
+      "source": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-bebas-visa-kunjungan?golden_visa=0",
+      "refs": ["https://kemenimipas.go.id/berita-utama/kemenimipas-menambah-enam-negara-penerima-bebas-visa-kunjungan-ke-indonesia"]
     }
   ]
 }
