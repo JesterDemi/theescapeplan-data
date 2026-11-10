@@ -316,3 +316,6 @@ const md = [
 const autoList = autoNotices.length ? '\n## Automatic entry-info notices live in the app\n\n' + autoNotices.map((n) => `- **${n.dests[0]}** (${n.level}): ${n.title}. ${n.body.match(/"(.*)"/)?.[1] ?? ''}`).join('\n') + '\n' : '';
 writeFileSync(join(ROOT, 'HEALTH.md'), md + autoList);
 console.log(md);
+
+// Immigration routes per country (sources/pathways -> pathways/). Separate files so the app only downloads the country you open.
+await import('./build-pathways.mjs');
