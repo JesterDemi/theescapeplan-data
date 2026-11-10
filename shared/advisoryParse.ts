@@ -189,7 +189,10 @@ const UK_TEXT: Record<UkCode, string> = {
   W4: 'Advises against all travel to the whole country',
 };
 // The UK does not use levels; this maps its warnings onto the shared scale.
-const UK_LEVEL: Record<UkCode, Level> = { '0': 1, P3: 2, P4: 3, W3: 3, W4: 4 };
+// Warnings for only part of a country count as 2 (increased caution) plus the regional flag, the same way
+// the US, Canada and Australia keep their headline level when only some areas are off limits.
+// Whole-country warnings count as 3 or 4.
+const UK_LEVEL: Record<UkCode, Level> = { '0': 1, P3: 2, P4: 2, W3: 3, W4: 4 };
 
 export function ukFromCode(code: string, ukCode: UkCode, updated?: string, change?: string, origin: SourceAdvisory['origin'] = 'live'): SourceAdvisory {
   return {
