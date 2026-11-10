@@ -82,8 +82,12 @@ ok.UK = ukReached >= Object.keys(uk).length * 0.8;
 mkdirSync(OUT, { recursive: true });
 const statePath = join(OUT, 'state.json');
 const eventsPath = join(OUT, 'events.json');
-const firstRun = !existsSync(statePath);
-const state = firstRun ? { levels: {} } : JSON.parse(readFileSync(statePath, 'utf8'));
+// Bump RULES when the level rules in shared/advisoryParse.ts change, so the new mapping
+// is saved quietly instead of being posted as a wave of fake "advice changed" alerts.
+const RULES = 2; // 2: UK warnings for only part of a country count as level 2
+const saved = existsSync(statePath) ? JSON.parse(readFileSync(statePath, 'utf8')) : null;
+const firstRun = !saved || (saved.rules ?? 1) !== RULES;
+const state = firstRun ? { levels: {}, rules: RULES } : saved;
 let events = existsSync(eventsPath) ? JSON.parse(readFileSync(eventsPath, 'utf8')) : [];
 
 const found = [];
@@ -226,7 +230,7 @@ write('state.json', JSON.stringify(state) + '\n');
 console.log(
   [
     `Sources: US ${ok.US ? 'ok' : 'down'}, UK ${ok.UK ? `ok (${ukReached} pages)` : `down (${ukReached} pages)`}, CA ${ok.CA ? 'ok' : 'down'}, AU ${ok.AU ? 'ok' : 'down'}`,
-    firstRun ? 'First run: saved current levels, no alerts posted.' : massChange ? 'Mass change, skipped.' : `Advisory changes today: ${found.length}`,
+    firstRun ? 'First run (or new level rules): saved current levels, no alerts posted.' : massChange ? 'Mass change, skipped.' : `Advisory changes today: ${found.length}`,
     `Items in all.xml: ${Math.min(all.length, MAX_ITEMS)} (${events.length} advisory, ${notices.length} entry)`,
   ].join('\n')
 );
