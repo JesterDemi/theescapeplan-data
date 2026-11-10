@@ -1,0 +1,31 @@
+[
+  {
+    "id": "dm-visa-exempt-entry",
+    "country": "DM",
+    "name": "Visa-free entry to Dominica",
+    "kind": "visa_free",
+    "purposes": ["tourism", "business", "transit"],
+    "summary": "Citizens of many countries can enter without a visa. Commonwealth, CARICOM, the US and some European countries get up to six months. A second list gets up to three months. Others may get 21 days with a return ticket.",
+    "eligibility": { "other": ["Official page groups countries by stay length but the full lists were not readable. Check your passport on the official page.", "Up to 21 days for transit and bona fide tourists with a return ticket, if the immigration officer is satisfied."] },
+    "stay": { "note": "Up to 6 months, 3 months or 21 days depending on nationality." },
+    "rights": { "work": "none" },
+    "where": "on_arrival",
+    "sources": [{ "label": "Government of Dominica: Do I need a visa to enter Dominica", "url": "https://dominica.gov.dm/services/passports-and-travel-documents-non-nationals/do-i-need-a-visa-to-enter-into-dominica" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "dm-citizenship-by-investment",
+    "country": "DM",
+    "name": "Citizenship by Investment (CBI)",
+    "kind": "citizenship",
+    "purposes": ["citizenship", "investment"],
+    "summary": "Citizenship through a contribution to the Economic Diversification Fund or an approved real estate investment. Applications must go through an authorized agent. Citizenship is for life.",
+    "eligibility": { "other": ["Investment amounts, fees and due diligence rules not confirmed. See the CBIU site.", "Application must be filed through an authorized agent."] },
+    "citizenship": { "route": "investment", "note": "CBIU lists the ability to hold multiple citizenships as a benefit. Whether your other country allows it is up to that country." },
+    "where": "online",
+    "sources": [{ "label": "Citizenship by Investment Unit, Dominica", "url": "https://cbiu.gov.dm/" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  }
+]

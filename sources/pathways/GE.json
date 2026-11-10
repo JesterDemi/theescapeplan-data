@@ -1,0 +1,735 @@
+[
+  {
+    "id": "ge-visa-free-1-year",
+    "country": "GE",
+    "name": "Visa-free entry, up to 1 year",
+    "kind": "visa_free",
+    "purposes": [
+      "tourism",
+      "business",
+      "remote_work"
+    ],
+    "summary": "Citizens of the countries on the government list (about 94 in the 2015 version, including the US, UK, Canada, Australia, Japan, South Korea, most of the EU and many others) can enter and stay up to one full year without a visa. The list was amended again on 2026-02-24 (Ordinance 80), so check the current list. Insurance is now required at entry.",
+    "eligibility": {
+      "other": [
+        "Must be a citizen of a listed country. The page we read shows only the 2015 list, later amendments (latest 2026-02-24) were not visible, so confirm your passport on the current official list.",
+        "Since 2026-01-01 every tourist needs health and accident insurance of at least 30,000 GEL covering the whole stay, in Georgian or English. Diplomatic and official passport holders and a few other groups are exempt.",
+        "Whether the 1-year stay itself changed in 2026 could not be confirmed from an official page."
+      ]
+    },
+    "stay": {
+      "durationMonths": 12,
+      "note": "Stay up to one full year per the ordinance. Stay after that was not confirmed."
+    },
+    "rights": {
+      "work": "none"
+    },
+    "where": "on_arrival",
+    "documents": [
+      "Valid passport",
+      "Health and accident insurance, at least 30,000 GEL, covering the full stay"
+    ],
+    "steps": [
+      "Buy insurance covering your dates",
+      "Show passport and policy at the border"
+    ],
+    "sources": [
+      {
+        "label": "Ordinance 255: countries allowed visa-free for one year (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      },
+      {
+        "label": "Georgian MFA: mandatory tourist insurance notice",
+        "url": "https://norway.mfa.gov.ge/en/news/749970-information-regarding-mandatory-insurance-for-tourists-entering-georgia"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-visa-free-90-days",
+    "country": "GE",
+    "name": "Visa-free entry, 90 days in 180",
+    "kind": "visa_free",
+    "purposes": [
+      "tourism",
+      "business",
+      "transit"
+    ],
+    "summary": "Under the Law on the Legal Status of Aliens, the standard visa-free stay is up to 90 days in any 180-day period for countries allowed visa-free entry on shorter terms. Some holders of valid visas or residence permits from other countries also get visa-free entry for 90 days.",
+    "eligibility": {
+      "other": [
+        "Which nationalities get 90 days is set by government ordinance and was not confirmed.",
+        "Holders of a valid UAE multiple-entry visa or residence permit (one year validity, with exceptions for 17 listed nationalities) can enter visa-free for 90 days, per the Georgian embassy in the UAE. Other residence-based lists exist, see the official portal.",
+        "Insurance of at least 30,000 GEL is required at entry since 2026-01-01."
+      ]
+    },
+    "stay": {
+      "maxDays": 90,
+      "perDays": 180
+    },
+    "rights": {
+      "work": "none"
+    },
+    "where": "on_arrival",
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      },
+      {
+        "label": "Georgian embassy visa information (UAE)",
+        "url": "https://uae.mfa.gov.ge/en/visa-information"
+      },
+      {
+        "label": "Georgian MFA: mandatory tourist insurance notice",
+        "url": "https://norway.mfa.gov.ge/en/news/749970-information-regarding-mandatory-insurance-for-tourists-entering-georgia"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-evisa-c1",
+    "country": "GE",
+    "name": "Short-stay visa (C1) via e-Visa",
+    "kind": "evisa",
+    "purposes": [
+      "tourism",
+      "business"
+    ],
+    "summary": "Short-term tourist or business visa for citizens of countries without visa-free entry. You apply and pay online on the e-Visa portal and receive the visa by email. C1 allows 90 days.",
+    "eligibility": {
+      "other": [
+        "Fee, processing time and full document list were not confirmed. The Georgian embassy in the UAE lists a USD 20 or AED 75 service fee for its own applications, which may differ from the portal.",
+        "Documents listed by the embassy include insurance above 30,000 GEL, accommodation proof, return ticket and three months of bank statements."
+      ]
+    },
+    "stay": {
+      "maxDays": 90,
+      "note": "C1 is 90 days per the embassy page."
+    },
+    "rights": {
+      "work": "none"
+    },
+    "where": "online",
+    "steps": [
+      "Apply on evisa.gov.ge",
+      "Pay online",
+      "Receive the e-Visa by email"
+    ],
+    "documents": [
+      "Passport",
+      "Travel or health insurance covering over 30,000 GEL",
+      "Proof of accommodation",
+      "Return ticket",
+      "Bank statements"
+    ],
+    "sources": [
+      {
+        "label": "Georgia e-Visa portal",
+        "url": "https://www.evisa.gov.ge"
+      },
+      {
+        "label": "Georgian embassy visa information (UAE)",
+        "url": "https://uae.mfa.gov.ge/en/visa-information"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-transit",
+    "country": "GE",
+    "name": "Transit without a visa, up to 10 days",
+    "kind": "visa",
+    "purposes": [
+      "transit"
+    ],
+    "summary": "The Law on the Legal Status of Aliens allows transit through Georgia without a visa for up to 10 days. Airside transit visa rules were not confirmed.",
+    "eligibility": {
+      "other": [
+        "Airside transit visa requirements by nationality were not confirmed. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "maxDays": 10
+    },
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-d1-work-visa",
+    "country": "GE",
+    "name": "Long-stay visa D1 (work and business)",
+    "kind": "visa",
+    "purposes": [
+      "work",
+      "entrepreneur"
+    ],
+    "summary": "D1 immigration visa for labor activity, company representatives, consultants and entrepreneurial activity. It lets you enter to then get a residence permit.",
+    "eligibility": {
+      "other": [
+        "Required documents, fees and processing time were not confirmed. See the documents list linked from the embassy visa page."
+      ]
+    },
+    "where": "embassy",
+    "sources": [
+      {
+        "label": "Georgian embassy visa information (UAE)",
+        "url": "https://uae.mfa.gov.ge/en/visa-information"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-d3-study-visa",
+    "country": "GE",
+    "name": "Long-stay visa D3 (study)",
+    "kind": "visa",
+    "purposes": [
+      "study"
+    ],
+    "summary": "D3 immigration visa for study or research at authorized Georgian institutions or international study programs.",
+    "eligibility": {
+      "other": [
+        "Required documents, fees and processing time were not confirmed."
+      ]
+    },
+    "where": "embassy",
+    "leadsTo": [
+      {
+        "pathway": "ge-study-permit",
+        "afterYears": 0
+      }
+    ],
+    "sources": [
+      {
+        "label": "Georgian embassy visa information (UAE)",
+        "url": "https://uae.mfa.gov.ge/en/visa-information"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-d4-family-visa",
+    "country": "GE",
+    "name": "Long-stay visa D4 (family reunification)",
+    "kind": "visa",
+    "purposes": [
+      "family"
+    ],
+    "summary": "D4 immigration visa for family reunification.",
+    "eligibility": {
+      "other": [
+        "Who qualifies, documents, fees and processing time were not confirmed."
+      ]
+    },
+    "where": "embassy",
+    "leadsTo": [
+      {
+        "pathway": "ge-family-permit",
+        "afterYears": 0
+      }
+    ],
+    "sources": [
+      {
+        "label": "Georgian embassy visa information (UAE)",
+        "url": "https://uae.mfa.gov.ge/en/visa-information"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-d5-property-visa",
+    "country": "GE",
+    "name": "Long-stay visa D5 (property owner)",
+    "kind": "visa",
+    "purposes": [
+      "investment"
+    ],
+    "summary": "D5 visa for owners of Georgian real property (not agricultural land) worth over USD 100,000. It extends to the owner's spouse and children. Value must be certified by an accredited assessor.",
+    "eligibility": {
+      "investment": {
+        "amount": 100000,
+        "currency": "USD",
+        "per": "once",
+        "note": "Non-agricultural real property, value certified by an accredited assessor"
+      },
+      "other": [
+        "Fees and processing time were not confirmed."
+      ]
+    },
+    "where": "embassy",
+    "sources": [
+      {
+        "label": "Georgian embassy visa information (UAE)",
+        "url": "https://uae.mfa.gov.ge/en/visa-information"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-work-permit",
+    "country": "GE",
+    "name": "Work residence permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work"
+    ],
+    "summary": "Temporary residence permit giving the right to work in Georgia. First issued for 6 months to 1 year per the law, and can be extended.",
+    "eligibility": {
+      "jobOffer": true,
+      "other": [
+        "Exact conditions, fees and processing time were not confirmed. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "durationMonths": 12,
+      "renewable": true,
+      "note": "6 months to 1 year initially, extensions up to 12 years in total for temporary permits per the law."
+    },
+    "rights": {
+      "work": "employer",
+      "family": true
+    },
+    "where": "in_country",
+    "leadsTo": [
+      {
+        "pathway": "ge-permanent-residence",
+        "afterYears": 10
+      }
+    ],
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-study-permit",
+    "country": "GE",
+    "name": "Study residence permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "study"
+    ],
+    "summary": "Temporary residence permit for study at an authorized Georgian institution. First issued for 6 months to 1 year.",
+    "eligibility": {
+      "other": [
+        "Conditions, fees and processing time were not confirmed. Study years do not count toward permanent residence. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "durationMonths": 12,
+      "renewable": true
+    },
+    "where": "in_country",
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-family-permit",
+    "country": "GE",
+    "name": "Family reunification residence permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "family"
+    ],
+    "summary": "Temporary residence permit for family members of a residence permit holder. First issued for 6 months to 1 year.",
+    "eligibility": {
+      "other": [
+        "Which family members qualify, fees and processing time were not confirmed. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "durationMonths": 12,
+      "renewable": true
+    },
+    "rights": {
+      "family": true
+    },
+    "where": "in_country",
+    "leadsTo": [
+      {
+        "pathway": "ge-permanent-residence",
+        "afterYears": 10
+      }
+    ],
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-it-permit",
+    "country": "GE",
+    "name": "IT sector residence permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work",
+      "entrepreneur",
+      "remote_work"
+    ],
+    "summary": "Residence permit for IT workers earning at least USD 25,000 a year with 2+ years of experience, and certain IT business owners and managers. First issued for 3 years, extendable.",
+    "eligibility": {
+      "income": {
+        "amount": 25000,
+        "currency": "USD",
+        "per": "year"
+      },
+      "other": [
+        "At least 2 years of experience. Rules for IT business owners and managers, fees and processing time were not confirmed. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "durationMonths": 36,
+      "renewable": true,
+      "note": "Extendable by 3 years, up to 12 years total per the law."
+    },
+    "where": "in_country",
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-investment-permit",
+    "country": "GE",
+    "name": "Investor residence permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "investment"
+    ],
+    "summary": "Residence permit for investing at least USD 300,000, or owning property worth over USD 300,000. Valid up to 5 years and not extendable. Can lead to an unlimited permit.",
+    "eligibility": {
+      "investment": {
+        "amount": 300000,
+        "currency": "USD",
+        "per": "once"
+      },
+      "other": [
+        "Turnover conditions listed in the law: USD 50,000 in year 1, USD 100,000 in year 2, USD 120,000 a year in years 3 to 5. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "durationMonths": 60,
+      "renewable": false
+    },
+    "where": "in_country",
+    "leadsTo": [
+      {
+        "pathway": "ge-unlimited-permit",
+        "afterYears": 5
+      }
+    ],
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-property-permit",
+    "country": "GE",
+    "name": "Short-term property owner residence permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "investment",
+      "retirement"
+    ],
+    "summary": "Short-term permit for owners of non-agricultural property worth over USD 150,000. Renewable in one-year steps.",
+    "eligibility": {
+      "investment": {
+        "amount": 150000,
+        "currency": "USD",
+        "per": "once",
+        "note": "Non-agricultural property"
+      },
+      "other": [
+        "Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "durationMonths": 12,
+      "renewable": true
+    },
+    "where": "in_country",
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-unlimited-permit",
+    "country": "GE",
+    "name": "Unlimited residence permit (investors)",
+    "kind": "permanent_residence",
+    "purposes": [
+      "investment"
+    ],
+    "summary": "Permanent permit for investor permit holders who meet turnover conditions, or who hold qualifying property for 5 years.",
+    "eligibility": {
+      "other": [
+        "Exact conditions were only partly read. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "leadsTo": [],
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-permanent-residence",
+    "country": "GE",
+    "name": "Permanent residence permit",
+    "kind": "permanent_residence",
+    "purposes": [
+      "family",
+      "work"
+    ],
+    "summary": "Permanent living permit for a spouse or minor child of a citizen, a parent of a minor citizen, or someone with 10 years on a temporary permit (study, medical and diplomatic periods do not count).",
+    "eligibility": {
+      "other": [
+        "10 years on a temporary permit, or family tie to a citizen. Fees and process not confirmed. Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "renewable": false,
+      "note": "Permanent"
+    },
+    "rights": {
+      "work": "any",
+      "family": true
+    },
+    "where": "in_country",
+    "leadsTo": [
+      {
+        "pathway": "ge-naturalization",
+        "afterYears": 0
+      }
+    ],
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-special-permit",
+    "country": "GE",
+    "name": "Special residence permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "humanitarian",
+      "family"
+    ],
+    "summary": "Special permit for trafficking victims, compatriots, and cases on ministerial initiative. 1 year at first, up to 5 years on ministerial initiative.",
+    "eligibility": {
+      "other": [
+        "Check the current rules on matsne.gov.ge, the page we read may not show the latest amendments."
+      ]
+    },
+    "stay": {
+      "durationMonths": 12,
+      "renewable": true
+    },
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-humanitarian",
+    "country": "GE",
+    "name": "Asylum and refugee protection",
+    "kind": "visa",
+    "purposes": [
+      "humanitarian"
+    ],
+    "summary": "Asylum is handled under Georgian refugee law. Temporary protection permit holders can stay visa-free for the validity of the permit. Apply through the official migration authorities.",
+    "eligibility": {
+      "other": [
+        "Process details not confirmed. Contact online@sda.gov.ge or +995 32 2 40 10 10."
+      ]
+    },
+    "where": "in_country",
+    "sources": [
+      {
+        "label": "Law on the Legal Status of Aliens and Stateless Persons (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2278806"
+      },
+      {
+        "label": "Migration Department, Ministry of Internal Affairs (sda.gov.ge)",
+        "url": "https://sda.gov.ge/?lang=en"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-naturalization",
+    "country": "GE",
+    "name": "Citizenship by naturalization",
+    "kind": "citizenship",
+    "purposes": [
+      "citizenship"
+    ],
+    "summary": "Regular route needs 10 years of lawful residence, Georgian language, history and basic law knowledge, and a job, property or business in Georgia. Stateless persons need 5 years.",
+    "eligibility": {
+      "language": "Georgian",
+      "other": [
+        "Language and history/law test result is valid for 1 year. Needs a job, real estate or business in Georgia. The page we read was the 2025 consolidated text and lists a later amendment dated 2026-06-25, so confirm current rules."
+      ]
+    },
+    "citizenship": {
+      "dualAllowed": "conditional",
+      "residenceYears": 10,
+      "route": "naturalization",
+      "note": "Georgia generally allows one citizenship. Dual citizenship only in exceptional cases (presidential grants) or with state consent given before taking the other citizenship."
+    },
+    "sources": [
+      {
+        "label": "Organic Law on Georgian Citizenship (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2342552"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-citizenship-marriage",
+    "country": "GE",
+    "name": "Citizenship by marriage (simplified)",
+    "kind": "citizenship",
+    "purposes": [
+      "citizenship",
+      "family"
+    ],
+    "summary": "Spouse of a Georgian citizen can apply through the simplified procedure after 5 years of continuous lawful residence, with language and history/law knowledge. Marriage alone does not give citizenship.",
+    "eligibility": {
+      "language": "Georgian",
+      "other": [
+        "Confirm current rules, the law was amended after the version we read."
+      ]
+    },
+    "citizenship": {
+      "dualAllowed": "conditional",
+      "residenceYears": 5,
+      "route": "marriage"
+    },
+    "sources": [
+      {
+        "label": "Organic Law on Georgian Citizenship (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2342552"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-citizenship-descent",
+    "country": "GE",
+    "name": "Citizenship by descent (parent)",
+    "kind": "citizenship",
+    "purposes": [
+      "citizenship"
+    ],
+    "summary": "A child is a citizen at birth if a parent is a Georgian citizen. Descent from earlier ancestors is not a standalone route, but can count as a ground for an exceptional presidential grant (ancestors up to five generations).",
+    "eligibility": {
+      "other": [
+        "Confirm current rules."
+      ]
+    },
+    "citizenship": {
+      "dualAllowed": "conditional",
+      "route": "descent"
+    },
+    "sources": [
+      {
+        "label": "Organic Law on Georgian Citizenship (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2342552"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ge-citizenship-exceptional",
+    "country": "GE",
+    "name": "Exceptional citizenship by the President (incl. investment)",
+    "kind": "citizenship",
+    "purposes": [
+      "citizenship",
+      "investment"
+    ],
+    "summary": "The President can grant citizenship for exceptional merit or in the state interest. Grounds include a substantial investment, sporting, science or art achievements, or a homeland connection. Dual citizenship is allowed here.",
+    "eligibility": {
+      "other": [
+        "No investment amount stated on the page we read. Discretionary, not a guaranteed route."
+      ]
+    },
+    "citizenship": {
+      "dualAllowed": true,
+      "route": "investment"
+    },
+    "sources": [
+      {
+        "label": "Organic Law on Georgian Citizenship (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2342552"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  }
+]

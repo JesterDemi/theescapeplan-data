@@ -1,0 +1,312 @@
+[
+{
+"id": "cr-canada-tourist-180",
+"country": "CR",
+"name": "Tourist entry for Canadian citizens",
+"kind": "visa_free",
+"purposes": [
+"tourism",
+"business"
+],
+"summary": "Canadians can enter as tourists with no visa for up to 180 days. The stay can't be extended. Paid work isn't allowed.",
+"eligibility": {
+"passports": [
+"CA"
+],
+"other": [
+"Passport valid at least 1 day on arrival",
+"Onward or return ticket",
+"No entry impediment, such as a recent conviction for an intentional crime that is illegal in both countries"
+],
+"savings": {
+"amount": 100,
+"currency": "USD",
+"per": "month",
+"note": "Proof of funds per month of stay or fraction of a month"
+}
+},
+"stay": {
+"maxDays": 180,
+"renewable": false
+},
+"rights": {
+"work": "none"
+},
+"where": "on_arrival",
+"sources": [
+{
+"label": "Costa Rica Consulate in Canada: Canadian citizens",
+"url": "https://costaricaembassy.com/consulado/ciudadanos-canadienses/"
+}
+],
+"checked": "2026-11-10",
+"confidence": "verified"
+},
+{
+"id": "cr-canada-pr-visa-exempt",
+"country": "CR",
+"name": "Visa exemption for Canadian PR and work/study visa holders",
+"kind": "visa_free",
+"purposes": [
+"tourism"
+],
+"summary": "Some nationalities that normally need a visa can enter without one if they hold Canadian permanent residence or a multiple-entry Canadian work or study visa. Stay is up to 30 days.",
+"eligibility": {
+"residentOf": [
+"CA"
+],
+"other": [
+"Needs a Canadian PR card or a multiple-entry Canadian work/study visa stamped in the passport",
+"Passport valid at least 180 days beyond entry",
+"Ticket out within 30 days",
+"A work or study permit stapled to the passport does not count",
+"Proof of funds of USD 100 per person per month of stay"
+]
+},
+"stay": {
+"maxDays": 30
+},
+"rights": {
+"work": "none"
+},
+"where": "on_arrival",
+"sources": [
+{
+"label": "Costa Rica Consulate in Canada: PR and visa holders",
+"url": "https://costaricaembassy.com/consulado/residencia_permanente_ca/"
+}
+],
+"checked": "2026-11-10",
+"confidence": "verified"
+},
+{
+"id": "cr-consular-visa",
+"country": "CR",
+"name": "Consular tourist visa",
+"kind": "visa",
+"purposes": [
+"tourism",
+"business"
+],
+"summary": "Nationalities that need a visa apply at a Costa Rican consulate. The full visa-free and visa-required lists are in the official visa directives, which I could not open. Details below come from the Ottawa consulate.",
+"eligibility": {
+"other": [
+"Which passports need a visa: check the official directives on migracion.go.cr (page was unreachable)",
+"Ottawa consulate asks for passport valid 6+ months, round-trip ticket, proof of funds, apostilled criminal record, photo and cover letter"
+]
+},
+"fees": [
+{
+"label": "Consular visa fee at the Ottawa consulate",
+"amount": 30,
+"currency": "USD",
+"per": "once"
+}
+],
+"stay": {
+"note": "Visa must be used within 60 days of being stamped. Single entry."
+},
+"where": "embassy",
+"sources": [
+{
+"label": "Costa Rica Consulate in Canada: Visas",
+"url": "https://costaricaembassy.com/consulado/visas/"
+}
+],
+"checked": "2026-11-10",
+"confidence": "needs_review"
+},
+{
+"id": "cr-canada-youth-mobility",
+"country": "CR",
+"name": "Youth mobility (Young Professionals and Working Holiday), Canada",
+"kind": "temporary_residence",
+"purposes": [
+"work",
+"tourism"
+],
+"summary": "Canadians aged 18 to 35 enter as tourists for up to 180 days, find a job, then switch to a work status. Can't bring dependents.",
+"eligibility": {
+"passports": [
+"CA"
+],
+"minAge": 18,
+"maxAge": 35,
+"savings": {
+"amount": 2500,
+"currency": "CAD",
+"per": "once"
+},
+"other": [
+"Onward ticket and letter of intent",
+"Clean criminal record",
+"Medical insurance covering hospitalization and repatriation",
+"No dependents",
+"Can't have used this category before",
+"Wait 3 months after finishing before applying for another category",
+"Documents apostilled and translated into Spanish"
+]
+},
+"stay": {
+"maxDays": 180,
+"durationMonths": 12,
+"note": "Program looks like one year in total, page isn't explicit"
+},
+"rights": {
+"work": "employer"
+},
+"fees": [
+{
+"label": "Change of status from tourist to work",
+"amount": 200,
+"currency": "USD",
+"per": "once"
+},
+{
+"label": "Temporary residence",
+"amount": 50,
+"currency": "USD",
+"per": "once"
+}
+],
+"where": "in_country",
+"sources": [
+{
+"label": "Costa Rica Consulate in Canada: Youth mobility",
+"url": "https://costaricaembassy.com/consulado/movilidad_juvenil/"
+}
+],
+"checked": "2026-11-10",
+"confidence": "needs_review"
+},
+{
+"id": "cr-digital-nomad",
+"country": "CR",
+"name": "Digital nomad (Stay for Remote Workers and Service Providers, Ley 10008)",
+"kind": "temporary_residence",
+"purposes": [
+"remote_work"
+],
+"summary": "Lets you work remotely for clients outside Costa Rica. It extends a 90-day tourist stay to one year, renewable for one more year.",
+"eligibility": {
+"income": {
+"amount": 3000,
+"currency": "USD",
+"per": "month",
+"note": "USD 4,000 per month if bringing dependents. Income must come from outside Costa Rica."
+},
+"other": [
+"Must provide paid remote services to clients outside Costa Rica",
+"Medical insurance for the whole stay, minimum USD 50,000 coverage, dependents included",
+"Bank statements for the past year with a sworn affidavit, or a certification from a public accountant or notary (apostilled or consularly legalized)",
+"Criminal and police record checks by DGME",
+"Spanish translations of foreign documents"
+]
+},
+"rights": {
+"work": "self",
+"family": true
+},
+"where": "online",
+"sources": [
+{
+"label": "Visit Costa Rica (ICT): digital nomad requirements",
+"url": "https://visitcostarica.com/digital-nomads/requirements"
+},
+{
+"label": "Visit Costa Rica (ICT): digital nomads",
+"url": "https://visitcostarica.com/digital-nomads"
+}
+],
+"checked": "2026-11-10",
+"confidence": "verified",
+"stay": {
+"durationMonths": 12,
+"renewable": true,
+"note": "Renewable for one additional year"
+},
+"documents": [
+"Signed application form",
+"Proof of USD 100 payment",
+"Passport photo page and entry stamp page",
+"Bank statements or accountant certification",
+"Medical insurance policy",
+"Spanish translations"
+],
+"fees": [
+{
+"label": "Government payment",
+"amount": 100,
+"currency": "USD",
+"per": "once",
+"note": "Bank fees, including a USD 15 Banco de Costa Rica fee, can reduce the amount received"
+}
+],
+"steps": [
+"Gather income proof and insurance",
+"Apply online at tramiteya.go.cr/dgme or at a DGME office",
+"Pay the USD 100 fee",
+"DGME runs security checks"
+]
+},
+{
+"id": "cr-temporary-residence",
+"country": "CR",
+"name": "Temporary residence categories (pensionado, rentista, inversionista, work, study, family)",
+"kind": "temporary_residence",
+"purposes": [
+"retirement",
+"investment",
+"work",
+"study",
+"family"
+],
+"summary": "Costa Rica has temporary residence categories including pensionado, rentista, inversionista, work, study and family. Amounts and years were not confirmed on an official page, so they are left out. Apply to the immigration agency in Costa Rica, not at the consulate.",
+"eligibility": {
+"other": [
+"Requirements for each category are on the DGME site (page was unreachable). Not confirmed here."
+]
+},
+"where": "in_country",
+"leadsTo": [
+{
+"pathway": "cr-permanent-residence",
+"afterYears": 0
+}
+],
+"sources": [
+{
+"label": "Costa Rica Consulate in Canada: Residences",
+"url": "https://costaricaembassy.com/consulado/residencias/"
+}
+],
+"checked": "2026-11-10",
+"confidence": "needs_review"
+},
+{
+"id": "cr-permanent-residence",
+"country": "CR",
+"name": "Permanent residence",
+"kind": "permanent_residence",
+"purposes": [
+"family",
+"retirement",
+"work"
+],
+"summary": "Permanent residence exists and is applied for with the immigration agency in Costa Rica. Eligibility routes and years were not confirmed on an official page.",
+"eligibility": {
+"other": [
+"Requirements not confirmed. See DGME site."
+]
+},
+"where": "in_country",
+"sources": [
+{
+"label": "Costa Rica Consulate in Canada: Residences",
+"url": "https://costaricaembassy.com/consulado/residencias/"
+}
+],
+"checked": "2026-11-10",
+"confidence": "needs_review"
+}
+]

@@ -1,0 +1,892 @@
+[
+ {
+  "id": "cn-unilateral-visa-free",
+  "country": "CN",
+  "name": "Unilateral Visa-Free Entry (trial policy)",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business",
+   "transit"
+  ],
+  "summary": "Ordinary passport holders from 50 listed countries can enter for up to 30 days without a visa. It is a trial that runs through Dec 31, 2026 for most countries, so check before you book.",
+  "eligibility": {
+   "passports": [
+    "FR",
+    "DE",
+    "IT",
+    "ES",
+    "NL",
+    "CH",
+    "IE",
+    "HU",
+    "AT",
+    "BE",
+    "LU",
+    "NZ",
+    "AU",
+    "PL",
+    "PT",
+    "GR",
+    "CY",
+    "SI",
+    "SK",
+    "NO",
+    "FI",
+    "DK",
+    "IS",
+    "AD",
+    "MC",
+    "LI",
+    "KR",
+    "BG",
+    "RO",
+    "HR",
+    "ME",
+    "MK",
+    "MT",
+    "EE",
+    "LV",
+    "JP",
+    "BR",
+    "AR",
+    "CL",
+    "PE",
+    "UY",
+    "SA",
+    "OM",
+    "KW",
+    "BH",
+    "RU",
+    "SE",
+    "CA",
+    "GB",
+    "BN"
+   ],
+   "other": [
+    "Ordinary passport only.",
+    "Allowed purposes: business, tourism, visiting family or friends, exchange, transit, sports events, conferences and exhibitions, study tours.",
+    "No work, study or news reporting.",
+    "Valid until Dec 31, 2026 for all except Russia (Dec 31, 2027) and Brunei (no end date).",
+    "Czech Republic is not on the list.",
+    "US, India, Mexico and others are not on this list. See the 240-hour transit record."
+   ]
+  },
+  "sources": [
+   {
+    "label": "Chinese Embassy in Sweden: FAQs on Visa-free Entry (updated 2026-05-25)",
+    "url": "https://se.china-embassy.gov.cn/eng/lsyfw/202511/t20251110_11750037.htm"
+   },
+   {
+    "label": "Chinese Embassy in Croatia: Notice on extending unilateral visa-free policy",
+    "url": "https://hr.china-embassy.gov.cn/eng/qzfw/Visa/202511/t20251104_11746850.htm"
+   },
+   {
+    "label": "Ministry of Foreign Affairs: visa waiver for Canada and UK",
+    "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202602/t20260215_11860467.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "stay": {
+   "maxDays": 30,
+   "note": "Counted from the day after entry. Multiple entries allowed, no cap on total days right now. Longer stays need a visa in advance, or a stay permit from the local exit-entry office."
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival",
+  "steps": [
+   "Check your country is on the list.",
+   "Fly or travel in with an ordinary passport valid for your stay.",
+   "Carry proof of purpose like a hotel booking and onward ticket."
+  ]
+ },
+ {
+  "id": "cn-240h-transit",
+  "country": "CN",
+  "name": "240-Hour Visa-Free Transit",
+  "kind": "visa_free",
+  "purposes": [
+   "transit",
+   "tourism",
+   "business"
+  ],
+  "summary": "Citizens of 57 countries can enter visa-free for up to 10 days if they have a confirmed onward ticket to a third country or region. Work, study and news reporting are not allowed.",
+  "eligibility": {
+   "passports": [
+    "AL",
+    "AT",
+    "BY",
+    "BE",
+    "BA",
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "DK",
+    "EE",
+    "FI",
+    "FR",
+    "DE",
+    "GR",
+    "HU",
+    "IS",
+    "IE",
+    "IT",
+    "LV",
+    "LT",
+    "LU",
+    "MT",
+    "MC",
+    "ME",
+    "NL",
+    "MK",
+    "NO",
+    "PL",
+    "PT",
+    "RO",
+    "RU",
+    "RS",
+    "SK",
+    "SI",
+    "ES",
+    "SE",
+    "CH",
+    "UA",
+    "GB",
+    "CA",
+    "US",
+    "AR",
+    "BR",
+    "CL",
+    "MX",
+    "AU",
+    "NZ",
+    "BN",
+    "ID",
+    "JP",
+    "KG",
+    "QA",
+    "SG",
+    "KR",
+    "AE",
+    "VN"
+   ],
+   "other": [
+    "Ordinary passport only.",
+    "Must hold onward ticket with confirmed date and seat to a third country or region (not back to where you came from).",
+    "Stay limited to the designated area for that port.",
+    "Enter through any of 65 open ports in 24 provinces and regions."
+   ]
+  },
+  "sources": [
+   {
+    "label": "NIA: 240-Hour Visa-Free Transit Policy",
+    "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+   },
+   {
+    "label": "NIA: Kyrgyzstan and Vietnam added (57 countries, 65 ports)",
+    "url": "https://en.nia.gov.cn/n147418/n147468/c217849/content.html"
+   },
+   {
+    "label": "NIA: 10 new measures (65 ports)",
+    "url": "https://en.nia.gov.cn/n147413/c187308/content.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "stay": {
+   "maxDays": 10,
+   "note": "240 hours inside the designated area."
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival"
+ },
+ {
+  "id": "cn-24h-transit",
+  "country": "CN",
+  "name": "24-Hour Direct Transit (no visa)",
+  "kind": "visa_free",
+  "purposes": [
+   "transit"
+  ],
+  "summary": "Anyone with a connecting ticket to a third country or region can pass through China without a visa for up to 24 hours if they stay in the port area. About 10 more airports were added in late 2025.",
+  "eligibility": {
+   "other": [
+    "Applies to all nationalities per NIA.",
+    "Must not leave the port of entry."
+   ]
+  },
+  "sources": [
+   {
+    "label": "NIA: 10 new measures",
+    "url": "https://en.nia.gov.cn/n147413/c187308/content.html"
+   },
+   {
+    "label": "Chinese Embassy in Maldives: Visa Exemption",
+    "url": "https://mv.china-embassy.gov.cn/eng/lsfw/vfc/202604/t20260430_11903535.htm"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "stay": {
+   "maxDays": 1
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival"
+ },
+ {
+  "id": "cn-mutual-visa-exemption",
+  "country": "CN",
+  "name": "Mutual Visa Exemption Agreements",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "China has mutual visa exemption agreements with 158 countries as of April 2025, but many cover only diplomatic or service passports. Some cover ordinary passports, with limits from 14 to 90 days.",
+  "eligibility": {
+   "other": [
+    "Check the official list of agreements for your passport type and stay limit."
+   ]
+  },
+  "sources": [
+   {
+    "label": "NIA: List of mutual visa exemption agreements",
+    "url": "https://en.nia.gov.cn/n147418/n147463/c181470/content.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "where": "on_arrival"
+ },
+ {
+  "id": "cn-hainan-visa-free",
+  "country": "CN",
+  "name": "Hainan 30-Day Visa-Free Entry",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Ordinary passport holders from 61 countries can enter Hainan without a visa and stay up to 30 days, within Hainan only. Allowed purposes include tourism, business, visits, medical care, conferences and sports.",
+  "eligibility": {
+   "other": [
+    "Ordinary passport only.",
+    "Must enter through an open Hainan port.",
+    "No work or study.",
+    "Register with local police within 24 hours if not staying in a hotel."
+   ]
+  },
+  "sources": [
+   {
+    "label": "NIA: Regional Visa-Free Entry Policies",
+    "url": "https://en.nia.gov.cn/n147418/n147463/c180637/content.html"
+   },
+   {
+    "label": "NIA: Kyrgyzstan and Vietnam added",
+    "url": "https://en.nia.gov.cn/n147418/n147468/c217849/content.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "stay": {
+   "maxDays": 30,
+   "note": "Hainan only."
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival"
+ },
+ {
+  "id": "cn-group-tour-visa-free",
+  "country": "CN",
+  "name": "Regional Group Tour Visa-Free Entry",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "Tour groups can enter visa-free through set routes: Guangdong groups from Hong Kong or Macao (up to 6 days), ASEAN groups to Guilin or Xishuangbanna (6 days), and cruise groups via Shanghai (15 days).",
+  "eligibility": {
+   "other": [
+    "Must be a group of two or more organized by a licensed travel agency.",
+    "Each route has its own ports and allowed areas.",
+    "Individuals from countries with a unilateral policy should use that instead."
+   ]
+  },
+  "sources": [
+   {
+    "label": "NIA: Regional Visa-Free Entry Policies",
+    "url": "https://en.nia.gov.cn/n147418/n147463/c180637/content.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "where": "on_arrival"
+ },
+ {
+  "id": "cn-port-visa",
+  "country": "CN",
+  "name": "Port Visa",
+  "kind": "visa",
+  "purposes": [
+   "business",
+   "tourism"
+  ],
+  "summary": "A single-entry visa issued at a designated port for urgent reasons like emergencies or urgent business. Stay is up to 30 days.",
+  "eligibility": {
+   "other": [
+    "Needs documents showing the competent Chinese authority approved the application."
+   ]
+  },
+  "sources": [
+   {
+    "label": "NIA: Port Visa and Regional Visa-Free Entry Policies",
+    "url": "https://en.nia.gov.cn/n147418/n147463/c156078/content.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "stay": {
+   "maxDays": 30
+  },
+  "where": "on_arrival"
+ },
+ {
+  "id": "cn-l-tourist",
+  "country": "CN",
+  "name": "L Visa (Tourist)",
+  "kind": "visa",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "Regular tourist visa for travelers who need a visa and are not covered by a visa-free policy. Apply online through the MFA visa system and then at an embassy or visa center.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "rights": {
+   "work": "none"
+  }
+ },
+ {
+  "id": "cn-m-business",
+  "country": "CN",
+  "name": "M Visa (Commercial and Trade)",
+  "kind": "visa",
+  "purposes": [
+   "business"
+  ],
+  "summary": "Visa for short business trips like trade, meetings and fairs. Usually needs an invitation from a Chinese company or organization.",
+  "eligibility": {
+   "other": [
+    "Invitation letter normally required.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "rights": {
+   "work": "none"
+  }
+ },
+ {
+  "id": "cn-f-visit",
+  "country": "CN",
+  "name": "F Visa (Exchange and Visit)",
+  "kind": "visa",
+  "purposes": [
+   "business"
+  ],
+  "summary": "Visa for exchanges, visits and non-commercial activities, usually with an invitation from a Chinese unit. Not for paid work.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "rights": {
+   "work": "none"
+  }
+ },
+ {
+  "id": "cn-z-work",
+  "country": "CN",
+  "name": "Z Visa (Work)",
+  "kind": "visa",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Entry visa for foreigners who will work in China. You need a work permit notification first, then convert to a residence permit after arrival.",
+  "eligibility": {
+   "other": [
+    "Needs a Chinese employer and work permit approval.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "employer",
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "cn-work-residence-permit",
+    "afterYears": 0
+   }
+  ],
+  "steps": [
+   "Employer applies for the work permit notification.",
+   "Apply for the Z visa abroad.",
+   "Enter China and apply for a work residence permit within 30 days."
+  ]
+ },
+ {
+  "id": "cn-work-permit-tiers",
+  "country": "CN",
+  "name": "Foreigner's Work Permit (Class A, B, C)",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "China sorts foreign workers into three tiers: A for top talent, B for professionals, C for other and seasonal work. Higher tiers get easier approval.",
+  "eligibility": {
+   "other": [
+    "Tier criteria and points were not confirmed from an official page.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "employer",
+  "rights": {
+   "work": "employer"
+  },
+  "leadsTo": [
+   {
+    "pathway": "cn-work-residence-permit",
+    "afterYears": 0
+   }
+  ]
+ },
+ {
+  "id": "cn-work-residence-permit",
+  "country": "CN",
+  "name": "Work Residence Permit",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Residence permit issued after entering on a Z visa. Lets you live and work in China for the term of the permit.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "in_country",
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "stay": {
+   "renewable": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "cn-permanent-residence",
+    "afterYears": 0
+   }
+  ]
+ },
+ {
+  "id": "cn-x1-long-study",
+  "country": "CN",
+  "name": "X1 Visa (Long-Term Study)",
+  "kind": "visa",
+  "purposes": [
+   "study"
+  ],
+  "summary": "Visa for study over 180 days. After arrival you apply for a study residence permit.",
+  "eligibility": {
+   "other": [
+    "Usually needs an admission letter and JW201 or JW202 form from the school.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "rights": {
+   "work": "none"
+  }
+ },
+ {
+  "id": "cn-x2-short-study",
+  "country": "CN",
+  "name": "X2 Visa (Short-Term Study)",
+  "kind": "visa",
+  "purposes": [
+   "study"
+  ],
+  "summary": "Visa for study of 180 days or less. Needs an admission letter from the school.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "rights": {
+   "work": "none"
+  },
+  "stay": {
+   "maxDays": 180
+  }
+ },
+ {
+  "id": "cn-q1-family-long",
+  "country": "CN",
+  "name": "Q1 Visa (Family Reunion, Long-Term)",
+  "kind": "visa",
+  "purposes": [
+   "family"
+  ],
+  "summary": "For family members of Chinese citizens or of foreigners with Chinese permanent residence who want to stay over 180 days. Convert to a residence permit after arrival.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "rights": {
+   "family": true
+  }
+ },
+ {
+  "id": "cn-q2-family-short",
+  "country": "CN",
+  "name": "Q2 Visa (Family Visit, Short-Term)",
+  "kind": "visa",
+  "purposes": [
+   "family"
+  ],
+  "summary": "For visiting relatives who are Chinese citizens or foreign permanent residents of China, for up to 180 days.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "stay": {
+   "maxDays": 180
+  }
+ },
+ {
+  "id": "cn-s1-s2-dependent",
+  "country": "CN",
+  "name": "S1 and S2 Visas (Family of Foreigners in China)",
+  "kind": "visa",
+  "purposes": [
+   "family"
+  ],
+  "summary": "S1 is for long stays over 180 days with family members of foreigners working or studying in China. S2 is for short visits of 180 days or less.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy"
+ },
+ {
+  "id": "cn-r-talent",
+  "country": "CN",
+  "name": "R Visa (High-Level Talent)",
+  "kind": "visa",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Visa for foreigners in short supply or top talent China wants to attract. Typically processed on a fast track.",
+  "eligibility": {
+   "other": [
+    "Criteria set by Chinese authorities, not confirmed here.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "rights": {
+   "work": "employer"
+  }
+ },
+ {
+  "id": "cn-k-youth-science",
+  "country": "CN",
+  "name": "K Visa (Young STEM Talent)",
+  "kind": "visa",
+  "purposes": [
+   "work",
+   "study"
+  ],
+  "summary": "A newer visa category for young foreign science and technology talent. Announced as a new category. Details were not confirmed from an official page.",
+  "eligibility": {
+   "other": [
+    "Rules and start date not confirmed.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy"
+ },
+ {
+  "id": "cn-d-permanent-visa",
+  "country": "CN",
+  "name": "D Visa (Permanent Residence)",
+  "kind": "visa",
+  "purposes": [
+   "family",
+   "work"
+  ],
+  "summary": "Visa for people who have been approved for Chinese permanent residence. Lets them enter and get the permanent resident ID card.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "leadsTo": [
+   {
+    "pathway": "cn-permanent-residence",
+    "afterYears": 0
+   }
+  ]
+ },
+ {
+  "id": "cn-permanent-residence",
+  "country": "CN",
+  "name": "Permanent Residence (Foreigner's Permanent Resident ID Card)",
+  "kind": "permanent_residence",
+  "purposes": [
+   "work",
+   "family",
+   "investment"
+  ],
+  "summary": "Known as the Chinese green card. It is hard to get and is granted for high-level talent, major investors, and some family ties. Years needed and thresholds could not be confirmed.",
+  "eligibility": {
+   "other": [
+    "Years of residence and thresholds not confirmed from an official page.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "in_country",
+  "rights": {
+   "work": "any",
+   "family": true,
+   "publicHealth": false
+  },
+  "leadsTo": []
+ },
+ {
+  "id": "cn-naturalization",
+  "country": "CN",
+  "name": "Chinese Nationality by Naturalization",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "Foreigners can apply if they have close relatives who are Chinese citizens, settled in China, or have other legitimate reasons. Approval is rare.",
+  "eligibility": {
+   "other": [
+    "Official nationality law text not opened. Years and language requirements not confirmed.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "in_country",
+  "citizenship": {
+   "dualAllowed": false,
+   "route": "naturalization",
+   "note": "China does not recognize dual nationality. Naturalizing means giving up your old nationality."
+  }
+ },
+ {
+  "id": "cn-citizenship-descent-birth",
+  "country": "CN",
+  "name": "Chinese Nationality by Birth or Descent",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "A child with at least one Chinese citizen parent is generally Chinese if born in China. Abroad, the rule depends on whether the parent has settled abroad.",
+  "eligibility": {
+   "other": [
+    "Based on the nationality law, not confirmed on an opened official page.",
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "citizenship": {
+   "dualAllowed": false,
+   "route": "descent",
+   "note": "No dual nationality."
+  }
+ },
+ {
+  "id": "cn-asylum",
+  "country": "CN",
+  "name": "Refugee Status and Asylum",
+  "kind": "visa",
+  "purposes": [
+   "humanitarian"
+  ],
+  "summary": "China accepts asylum cases through its own process, but it is very rarely granted. Contact Chinese authorities directly.",
+  "eligibility": {
+   "other": [
+    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+   ]
+  },
+  "sources": [
+   {
+    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "in_country"
+ }
+]

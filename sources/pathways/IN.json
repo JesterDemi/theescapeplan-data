@@ -1,0 +1,885 @@
+[
+ {
+  "id": "in-visa-free-nepal-bhutan",
+  "country": "IN",
+  "name": "Visa-free entry for Nepal and Bhutan citizens",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business",
+   "work"
+  ],
+  "summary": "Citizens of Nepal and Bhutan entering by land or air from Nepal or Bhutan need no passport or visa. They carry a government photo ID showing nationality. Travel from any other country needs a valid passport, and entry from China, Macau, Hong Kong or Pakistan needs a passport and visa.",
+  "eligibility": {
+   "passports": [
+    "NP",
+    "BT"
+   ]
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "Visa-free regime and visa on arrival (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/travelling-to-india/foreigners/visa-free-regime-visa-on-arrival"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified"
+ },
+ {
+  "id": "in-visa-free-maldives",
+  "country": "IN",
+  "name": "Visa-free entry for Maldives citizens",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Maldivians can enter visa-free for business, medical treatment or tourism. Stay is capped at 90 days, counting all stays in India in the previous 6 months. Longer visits need a regular visa.",
+  "eligibility": {
+   "passports": [
+    "MV"
+   ]
+  },
+  "stay": {
+   "maxDays": 90,
+   "note": "Includes all stays in India in the 6 months before arrival."
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "Visa-free regime and visa on arrival (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/travelling-to-india/foreigners/visa-free-regime-visa-on-arrival"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified"
+ },
+ {
+  "id": "in-visa-on-arrival",
+  "country": "IN",
+  "name": "Visa on Arrival (Japan, South Korea, UAE)",
+  "kind": "visa_on_arrival",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Citizens of Japan, South Korea and the UAE can get a visa on arrival for business, tourism, conferences or medical treatment (including Ayush). Up to 60 days, double entry, not extendable or convertible. UAE citizens only qualify if they held an Indian visa or e-Visa before.",
+  "eligibility": {
+   "passports": [
+    "JP",
+    "KR",
+    "AE"
+   ],
+   "other": [
+    "UAE citizens must have previously held an Indian e-Visa or regular visa.",
+    "Not available if the applicant or a parent or grandparent was born in or a permanent resident of Pakistan.",
+    "Only at listed airports: Delhi, Mumbai, Chennai, Kolkata, Bengaluru, Hyderabad for all three, plus Cochin, Calicut and Ahmedabad for UAE."
+   ]
+  },
+  "stay": {
+   "maxDays": 60,
+   "renewable": false,
+   "note": "Double entry. Not extendable or convertible."
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "Visa-free regime and visa on arrival (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/travelling-to-india/foreigners/visa-free-regime-visa-on-arrival"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified"
+ },
+ {
+  "id": "in-evisa-tourist",
+  "country": "IN",
+  "name": "e-Tourist Visa",
+  "kind": "evisa",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "Online visa for tourism, sightseeing, visiting family, short yoga programs, short non-certified courses and unpaid volunteering up to one month. Comes as 30-day, 6-month, 1-year or 5-year multiple-entry versions. The 1-year and 5-year versions cap stays at 180 days per calendar year.",
+  "eligibility": {
+   "other": [
+    "About 175 eligible countries and regions, listed on the e-Visa portal.",
+    "Pakistani passport holders or people of Pakistani origin must apply for a regular visa.",
+    "Passport valid 6 months with 2 blank pages, onward ticket and enough funds.",
+    "Apply 4 to 120 days before arrival. Entry only through designated airports, seaports or land ports.",
+    "Fee amounts are in country-specific schedules on the portal and were not confirmed."
+   ]
+  },
+  "stay": {
+   "note": "30 days, 6 months, 1 year or 5 years validity. 30-day version is not extendable or convertible. 1 and 5 year versions allow max 180 days per calendar year."
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "online",
+  "steps": [
+   "Apply on indianvisaonline.gov.in 4 to 120 days before travel.",
+   "Pay the fee online.",
+   "Print the ETA once it says GRANTED.",
+   "Enter through a designated port and give biometrics on arrival."
+  ],
+  "processing": "The portal gives no overall processing time.",
+  "sources": [
+   {
+    "label": "India e-Visa portal",
+    "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+   },
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-evisa-business",
+  "country": "IN",
+  "name": "e-Business Visa",
+  "kind": "evisa",
+  "purposes": [
+   "business"
+  ],
+  "summary": "Online business visa. B1 is valid 1 year with each stay up to 180 days. B5 (conferences) is valid 30 days. B6 (films) is valid 1 year. A separate B4 production-investment e-visa runs 6 months.",
+  "eligibility": {
+   "other": [
+    "Not for employment, NGO work or journalism. Use a regular visa for those.",
+    "Same passport, funds and onward ticket rules as other e-Visas.",
+    "The portal's FAQ and visa sections disagree on some durations, so confirm on the portal.",
+    "Fee amounts not confirmed."
+   ]
+  },
+  "stay": {
+   "note": "B1 1 year, up to 180 days per stay. B5 30 days. B6 1 year. Production investment 6 months."
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "India e-Visa portal",
+    "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+   },
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-evisa-medical",
+  "country": "IN",
+  "name": "e-Medical and e-Medical Attendant Visa",
+  "kind": "evisa",
+  "purposes": [
+   "humanitarian"
+  ],
+  "summary": "Online visa for medical treatment (M1, M3 Ayush) and for attendants (M2, M4). The visa sections of the portal say valid 1 year from arrival, but the FAQ on the same site says 60 days, so this needs a check.",
+  "eligibility": {
+   "other": [
+    "Validity conflict on the official portal (1 year vs 60 days). Confirm before applying.",
+    "Fee amounts not confirmed."
+   ]
+  },
+  "stay": {
+   "note": "Portal states conflicting validity."
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "India e-Visa portal",
+    "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+   },
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-evisa-student",
+  "country": "IN",
+  "name": "e-Student Visa",
+  "kind": "evisa",
+  "purposes": [
+   "study"
+  ],
+  "summary": "Online student visa valid 1 year from ETA grant, multiple entry. Listed on the e-Visa portal.",
+  "eligibility": {
+   "other": [
+    "Details on eligible courses and fees were not confirmed from the portal.",
+    "Regular S visas are the main route for long study."
+   ]
+  },
+  "stay": {
+   "durationMonths": 12
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "India e-Visa portal",
+    "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-evisa-family",
+  "country": "IN",
+  "name": "e-Family Visa (SX)",
+  "kind": "evisa",
+  "purposes": [
+   "family"
+  ],
+  "summary": "Online family visa valid 1 year from ETA grant, multiple entry. Listed on the e-Visa portal.",
+  "eligibility": {
+   "other": [
+    "Who qualifies as family was not confirmed from the portal. Check before applying."
+   ]
+  },
+  "stay": {
+   "durationMonths": 12
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "India e-Visa portal",
+    "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-evisa-transit",
+  "country": "IN",
+  "name": "e-Transit Visa (TR)",
+  "kind": "evisa",
+  "purposes": [
+   "transit"
+  ],
+  "summary": "Online transit visa valid 30 days from first arrival, multiple entry.",
+  "eligibility": {
+   "other": [
+    "Airside transit visa rules were not confirmed from an official page."
+   ]
+  },
+  "stay": {
+   "maxDays": 30
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "India e-Visa portal",
+    "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+   },
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-evisa-misc-x1",
+  "country": "IN",
+  "name": "e-Miscellaneous Visa (X1)",
+  "kind": "evisa",
+  "purposes": [
+   "family"
+  ],
+  "summary": "Online miscellaneous visa valid 3 months from first entry, multiple entry. The regular X1 category covers people of Indian origin and foreign spouses and children of Indian citizens, PIOs or OCI holders.",
+  "eligibility": {
+   "other": [
+    "Exact e-Visa eligibility for X1 not confirmed from the portal."
+   ]
+  },
+  "stay": {
+   "durationMonths": 3
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "India e-Visa portal",
+    "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+   },
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-tourist",
+  "country": "IN",
+  "name": "Regular Tourist Visa (T1, T2)",
+  "kind": "visa",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "Paper visa for recreation, sightseeing, visiting friends or relatives, short yoga programs, short non-certified courses and unpaid volunteering. T2 is for mountaineering expeditions. Short courses must not exceed 6 months or give a diploma or certificate.",
+  "eligibility": {
+   "other": [
+    "Validity and fees are on separate official pages that could not be read."
+   ]
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "embassy",
+  "steps": [
+   "Fill the online application on indianvisaonline.gov.in.",
+   "Print, sign and submit it with documents and passport at an IVAC or Indian mission on your appointment.",
+   "Collect your passport and visa or get it by post."
+  ],
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   },
+   {
+    "label": "India visa application (Indian Visa Online)",
+    "url": "https://indianvisaonline.gov.in/visa/index.html"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-business",
+  "country": "IN",
+  "name": "Business Visa (B1 to B6)",
+  "kind": "visa",
+  "purposes": [
+   "business"
+  ],
+  "summary": "Paper visa for business activity. B1 general business, B2 paid sports, B3 cultural or commercial shows, B4 production investment (e-visa only), B5 conferences, B6 films and web shows.",
+  "eligibility": {
+   "other": [
+    "Validity and fees not confirmed. Check the Visa Manual."
+   ]
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-employment",
+  "country": "IN",
+  "name": "Employment Visa (E1)",
+  "kind": "visa",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Visa for employment in India, including intra-company transfers. E2 covers NGO employment and E3 covers missionaries and religious workers. Foreigners on a long employment visa must register with the FRRO.",
+  "eligibility": {
+   "jobOffer": true,
+   "other": [
+    "Salary threshold, validity and fees not confirmed from an official page.",
+    "Registration with the FRRO within 14 days of arrival if the visa is valid over 180 days."
+   ]
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   },
+   {
+    "label": "Registration requirements (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-student",
+  "country": "IN",
+  "name": "Student Visa (S1 to S5)",
+  "kind": "visa",
+  "purposes": [
+   "study"
+  ],
+  "summary": "S1 covers higher education and exchange programs, S2 school, S3 yoga, Vedic culture, music, dance, Buddhist studies and Indian languages, S4 research scholars, S5 internships.",
+  "eligibility": {
+   "other": [
+    "Validity and fees not confirmed.",
+    "Must register with the FRRO within 14 days of arrival if the visa is valid over 180 days."
+   ]
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   },
+   {
+    "label": "Registration requirements (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-research",
+  "country": "IN",
+  "name": "Research Scholar Visa (S4)",
+  "kind": "visa",
+  "purposes": [
+   "study"
+  ],
+  "summary": "The S4 category is for research scholars. Extra clearances may apply.",
+  "eligibility": {
+   "other": [
+    "Clearance rules, validity and fees not confirmed from an official page."
+   ]
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-medical",
+  "country": "IN",
+  "name": "Medical Visa (M1 to M4)",
+  "kind": "visa",
+  "purposes": [
+   "humanitarian"
+  ],
+  "summary": "M1 is for medical treatment outside Ayush and M2 for its attendants. M3 and M4 are the Ayush equivalents. Pakistani nationals on medical visas must register within 7 days of arrival.",
+  "eligibility": {
+   "other": [
+    "Validity and fees not confirmed."
+   ]
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   },
+   {
+    "label": "Special categories registration (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/special-categories"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-entry-x",
+  "country": "IN",
+  "name": "Entry Visa (X1 to X4, X-Misc)",
+  "kind": "visa",
+  "purposes": [
+   "family"
+  ],
+  "summary": "X1 is for people of Indian origin and foreign spouses and children of Indian citizens, PIOs or OCI holders (not those already registered as OCI). X2 covers joining Auroville, Aurobindo Ashram, Missionaries of Charity or similar. X4 is a stay visa for Afghans. X-Misc covers other purposes.",
+  "eligibility": {
+   "other": [
+    "Validity and fees not confirmed."
+   ]
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-transit",
+  "country": "IN",
+  "name": "Transit Visa (TR)",
+  "kind": "visa",
+  "purposes": [
+   "transit"
+  ],
+  "summary": "Visa for travel through India to a destination abroad.",
+  "eligibility": {
+   "other": [
+    "Validity, fees and airside transit exemption rules not confirmed."
+   ]
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-visa-long-term",
+  "country": "IN",
+  "name": "Long Term Visa (certain Afghan, Bangladeshi and Pakistani nationals)",
+  "kind": "visa",
+  "purposes": [
+   "humanitarian"
+  ],
+  "summary": "Long Term Visas exist for certain Afghan, Bangladeshi and Pakistani nationals under categories set in the Visa Manual. The Bureau notes most existing Pakistani visas were revoked from 27 April 2025.",
+  "eligibility": {
+   "passports": [
+    "AF",
+    "BD",
+    "PK"
+   ],
+   "other": [
+    "Categories are in the Visa Manual PDF, which was not read."
+   ]
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   },
+   {
+    "label": "Special categories registration (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/special-categories"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-prs-investor",
+  "country": "IN",
+  "name": "Permanent Residency Status (PRS) for foreign investors",
+  "kind": "permanent_residence",
+  "purposes": [
+   "investment"
+  ],
+  "summary": "The visa list shows a PRS category giving permanent residency to foreign investors.",
+  "eligibility": {
+   "other": [
+    "Investment amount and conditions not confirmed from an official page."
+   ]
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-registration-frro",
+  "country": "IN",
+  "name": "FRRO registration",
+  "kind": "visa",
+  "purposes": [
+   "work",
+   "study",
+   "business"
+  ],
+  "summary": "Foreigners must register with the FRRO or FRO. Student, employment, medical and work visa holders (and E3) whose visa is valid over 180 days register within 14 days of arrival. Business and other visa holders register if they stay over 180 days in a calendar year or in one stay. Pakistani nationals register within 24 hours. Exempt: children under 12, OCI holders, Nepal and Bhutan citizens.",
+  "eligibility": {
+   "other": [
+    "Bangladeshi nationals staying over 6 months continuously get a residential permit within 14 days of arrival.",
+    "Extensions and conversions are done online at indianfrro.gov.in while the visa is still valid. Overstay is treated as illegal."
+   ]
+  },
+  "stay": {
+   "note": "Extensions are decided case by case through the FRRO."
+  },
+  "where": "in_country",
+  "steps": [
+   "Register with your jurisdictional FRRO or FRO within the deadline.",
+   "Apply for extensions or conversions on indianfrro.gov.in before the visa expires."
+  ],
+  "sources": [
+   {
+    "label": "Registration requirements (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements"
+   },
+   {
+    "label": "Special categories registration (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/special-categories"
+   },
+   {
+    "label": "Visa extension and conversion (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/registration-authority/visa-services/visa-extension-conversion"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified"
+ },
+ {
+  "id": "in-oci-card",
+  "country": "IN",
+  "name": "Overseas Citizen of India (OCI) card",
+  "kind": "permanent_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "Lifelong multi-entry visa and registration exemption for foreign citizens of Indian origin and spouses of Indian citizens or OCI holders. You keep your foreign citizenship. No vote, no constitutional posts, no farm or plantation land.",
+  "eligibility": {
+   "other": [
+    "Eligible: foreign citizens who were Indian citizens, or eligible to be, on or after 26 January 1950, their children, grandchildren and great-grandchildren, and minor children of Indian citizens.",
+    "Spouses of Indian citizens or OCI holders if the registered marriage is at least 2 years old.",
+    "Not eligible if a parent, grandparent or great-grandparent was a citizen of Pakistan, Bangladesh or another notified country.",
+    "Not eligible: serving or former foreign military or police (Israelis excepted) and diplomatic passport holders.",
+    "Spouse cards issued on or after 3 September 2025 start at 5 years, extendable to lifelong.",
+    "Biometrics required, except under 12 or over 70."
+   ]
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "fees": [
+   {
+    "label": "Application",
+    "amount": 250,
+    "currency": "USD",
+    "per": "once"
+   },
+   {
+    "label": "Processing",
+    "amount": 25,
+    "currency": "USD",
+    "per": "once"
+   }
+  ],
+  "leadsTo": [
+   {
+    "pathway": "in-citizenship-registration",
+    "afterYears": 5
+   }
+  ],
+  "where": "online",
+  "steps": [
+   "Apply on ociservices.gov.in.",
+   "Show a long-duration visa valid at least 3 months and a residence permit if applying from India.",
+   "Give biometrics and attend an interview (not for under 12).",
+   "Carry your passport and OCI card at all times in India."
+  ],
+  "processing": "The MHA FAQ (older) says about 30 days, up to 120 with adverse information.",
+  "sources": [
+   {
+    "label": "About OCI card (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/pio-oci-card-holders/about-pio-oci-card"
+   },
+   {
+    "label": "OCI FAQ (Ministry of Home Affairs)",
+    "url": "https://www.mha.gov.in/sites/default/files/oci-faq.pdf"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-pio-descent",
+  "country": "IN",
+  "name": "PIO card (merged into OCI)",
+  "kind": "permanent_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "Old PIO cards are surrendered when OCI is granted. People of Indian origin now apply for OCI, or for an X1 visa. The OCI FAQ says the PIO card was valid 15 years while OCI is lifelong.",
+  "eligibility": {
+   "other": [
+    "New PIO cards were not confirmed as available. Treat OCI as the route."
+   ]
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "OCI FAQ (Ministry of Home Affairs)",
+    "url": "https://www.mha.gov.in/sites/default/files/oci-faq.pdf"
+   },
+   {
+    "label": "List of Visas (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/visa-oci/apply-for-visa/list-of-visas"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-citizenship-registration",
+  "country": "IN",
+  "name": "Citizenship by registration (Section 5)",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "The Citizenship Act allows registration for people of Indian origin and spouses of Indian citizens. Exact residence years were not confirmed from an official page. The MHA OCI FAQ says OCI holders can apply after 5 years of OCI, including 1 year of residence in India.",
+  "eligibility": {
+   "other": [
+    "Residence years and the dual citizenship rule were not confirmed. Illegal migrants cannot apply."
+   ]
+  },
+  "citizenship": {
+   "route": "marriage",
+   "note": "Spouse and origin routes under Section 5. Years not confirmed."
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "Indian Citizenship Online FAQ (MHA)",
+    "url": "https://indiancitizenshiponline.nic.in/Documents/UserGuide/ic_faq_24092019.pdf"
+   },
+   {
+    "label": "OCI FAQ (Ministry of Home Affairs)",
+    "url": "https://www.mha.gov.in/sites/default/files/oci-faq.pdf"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-naturalization",
+  "country": "IN",
+  "name": "Citizenship by naturalization (Section 6)",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "Foreigners can apply for Indian citizenship by naturalization under Section 6 of the Citizenship Act, 1955. The official pages I could open did not state the residence years, language or test rules.",
+  "eligibility": {
+   "other": [
+    "Years of residence, language and test not confirmed.",
+    "India does not generally allow dual citizenship, but this was not confirmed from an official page I could read. Applicants may need to renounce their old citizenship."
+   ]
+  },
+  "citizenship": {
+   "route": "naturalization",
+   "note": "Dual citizenship rule not confirmed."
+  },
+  "where": "online",
+  "sources": [
+   {
+    "label": "Indian Citizenship Online FAQ (MHA)",
+    "url": "https://indiancitizenshiponline.nic.in/Documents/UserGuide/ic_faq_24092019.pdf"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-citizenship-descent",
+  "country": "IN",
+  "name": "Citizenship by descent (Section 4)",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "The Citizenship Act provides citizenship by descent for people born abroad to Indian citizens. Conditions and registration timelines were not confirmed from an official page.",
+  "eligibility": {
+   "other": [
+    "Conditions not confirmed."
+   ]
+  },
+  "citizenship": {
+   "route": "descent"
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "Indian Citizenship Online FAQ (MHA)",
+    "url": "https://indiancitizenshiponline.nic.in/Documents/UserGuide/ic_faq_24092019.pdf"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "in-act-2025",
+  "country": "IN",
+  "name": "Immigration and Foreigners Act, 2025 and Rules, 2025",
+  "kind": "visa",
+  "purposes": [
+   "tourism",
+   "work",
+   "study",
+   "business"
+  ],
+  "summary": "New law governing entry, stay, registration and exit of foreigners, plus carrier liability and accommodation keepers' duties. It repeals the Passport (Entry into India) Act 1920, Registration of Foreigners Act 1939, Foreigners Act 1946 and Immigration (Carriers' Liability) Act 2000. Immigration fraud is an offence. The Immigration and Foreigners Rules, 2025 modernize the rules for entry, stay and exit.",
+  "eligibility": {
+   "other": [
+    "This is a legal framework, not a visa. Read the full Act and Rules PDFs on the Bureau of Immigration page for penalties and details."
+   ]
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "Immigration policies and process (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/immigration/policy-and-law/immigration-policies-process"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified"
+ },
+ {
+  "id": "in-asylum",
+  "country": "IN",
+  "name": "Asylum and refugee protection",
+  "kind": "visa",
+  "purposes": [
+   "humanitarian"
+  ],
+  "summary": "India has no single asylum law page I could verify. Protection is handled case by case. Check with the MHA or the Bureau of Immigration.",
+  "eligibility": {
+   "other": [
+    "No official asylum process page was read."
+   ]
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "Immigration policies and process (Bureau of Immigration)",
+    "url": "https://boi.mha.gov.in/boi/contents/immigration/policy-and-law/immigration-policies-process"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ }
+]

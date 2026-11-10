@@ -1,0 +1,175 @@
+[
+  {
+    "id": "ee-schengen-short-stay",
+    "country": "EE",
+    "name": "Short stay in Estonia (Schengen)",
+    "kind": "visa",
+    "purposes": ["tourism", "business", "transit"],
+    "summary": "Estonia is in Schengen. Short stays are up to 90 days in any 180 days, either visa-free or with a short-stay visa, depending on your passport.",
+    "eligibility": { "other": ["Official visa-free list was not reachable when checked. Confirm your passport on the Estonian Ministry of Foreign Affairs visa pages.", "Airport transit visa rules were not confirmed."] },
+    "stay": { "maxDays": 90, "perDays": 180 },
+    "rights": { "work": "none" },
+    "where": "embassy",
+    "sources": [{ "label": "Estonian Ministry of Foreign Affairs: long-stay (D) visa page (mentions 90 days in 180 Schengen rule)", "url": "https://vm.ee/en/consular-visa-and-travel-information/visa-information/application-long-stay-d-visa" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-digital-nomad-visa",
+    "country": "EE",
+    "name": "Digital Nomad Visa (long-stay D visa for teleworking)",
+    "kind": "visa",
+    "purposes": ["remote_work"],
+    "summary": "A visa of up to 365 days for people who work remotely for a foreign employer, a foreign company they own, or mostly foreign clients. It can't be extended and doesn't lead to a residence permit. e-Residency is a digital ID, not a visa, and isn't needed.",
+    "eligibility": {
+      "income": { "amount": 3960, "currency": "EUR", "per": "month", "note": "Ministry of Foreign Affairs page says 132 EUR per day. The e-Residency site says about 4,500 EUR per month. Numbers conflict." },
+      "other": [
+        "Must work location-independently using telecommunications.",
+        "One of: contract with a foreign-registered employer, owner or partner of a foreign-registered company, or freelance for mostly foreign clients.",
+        "Applications from Russian and Belarusian citizens are currently restricted.",
+        "Staying over 183 days in 12 months can make you an Estonian tax resident.",
+        "Income threshold conflicts between official pages, check before applying."
+      ]
+    },
+    "stay": { "durationMonths": 12, "renewable": false, "note": "Total stays capped at 548 days in 730 consecutive days. Also allows up to 90 days in other Schengen states per 180 days." },
+    "rights": { "work": "self", "family": true },
+    "where": "embassy",
+    "documents": ["Passport issued in last 10 years, valid 3 months past visa", "Signed application form", "One 35x45 mm photo", "Travel medical insurance", "Proof of funds", "Proof of remote work such as employer confirmation", "Travel booking", "Fingerprints", "Visa fee"],
+    "fees": [{ "label": "D visa, adult", "amount": 120, "currency": "EUR", "per": "once" }, { "label": "D visa, child 6 to 11", "amount": 60, "currency": "EUR", "per": "once" }, { "label": "C visa (up to 90 days)", "amount": 90, "currency": "EUR", "per": "once" }],
+    "processing": "Usually up to 30 days.",
+    "sources": [
+      { "label": "Estonian Ministry of Foreign Affairs: long-stay D visa", "url": "https://vm.ee/en/consular-visa-and-travel-information/visa-information/application-long-stay-d-visa" },
+      { "label": "e-Residency: Digital Nomad Visa FAQ", "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa/" },
+      { "label": "e-Residency: Digital Nomad Visa vs e-Residency", "url": "https://www.e-resident.gov.ee/nomadvisa/" },
+      { "label": "Work in Estonia: digital nomad visa", "url": "https://www.workinestonia.com/moving-to-estonia/digital-nomad-visa/" }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-startup-visa",
+    "country": "EE",
+    "name": "Start-up business D visa and start-up residence permit",
+    "kind": "visa",
+    "purposes": ["entrepreneur"],
+    "summary": "Estonia has a long-stay visa and a residence permit route for start-up founders. Exact conditions were not readable when checked.",
+    "eligibility": { "other": ["Financial requirement and approval steps not confirmed. See the Police and Border Guard Board start-up entrepreneur page."] },
+    "rights": { "work": "self" },
+    "where": "embassy",
+    "sources": [
+      { "label": "Estonian Ministry of Foreign Affairs: long-stay D visa (lists start-up business)", "url": "https://vm.ee/en/consular-visa-and-travel-information/visa-information/application-long-stay-d-visa" },
+      { "label": "Police and Border Guard Board: residence permit for business", "url": "https://www.politsei.ee/en/instructions/applying-for-a-residence-permit" }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-employment-residence-permit",
+    "country": "EE",
+    "name": "Residence permit for employment (includes EU Blue Card)",
+    "kind": "temporary_residence",
+    "purposes": ["work"],
+    "summary": "For skilled and general employees with a job in Estonia. Salary generally must be at least the Estonian average gross salary. The employer first gets approval from the Unemployment Insurance Fund.",
+    "eligibility": {
+      "jobOffer": true,
+      "income": { "amount": 2092, "currency": "EUR", "per": "month", "note": "Gross, for applications from 5 March 2026. Likely the 1.0 column of the official table (average salary). Table also lists 1674, 2594 and 3138 for other rates. Confirm on the official page." },
+      "other": ["Employer must get permission from the Estonian Unemployment Insurance Fund.", "Exceptions to the salary threshold exist."]
+    },
+    "stay": { "durationMonths": 60, "renewable": true, "note": "Initial permit up to 5 years. Extensions up to 10 years at a time." },
+    "rights": { "work": "employer", "family": true },
+    "where": "in_country",
+    "sources": [{ "label": "Police and Border Guard Board: residence permit for employment", "url": "https://www.politsei.ee/en/instructions/residence-permit-for-employment" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-short-term-work-study-d-visa",
+    "country": "EE",
+    "name": "Long-stay D visa for study, short-term work or seasonal work",
+    "kind": "visa",
+    "purposes": ["study", "work"],
+    "summary": "The D visa has separate categories for studies and PhD studies, short-term employment (including in a start-up) and seasonal work. Each has its own financial requirement. Amounts not confirmed.",
+    "eligibility": { "other": ["Financial requirement differs by category and was not read.", "Studies longer than a year usually go through a study residence permit."] },
+    "rights": { "work": "employer" },
+    "where": "embassy",
+    "sources": [
+      { "label": "Estonian Ministry of Foreign Affairs: long-stay D visa", "url": "https://vm.ee/en/consular-visa-and-travel-information/visa-information/application-long-stay-d-visa" },
+      { "label": "Police and Border Guard Board: residence permits", "url": "https://www.politsei.ee/en/instructions/applying-for-a-residence-permit" }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-youth-working-holiday",
+    "country": "EE",
+    "name": "Youth visa with work rights (working holiday style)",
+    "kind": "visa",
+    "purposes": ["work", "tourism"],
+    "summary": "Under bilateral agreements, young citizens of Australia, New Zealand, Canada and Japan can get a long-stay visa with work rights.",
+    "eligibility": { "passports": ["AU", "NZ", "CA", "JP"], "other": ["Age limits and duration not confirmed. Check with the Ministry of Foreign Affairs."] },
+    "rights": { "work": "any" },
+    "where": "embassy",
+    "sources": [{ "label": "Estonian Ministry of Foreign Affairs: long-stay D visa", "url": "https://vm.ee/en/consular-visa-and-travel-information/visa-information/application-long-stay-d-visa" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-family-spouse-residence-permit",
+    "country": "EE",
+    "name": "Residence permit for a spouse (family member)",
+    "kind": "temporary_residence",
+    "purposes": ["family"],
+    "summary": "For a spouse of an Estonian citizen or of a foreigner living in Estonia on a residence permit. Similar family permits exist for children and parents.",
+    "eligibility": { "other": ["Sponsor must be an Estonian citizen or a foreigner with an Estonian residence permit.", "Sponsor must have income of double the subsistence level, set yearly by the State Budget Act.", "Health insurance required.", "No language requirement is mentioned on the page.", "Spouses of employment or study permit holders qualify only in exceptional cases."] },
+    "stay": { "durationMonths": 60, "renewable": true, "note": "Initial permit up to 5 years, and no longer than the sponsor's permit. Extensions up to 10 years at a time." },
+    "where": "in_country",
+    "sources": [{ "label": "Police and Border Guard Board: residence permit for a spouse", "url": "https://www.politsei.ee/en/instructions/residence-permit-for-a-family-member/for-a-spouse" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-long-term-resident",
+    "country": "EE",
+    "name": "Permanent resident (long-term resident) residence permit",
+    "kind": "permanent_residence",
+    "purposes": ["work", "family", "retirement"],
+    "summary": "A permanent residence status for people who have lived in Estonia legally for some years. It is needed for citizenship. Years and language conditions were not confirmed.",
+    "eligibility": { "other": ["Conditions (years of residence, income, language) not read. See the Police and Border Guard Board long-term resident page."] },
+    "rights": { "work": "any", "family": true },
+    "where": "in_country",
+    "sources": [{ "label": "Police and Border Guard Board: residence permits", "url": "https://www.politsei.ee/en/instructions/applying-for-a-residence-permit" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-eu-eea-free-movement",
+    "country": "EE",
+    "name": "EU/EEA/Swiss right of residence",
+    "kind": "temporary_residence",
+    "purposes": ["work", "study", "family", "retirement"],
+    "summary": "Citizens of EU and EEA countries and Switzerland don't need a residence permit to live in Estonia. They register their right of residence instead.",
+    "eligibility": { "passports": ["bloc:EU", "bloc:EEA", "CH"], "other": ["Registration conditions not read."] },
+    "rights": { "work": "any", "family": true },
+    "where": "in_country",
+    "sources": [{ "label": "Police and Border Guard Board: residence permits", "url": "https://www.politsei.ee/en/instructions/applying-for-a-residence-permit" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ee-citizenship-naturalization",
+    "country": "EE",
+    "name": "Estonian citizenship by naturalization (adult)",
+    "kind": "citizenship",
+    "purposes": ["citizenship"],
+    "summary": "Needs 8 years of residence, at least 5 of them on a permanent basis, plus language and constitution exams. Adults generally can't keep another citizenship.",
+    "eligibility": {
+      "language": "Estonian language exam (unless educated in Estonian)",
+      "other": ["8 years of residence in Estonia, at least 5 as a permanent resident.", "Hold a long-term residence permit or right of permanent residence.", "Pass exam on the Constitution and the Citizenship Act.", "Permanent legal income.", "Registered address in the population register.", "Loyalty to the Estonian state.", "Dual citizenship rule was not on this page. No dual for adults is the general rule, confirm with the Police and Border Guard Board."]
+    },
+    "citizenship": { "dualAllowed": false, "residenceYears": 8, "route": "naturalization", "note": "Dual citizenship not confirmed on the cited page." },
+    "where": "in_country",
+    "sources": [{ "label": "Police and Border Guard Board: citizenship for an adult", "url": "https://www.politsei.ee/en/instructions/estonian-citizenship-for-an-adult" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "sa-tourist-evisa",
+    "country": "SA",
+    "name": "Saudi Tourist eVisa",
+    "kind": "evisa",
+    "purposes": ["tourism"],
+    "summary": "Online tourist visa for citizens of 66 listed countries. Valid one year, multiple entry, up to 90 days in the country. Covers leisure, events, and visiting family. Study is not allowed.",
+    "eligibility": {
+      "other": ["Open to citizens of the 66 countries on the official list. Others should contact the nearest Saudi embassy.", "Fee, and whether the 90 days is per visit or total, are not shown on the page we read."]
+    },
+    "stay": { "maxDays": 90, "durationMonths": 12, "note": "The page does not say if the 90 days is per visit or total." },
+    "rights": { "work": "none" },
+    "where": "online",
+    "steps": ["Check your country is on the official list.", "Apply online on the visa portal (three-step form).", "If your country is not listed, contact the nearest Saudi embassy."],
+    "sources": [{ "label": "Saudi Tourist eVisa portal", "url": "https://visa.visitsaudi.com/" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "sa-umrah-via-evisa",
+    "country": "SA",
+    "name": "Umrah on the Tourist eVisa",
+    "kind": "evisa",
+    "purposes": ["tourism"],
+    "summary": "The tourist eVisa allows Umrah. It does not cover Hajj, which has its own separate process.",
+    "eligibility": {
+      "other": ["Same 66-country list as the tourist eVisa.", "Dedicated Umrah visas for other nationalities and the Hajj process were not confirmed. Check the Ministry of Hajj and Umrah."]
+    },
+    "where": "online",
+    "sources": [{ "label": "Saudi Tourist eVisa portal", "url": "https://visa.visitsaudi.com/" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "sa-premium-residency",
+    "country": "SA",
+    "name": "Premium Residency",
+    "kind": "temporary_residence",
+    "purposes": ["investment", "entrepreneur", "work", "retirement"],
+    "summary": "Residency program applied for online at pr.gov.sa. Seven options: Exceptional Competence, Talent, Business Investor, Entrepreneur, Real Estate Owner, Unlimited Duration, and Limited Duration. Eligibility rules and fees were not on the page we could read.",
+    "eligibility": {
+      "other": ["Requirements and fees for each option were not available on the official pages we could open. Check pr.gov.sa and its user manual."]
+    },
+    "where": "online",
+    "steps": ["Go to the pr.gov.sa platform.", "Create an account and sign in.", "Pick the premium residency product that fits.", "Start the application and fill in the details."],
+    "processing": "The service page says about 90 workdays.",
+    "sources": [{ "label": "Request Premium Residency (my.gov.sa)", "url": "https://my.gov.sa/en/services/187911" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "sa-premium-residency-unlimited",
+    "country": "SA",
+    "name": "Unlimited Duration Premium Residency",
+    "kind": "permanent_residence",
+    "purposes": ["investment"],
+    "summary": "Premium residency with no expiry, applied for at pr.gov.sa. The service page lists a cost of 800,000 but does not name the currency, so confirm before relying on it.",
+    "eligibility": {
+      "other": ["Detailed eligibility was not on the page we read. Fee listed as 800,000 with no currency given. Confirm on pr.gov.sa."]
+    },
+    "where": "online",
+    "processing": "The service page says about 90 workdays.",
+    "sources": [{ "label": "Unlimited Duration Premium Residency (my.gov.sa)", "url": "https://my.gov.sa/en/services/182760" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  }
+]

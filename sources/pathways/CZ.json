@@ -1,0 +1,334 @@
+[
+  {
+    "id": "cz-employee-card",
+    "country": "CZ",
+    "name": "Employee Card",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work"
+    ],
+    "summary": "For non-EU citizens taking a specific job in Czechia for more than three months. The job must be listed in the central vacancies database.",
+    "eligibility": {
+      "jobOffer": true,
+      "passports": [],
+      "other": [
+        "Contract or letter of intent must pay at least minimum wage and cover at least 15 hours a week",
+        "Employment permit needed if the job requires one",
+        "Proof of qualification for regulated professions"
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Employee Card",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/employment_card.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "verified",
+    "stay": {
+      "renewable": true,
+      "note": "Card is tied to the specific vacancy. Extend at the Ministry of the Interior before it expires if the job continues."
+    },
+    "rights": {
+      "work": "employer"
+    },
+    "where": "embassy",
+    "steps": [
+      "Find the consulate that handles your application and book an appointment",
+      "Apply in person with an interview and fingerprints",
+      "Wait for the decision",
+      "Get travel medical insurance once approved",
+      "Collect the long-term visa (single entry, valid 60 days)",
+      "Within those 60 days, visit the local Ministry of the Interior branch to give biometrics and get the card"
+    ],
+    "documents": [
+      "Passport (original)",
+      "Application form",
+      "Two photos",
+      "Fingerprints taken at the consulate",
+      "Proof of accommodation",
+      "Criminal record extract",
+      "Application fee",
+      "Travel medical insurance (only after approval)",
+      "Employment contract, work agreement or letter of intent",
+      "Vacancy reference number"
+    ],
+    "processing": "Legal limit is 60 days, up to 90 in exceptional cases or if the Labor Office is consulted."
+  },
+  {
+    "id": "cz-blue-card",
+    "country": "CZ",
+    "name": "EU Blue Card",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work"
+    ],
+    "summary": "For highly qualified non-EU workers with a well-paid job of at least one year. Tied to a specific vacancy.",
+    "eligibility": {
+      "jobOffer": true,
+      "education": "University degree or higher professional education requiring at least 3 years of study",
+      "other": [
+        "Contract of at least one year with a legal weekly working time, usually 40 hours",
+        "Salary must be at least 1.5 times the average yearly gross salary and be stated in the contract",
+        "Regulated professions need proof of the specific qualification"
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Blue Card",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/blue_card_green_card.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "verified",
+    "stay": {
+      "renewable": true,
+      "note": "Extend before the card expires. The page does not state the card's own validity."
+    },
+    "rights": {
+      "work": "employer"
+    },
+    "where": "embassy",
+    "documents": [
+      "Passport (original)",
+      "Application form",
+      "Two photos",
+      "Fingerprints taken at the consulate",
+      "Proof of accommodation",
+      "Criminal record extract",
+      "Application fee",
+      "Travel medical insurance (only after approval)",
+      "Original employment contract",
+      "Vacancy reference number",
+      "Proof of high qualification"
+    ],
+    "processing": "Legal limit is 90 days. Incomplete applications are suspended, which adds time."
+  },
+  {
+    "id": "cz-intra-company-transfer",
+    "country": "CZ",
+    "name": "Intra-Company Employee Transfer Card",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work"
+    ],
+    "summary": "For managers, specialists or trainees transferred within a company to a Czech branch.",
+    "eligibility": {
+      "jobOffer": true,
+      "other": [
+        "Details were not confirmed from the official page. Check the Czech MFA page."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Intra-Company Transfer Card",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/intra_company_employee_transfer_card.html"
+      },
+      {
+        "label": "Czech MFA: long-stay overview",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/index.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review",
+    "where": "embassy"
+  },
+  {
+    "id": "cz-seasonal-work",
+    "country": "CZ",
+    "name": "Seasonal Employment Permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work"
+    ],
+    "summary": "For seasonal work lasting more than three months. Details were not confirmed yet.",
+    "eligibility": {
+      "jobOffer": true,
+      "other": [
+        "Conditions not confirmed from the official page. Check the Czech MFA page."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Seasonal Employment",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/seasonal_employment.html"
+      },
+      {
+        "label": "Czech MFA: long-stay overview",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/index.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review",
+    "where": "embassy"
+  },
+  {
+    "id": "cz-business-visa",
+    "country": "CZ",
+    "name": "Long-Term Visa for Business (Zivno / Company)",
+    "kind": "visa",
+    "purposes": [
+      "entrepreneur",
+      "work"
+    ],
+    "summary": "For non-EU citizens who run a business, work self-employed or serve in a company's statutory body. Usually proved with a trade license or company register extract. Czechia has no separate digital nomad visa on the pages checked.",
+    "eligibility": {
+      "other": [
+        "Proof of financial means required, amount not stated on this page",
+        "Supporting documents must be no older than 180 days"
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Entrepreneurship",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/entrepreneurship.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "verified",
+    "stay": {
+      "durationMonths": 12,
+      "renewable": true,
+      "note": "Can be extended before it expires, or you can switch to a long-term residence permit."
+    },
+    "rights": {
+      "work": "self"
+    },
+    "where": "embassy",
+    "documents": [
+      "Passport (original)",
+      "Long-stay visa form with Business ticked",
+      "Two photos",
+      "Fingerprints",
+      "Trade license extract (zivnostensky list) or company register extract, originals",
+      "Proof of accommodation",
+      "Proof of financial means",
+      "Criminal record extract",
+      "Fee",
+      "Travel medical insurance (after approval)"
+    ],
+    "processing": "Legal limit is 90 days, up to 120 if more checks are needed."
+  },
+  {
+    "id": "cz-study",
+    "country": "CZ",
+    "name": "Long-Term Residence Permit for Study",
+    "kind": "temporary_residence",
+    "purposes": [
+      "study"
+    ],
+    "summary": "For university study, language or expert preparation, stipend programs, unpaid internships and EU voluntary service by non-EU citizens.",
+    "eligibility": {
+      "other": [
+        "Proof of funds covering housing costs, or a third party covering all expenses (amount not stated)",
+        "Parental consent for minors",
+        "Internship must be unpaid to count as study"
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Study",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/study_long_term.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "verified",
+    "stay": {
+      "renewable": true,
+      "note": "Extend at the local Ministry of the Interior branch before the card expires. Holders of an EU or multilateral study permit from another EU state can study up to one year without a visa."
+    },
+    "where": "embassy",
+    "documents": [
+      "Passport",
+      "Application form",
+      "Two photos",
+      "Fingerprints",
+      "Acceptance letter or other proof of study",
+      "Proof of accommodation",
+      "Proof of financial means",
+      "Criminal record extract",
+      "Fee"
+    ],
+    "processing": "Legal limit for the residence permit is 60 days."
+  },
+  {
+    "id": "cz-research",
+    "country": "CZ",
+    "name": "Long-Term Residence Permit for Scientific Research",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work",
+      "study"
+    ],
+    "summary": "For researchers, academics and visiting professors. Details not confirmed yet.",
+    "eligibility": {
+      "other": [
+        "Conditions not confirmed from the official page."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Research",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/research_long_term.html"
+      },
+      {
+        "label": "Czech MFA: long-stay overview",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/index.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review",
+    "where": "embassy"
+  },
+  {
+    "id": "cz-family-reunification",
+    "country": "CZ",
+    "name": "Family Reunification Residence Permit",
+    "kind": "temporary_residence",
+    "purposes": [
+      "family"
+    ],
+    "summary": "Residence permit for family members of foreigners or Czech citizens. The English MFA page was empty, so rules and numbers were not confirmed.",
+    "eligibility": {
+      "other": [
+        "Official English page says it is under preparation. Check the Ministry of the Interior page for family reunification."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Family Unification",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/family_unification.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review",
+    "rights": {
+      "family": true
+    },
+    "where": "embassy"
+  },
+  {
+    "id": "cz-permanent-residence",
+    "country": "CZ",
+    "name": "Permanent Residence Permit",
+    "kind": "permanent_residence",
+    "purposes": [
+      "citizenship"
+    ],
+    "summary": "Permanent residence in Czechia. Years required and language rules were not confirmed from an official page.",
+    "eligibility": {
+      "other": [
+        "The MFA page refers to the Ministry of the Interior. Years of residence and language level not confirmed."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Czech MFA: Permanent Residence Permit",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/permanent_residence_permit_1.html"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review",
+    "where": "in_country"
+  }
+]

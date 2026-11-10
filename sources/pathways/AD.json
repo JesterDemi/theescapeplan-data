@@ -1,0 +1,129 @@
+[
+  {
+    "id": "ad-tourist-visa",
+    "country": "AD",
+    "name": "Short stay and tourist visas",
+    "kind": "visa",
+    "purposes": [
+      "tourism",
+      "business",
+      "transit"
+    ],
+    "summary": "The Andorran foreign ministry has a tourist visas page. Visa rules and visa-free lists were not confirmed from an official page.",
+    "eligibility": {
+      "other": [
+        "Details not confirmed from an official page. Check the Visats turistics page on govern.ad."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Govern d'Andorra",
+        "url": "https://www.govern.ad/"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ad-passive-residence",
+    "country": "AD",
+    "name": "Residence without work (passive residence)",
+    "kind": "temporary_residence",
+    "purposes": [
+      "retirement",
+      "investment"
+    ],
+    "summary": "An authorization to live in Andorra without working. Government lists it as Residencia sense treball. Investment, income and deposit amounts were not confirmed.",
+    "eligibility": {
+      "other": [
+        "Amounts, minimum stay and renewal rules not confirmed. Page content did not load."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Residence without work: initial authorization",
+        "url": "https://www.govern.ad/ca/tematiques/immigracio/residencia/residencia-sense-treball-autoritzacio-inicial"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ad-self-employed",
+    "country": "AD",
+    "name": "Residence and work, self-employed",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work",
+      "entrepreneur"
+    ],
+    "summary": "Authorization to live and work in Andorra for your own account. The government approves a yearly quota of self-employed authorizations (a quota of 125 was announced). Requirements not confirmed.",
+    "eligibility": {
+      "other": [
+        "Quota is announced by the government. Requirements and fees not confirmed."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Self-employed residence and work: initial authorization",
+        "url": "https://www.govern.ad/ca/tematiques/immigracio/residencia-i-treball/residencia-i-treball-per-compte-propi-autoritzacio-inicial"
+      },
+      {
+        "label": "Govern d'Andorra immigration",
+        "url": "https://www.govern.ad/ca/tematiques/immigracio/residencia-i-treball"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ad-employee-residence",
+    "country": "AD",
+    "name": "Residence and work, employee",
+    "kind": "temporary_residence",
+    "purposes": [
+      "work"
+    ],
+    "summary": "Authorization to live and work for an Andorran employer. Employers usually need to request it. Rules and quotas not confirmed from an official page.",
+    "eligibility": {
+      "other": [
+        "Details not confirmed."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Govern d'Andorra immigration",
+        "url": "https://www.govern.ad/ca/tematiques/immigracio/residencia-i-treball"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ad-citizenship",
+    "country": "AD",
+    "name": "Andorran citizenship (naturalization)",
+    "kind": "citizenship",
+    "purposes": [
+      "citizenship"
+    ],
+    "summary": "Naturalization exists under Andorran nationality law. Years of residence, language test and dual citizenship rules were not confirmed from an official page.",
+    "eligibility": {
+      "other": [
+        "Not confirmed. Check the immigration and nationality section on govern.ad."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Govern d'Andorra",
+        "url": "https://www.govern.ad/"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review",
+    "citizenship": {
+      "route": "naturalization",
+      "note": "Details not confirmed."
+    }
+  }
+]

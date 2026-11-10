@@ -1,0 +1,719 @@
+[
+ {
+  "id": "no-schengen-visa-free",
+  "country": "NO",
+  "name": "Visa-free visit (Schengen rules)",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Many nationalities can visit Norway without a visa. Stays are limited to 90 days in any 180-day period across the Schengen area. UDI links to an official list of who needs a visa.",
+  "eligibility": {
+   "other": [
+    "Check UDI's official list of nationals who need or don't need a visa. The list itself was not readable, so nationalities are not summarized here."
+   ]
+  },
+  "stay": {
+   "maxDays": 90,
+   "perDays": 180
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "UDI: Visit and holiday",
+    "url": "https://www.udi.no/en/want-to-apply/visit-and-holiday/"
+   },
+   {
+    "label": "Norway in the USA: Visitor's visa",
+    "url": "https://www.norway.no/en/usa/services-info/visitors-visa-res-permit/visitors-visa/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-visitor-visa",
+  "country": "NO",
+  "name": "Schengen Visitor Visa",
+  "kind": "visa",
+  "purposes": [
+   "tourism",
+   "business",
+   "family"
+  ],
+  "summary": "If you need a visa, apply for a visitor visa for stays up to 90 days. Apply at least 15 days before travel, up to six months ahead. Processing can take up to 45 days.",
+  "eligibility": {},
+  "stay": {
+   "maxDays": 90,
+   "perDays": 180
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "embassy",
+  "fees": [
+   {
+    "label": "Adults and children over 12",
+    "amount": 90,
+    "currency": "EUR",
+    "per": "once"
+   },
+   {
+    "label": "Children 6 to 12",
+    "amount": 45,
+    "currency": "EUR",
+    "per": "once"
+   },
+   {
+    "label": "Children under 6",
+    "amount": 0,
+    "currency": "EUR",
+    "per": "once"
+   }
+  ],
+  "processing": "Up to 45 days from when the consulate receives the application, per Norway in the USA.",
+  "sources": [
+   {
+    "label": "UDI: Visit and holiday",
+    "url": "https://www.udi.no/en/want-to-apply/visit-and-holiday/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   },
+   {
+    "label": "Norway in the USA: Visitor's visa",
+    "url": "https://www.norway.no/en/usa/services-info/visitors-visa-res-permit/visitors-visa/"
+   }
+  ],
+  "confidence": "verified",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-airport-transit",
+  "country": "NO",
+  "name": "Airport Transit Visa",
+  "kind": "visa",
+  "purposes": [
+   "transit"
+  ],
+  "summary": "Some nationals need an airport transit visa to switch between two non-Schengen flights without passport control. It does not work if you change to a Schengen flight, leave the airport, or must leave because Oslo's non-Schengen transit zone closes overnight (2300 to 0600). Then you need a regular Schengen visa.",
+  "eligibility": {
+   "other": [
+    "Only some nationalities need it. See the official list."
+   ]
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "Norway in the USA: Visitor's visa",
+    "url": "https://www.norway.no/en/usa/services-info/visitors-visa-res-permit/visitors-visa/"
+   }
+  ],
+  "confidence": "verified",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-svalbard-visa-free",
+  "country": "NO",
+  "name": "Svalbard Entry (no visa for Svalbard itself)",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "work"
+  ],
+  "summary": "Norway does not require a visa to enter Svalbard, and you don't need a separate residence permit to stay there. Svalbard is outside Schengen, so if you need a Schengen visa you need one to travel through mainland Norway, with at least two entries. Living on Svalbard gives no right to residence or citizenship in mainland Norway.",
+  "eligibility": {
+   "other": [
+    "Residence on Svalbard has conditions. Ask the Governor of Svalbard."
+   ]
+  },
+  "rights": {
+   "work": "any"
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "Governor of Svalbard: Visas and immigration",
+    "url": "https://www.sysselmesteren.no/en/visas-and-immigration/"
+   },
+   {
+    "label": "UDI: Svalbard",
+    "url": "https://www.udi.no/en/word-definitions/svalbard/"
+   }
+  ],
+  "confidence": "verified",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-skilled-worker",
+  "country": "NO",
+  "name": "Skilled Worker Residence Permit",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "For people with a job offer in Norway who have a degree, a 3-year vocational education, or long work experience. Vocational jobs get up to 1 year at a time. University-level jobs normally get up to 3 years.",
+  "eligibility": {
+   "jobOffer": true,
+   "education": "University degree, 3-year vocational education, or special qualifications (usually 6+ years of experience)",
+   "other": [
+    "Normally full-time, at least 80% accepted.",
+    "Pay and conditions must be normal for Norway.",
+    "Regulated professions need authorization."
+   ]
+  },
+  "stay": {
+   "durationMonths": 36,
+   "renewable": true,
+   "note": "Up to 1 year at a time for vocational jobs, normally up to 3 years for university-level jobs."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "no-permanent-residence",
+    "afterYears": 3
+   }
+  ],
+  "where": "employer",
+  "fees": [
+   {
+    "label": "Work permit, adult",
+    "amount": 6300,
+    "currency": "NOK",
+    "per": "once"
+   }
+  ],
+  "sources": [
+   {
+    "label": "UDI: Skilled workers",
+    "url": "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "confidence": "verified",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-intra-company",
+  "country": "NO",
+  "name": "Employee of an International Company on Assignment",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "For people sent to Norway by an international company. Permits are normally for 2 years at a time, up to 6 years. You then need to live outside Norway for 2 years before reapplying. This time does not count toward permanent residence.",
+  "eligibility": {
+   "jobOffer": true
+  },
+  "stay": {
+   "durationMonths": 24,
+   "renewable": true,
+   "note": "Up to 6 years total."
+  },
+  "rights": {
+   "work": "employer"
+  },
+  "where": "employer",
+  "fees": [
+   {
+    "label": "Work permit, adult",
+    "amount": 6300,
+    "currency": "NOK",
+    "per": "once"
+   }
+  ],
+  "sources": [
+   {
+    "label": "UDI: Skilled workers",
+    "url": "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "confidence": "verified",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-self-employed",
+  "country": "NO",
+  "name": "Self-Employed Person Residence Permit",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "entrepreneur"
+  ],
+  "summary": "For people running a Norwegian company. Permits are normally 1 year at a time. The business must be expected to earn at least NOK 341,373 a year before tax. Permanent residence is possible after 3 years.",
+  "eligibility": {
+   "income": {
+    "amount": 341373,
+    "currency": "NOK",
+    "per": "year",
+    "note": "Expected business earnings before tax"
+   }
+  },
+  "stay": {
+   "durationMonths": 12,
+   "renewable": true
+  },
+  "rights": {
+   "work": "self"
+  },
+  "leadsTo": [
+   {
+    "pathway": "no-permanent-residence",
+    "afterYears": 3
+   }
+  ],
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "UDI: Skilled workers",
+    "url": "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/"
+   },
+   {
+    "label": "UDI: Work immigration",
+    "url": "https://www.udi.no/en/want-to-apply/work-immigration/"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-job-seeker",
+  "country": "NO",
+  "name": "Job Seeker Residence Permit (skilled workers)",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "For recent Norwegian graduates and researchers looking for skilled work. You can get up to 1 year. You can work any job while you search but can't run your own business. This time does not count toward permanent residence.",
+  "eligibility": {
+   "savings": {
+    "amount": 341373,
+    "currency": "NOK",
+    "per": "year",
+    "note": "Or NOK 28,448 per month. Former PhD candidates on a skilled-worker permit need NOK 85,344."
+   },
+   "education": "Completed degree in Norway, or researcher status",
+   "other": [
+    "Must apply before your study or researcher permit expires."
+   ]
+  },
+  "stay": {
+   "durationMonths": 12,
+   "renewable": false
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "UDI: Job seekers",
+    "url": "https://www.udi.no/en/want-to-apply/work-immigration/job-seekers/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "confidence": "verified",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-seasonal-worker",
+  "country": "NO",
+  "name": "Seasonal Worker Residence Permit",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "UDI lists a seasonal worker permit for non-EU/EEA citizens. UDI's detail page could not be read, so duration and rules are not confirmed here.",
+  "eligibility": {
+   "jobOffer": true,
+   "other": [
+    "Details not confirmed. Check UDI work immigration page."
+   ]
+  },
+  "rights": {
+   "work": "employer"
+  },
+  "where": "employer",
+  "sources": [
+   {
+    "label": "UDI: Work immigration",
+    "url": "https://www.udi.no/en/want-to-apply/work-immigration/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-study-permit",
+  "country": "NO",
+  "name": "Study Permit",
+  "kind": "temporary_residence",
+  "purposes": [
+   "study"
+  ],
+  "summary": "For studying in Norway more than 3 months at a university, college, vocational or upper secondary school, folk high school, and more. You can work up to 20 hours a week during studies and full-time in holidays.",
+  "eligibility": {
+   "savings": {
+    "amount": 170368,
+    "currency": "NOK",
+    "per": "year",
+    "note": "NOK 15,488 per month. Higher for folk high school and Bible school."
+   },
+   "other": [
+    "Admitted to an approved institution (NOKUT-approved for university and vocational).",
+    "Show housing and that you'll likely return home after studies.",
+    "Can't be self-employed. Can't work, even remotely, until the permit is granted."
+   ]
+  },
+  "rights": {
+   "work": "any",
+   "family": false
+  },
+  "where": "online",
+  "fees": [
+   {
+    "label": "Study permit, adult",
+    "amount": 5400,
+    "currency": "NOK",
+    "per": "once"
+   },
+   {
+    "label": "Study permit, under 18",
+    "amount": 2700,
+    "currency": "NOK",
+    "per": "once"
+   }
+  ],
+  "sources": [
+   {
+    "label": "UDI: Study permit",
+    "url": "https://www.udi.no/en/want-to-apply/studies/studietillatelse/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "confidence": "verified",
+  "leadsTo": [
+   {
+    "pathway": "no-job-seeker",
+    "afterYears": 0
+   }
+  ],
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "no-family-immigration",
+  "country": "NO",
+  "name": "Family Immigration Permit",
+  "kind": "temporary_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "For spouses, cohabitants and children of someone living in Norway. UDI also covers parents of children living in Norway, fiances, foster children and full siblings. Income rules apply to the sponsor. Exact thresholds were not read.",
+  "eligibility": {
+   "other": [
+    "Sponsor income requirement applies. UDI changed it in January 2025. Check the current amount on UDI."
+   ]
+  },
+  "rights": {
+   "work": "any",
+   "family": false
+  },
+  "where": "online",
+  "fees": [
+   {
+    "label": "First-time, adult",
+    "amount": 11900,
+    "currency": "NOK",
+    "per": "once"
+   },
+   {
+    "label": "First-time, child under 18",
+    "amount": 5950,
+    "currency": "NOK",
+    "per": "once"
+   }
+  ],
+  "sources": [
+   {
+    "label": "UDI: Family immigration",
+    "url": "https://www.udi.no/en/want-to-apply/family-immigration/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-eu-eea-residence",
+  "country": "NO",
+  "name": "EU/EEA Residence Rights",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "study",
+   "family",
+   "retirement"
+  ],
+  "summary": "EU/EEA nationals have the right to live, work and study in Norway. Family members apply for a residence card or use a registration scheme depending on their citizenship. UDI says EU/EEA citizens pay no fee, including for permanent residence after five years.",
+  "eligibility": {
+   "passports": [
+    "bloc:EEA"
+   ]
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "UDI: EU/EEA residence",
+    "url": "https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-nordic-move",
+  "country": "NO",
+  "name": "Nordic Citizens Moving to Norway",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "study",
+   "family",
+   "retirement"
+  ],
+  "summary": "Nordic citizens have a special route for moving to Norway. UDI has a dedicated page. Details were not read here.",
+  "eligibility": {
+   "passports": [
+    "DK",
+    "FI",
+    "IS",
+    "SE"
+   ]
+  },
+  "rights": {
+   "work": "any"
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "UDI: Nordic nationals moving to Norway",
+    "url": "https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/nordic-nationals-who-are-going-to-live-in-norway/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-permanent-residence",
+  "country": "NO",
+  "name": "Permanent Residence Permit",
+  "kind": "permanent_residence",
+  "purposes": [
+   "work",
+   "family",
+   "humanitarian"
+  ],
+  "summary": "Lets you stay and work in Norway indefinitely. Skilled workers can apply after 3 years. Since 1 September 2025 you need to pass an oral Norwegian test (A2 or higher) and a social studies test for ages 18 to 67. Rules changed 1 July 2025, so check current years and income requirements.",
+  "eligibility": {
+   "language": "Oral Norwegian test, level A2 or higher (ages 18 to 67)",
+   "other": [
+    "Social studies test in a language you understand.",
+    "Years and self-support rules changed in 2024 and 2025. Not confirmed on the pages read.",
+    "Time on a job seeker permit or intra-company assignment does not count."
+   ]
+  },
+  "rights": {
+   "work": "any",
+   "family": true,
+   "publicHealth": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "no-citizenship-naturalization",
+    "afterYears": 0
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Adult",
+    "amount": 4000,
+    "currency": "NOK",
+    "per": "once"
+   },
+   {
+    "label": "Child under 18",
+    "amount": 2000,
+    "currency": "NOK",
+    "per": "once"
+   }
+  ],
+  "sources": [
+   {
+    "label": "UDI: Permanent residence",
+    "url": "https://www.udi.no/en/want-to-apply/permanent-residence/"
+   },
+   {
+    "label": "UDI: Changes to language and social studies requirements",
+    "url": "https://www.udi.no/en/important-messages/changes-to-the-requirements-for-a-permanent-residence-permit/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-citizenship-naturalization",
+  "country": "NO",
+  "name": "Norwegian Citizenship by Naturalization",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "For people with a residence permit in Norway. The Nationality Act page says at least 7 of the last 10 years in Norway plus permanent residence or eligibility for it. Residence time can be shorter in some cases, and UDI has a notice on income and reduced residence time. Dual citizenship: UDI says there is no separate application for it and you don't need to tell UDI you want to keep your other citizenship.",
+  "eligibility": {
+   "other": [
+    "Language requirements changed in 2022. Check UDI for the current level.",
+    "Residence years and test details not confirmed. The government page may be older than UDI's current rules."
+   ]
+  },
+  "citizenship": {
+   "dualAllowed": true,
+   "residenceYears": 7,
+   "route": "naturalization",
+   "note": "7 of 10 years per regjeringen.no. Needs review against UDI's current rules."
+  },
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Adult",
+    "amount": 6500,
+    "currency": "NOK",
+    "per": "once"
+   },
+   {
+    "label": "Child under 18",
+    "amount": 0,
+    "currency": "NOK",
+    "per": "once"
+   }
+  ],
+  "sources": [
+   {
+    "label": "UDI: Citizenship",
+    "url": "https://www.udi.no/en/want-to-apply/citizenship/"
+   },
+   {
+    "label": "UDI: Citizenship for people with a residence permit",
+    "url": "https://www.udi.no/en/want-to-apply/citizenship/citizenship-for-people-who-hold-a-residence-permit-in-norway/"
+   },
+   {
+    "label": "Regjeringen: The Norwegian Nationality Act",
+    "url": "https://www.regjeringen.no/en/topics/immigration-and-integration/asd/statsborgerloven/id2343481/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-citizenship-descent",
+  "country": "NO",
+  "name": "Norwegian Citizenship by Descent",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "A child born after 1 September 2006 automatically becomes Norwegian if the mother or father is a Norwegian citizen. Adopted children can also qualify. Further generations rules were not read.",
+  "eligibility": {},
+  "citizenship": {
+   "dualAllowed": true,
+   "route": "descent",
+   "note": "Automatic for children of a Norwegian parent, born after 1 Sept 2006."
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "Regjeringen: The Norwegian Nationality Act",
+    "url": "https://www.regjeringen.no/en/topics/immigration-and-integration/asd/statsborgerloven/id2343481/"
+   },
+   {
+    "label": "UDI: Citizenship",
+    "url": "https://www.udi.no/en/want-to-apply/citizenship/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "no-asylum",
+  "country": "NO",
+  "name": "Protection (Asylum)",
+  "kind": "visa",
+  "purposes": [
+   "humanitarian"
+  ],
+  "summary": "Apply for protection in Norway through UDI's official process. The first asylum application has no fee.",
+  "eligibility": {
+   "other": [
+    "See UDI's protection page for the process."
+   ]
+  },
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "First asylum application",
+    "amount": 0,
+    "currency": "NOK",
+    "per": "once"
+   }
+  ],
+  "sources": [
+   {
+    "label": "UDI: Protection (asylum)",
+    "url": "https://www.udi.no/en/want-to-apply/protection-asylum/"
+   },
+   {
+    "label": "UDI: Fees",
+    "url": "https://www.udi.no/en/word-definitions/fees/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ }
+]

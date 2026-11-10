@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ma-evisa",
+    "country": "MA",
+    "name": "Morocco eVisa",
+    "kind": "evisa",
+    "purposes": ["tourism", "business"],
+    "summary": "Morocco runs an official online portal for eVisa and access authorization. Whether you qualify depends on your nationality, residence, passport type and trip purpose, and the portal has an eligibility checker.",
+    "eligibility": {
+      "other": [
+        "Official sites blocked automated reading, so conditions, fees, validity and processing time were not confirmed.",
+        "Use the eligibility checker on the portal (asks nationality, country of residence, passport type, purpose, and any other valid visa)."
+      ]
+    },
+    "where": "online",
+    "steps": ["Open the official portal and run the eligibility check.", "Follow the result: eVisa, regular visa, or no visa needed."],
+    "sources": [{ "label": "Morocco official access portal (eVisa)", "url": "https://www.acces-maroc.ma" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "ma-visa-free-entry",
+    "country": "MA",
+    "name": "Visa-free entry",
+    "kind": "visa_free",
+    "purposes": ["tourism", "business"],
+    "summary": "Many nationalities can enter Morocco without a visa for short stays. The exact country list and allowed days were not confirmed from an official page, so check the official eligibility checker.",
+    "eligibility": {
+      "other": [
+        "Country list and maximum stay not confirmed because official pages blocked bots.",
+        "Check eligibility on the official portal before travel."
+      ]
+    },
+    "where": "on_arrival",
+    "sources": [{ "label": "Morocco official access portal (eligibility check)", "url": "https://www.acces-maroc.ma" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  }
+]

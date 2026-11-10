@@ -1,0 +1,89 @@
+[
+  {
+    "id": "bb-entry-visa",
+    "country": "BB",
+    "name": "Barbados Entry Visa",
+    "kind": "evisa",
+    "purposes": [
+      "tourism",
+      "business"
+    ],
+    "summary": "For nationalities that need a visa, the application and payment are fully online through the immigration site. Which nationalities need one is not confirmed here.",
+    "eligibility": {
+      "other": [
+        "Visa-exempt list, fees and stay length not read on an official page."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Barbados Immigration Department",
+        "url": "https://www.immigration.gov.bb/"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "needs_review",
+    "where": "online"
+  },
+  {
+    "id": "bb-welcome-stamp",
+    "country": "BB",
+    "name": "12-Month Barbados Welcome Stamp",
+    "kind": "visa",
+    "purposes": [
+      "remote_work"
+    ],
+    "summary": "Work remotely from Barbados for up to 12 months for clients or employers outside the country. You can reapply. Holders pay no Barbados income tax.",
+    "eligibility": {
+      "income": {
+        "amount": 50000,
+        "currency": "USD",
+        "per": "year"
+      },
+      "other": [
+        "Work must be location independent, for companies or clients outside Barbados."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Barbados Welcome Stamp (Visit Barbados)",
+        "url": "https://www.visitbarbados.org/barbados-welcome-stamp"
+      },
+      {
+        "label": "Government Information Service Barbados",
+        "url": "https://gisbarbados.gov.bb/?p=537897"
+      }
+    ],
+    "checked": "2026-11-10",
+    "confidence": "verified",
+    "stay": {
+      "durationMonths": 12,
+      "renewable": true,
+      "note": "Valid one year, can be reapplied for."
+    },
+    "rights": {
+      "work": "self",
+      "family": true
+    },
+    "fees": [
+      {
+        "label": "Individual",
+        "amount": 2000,
+        "currency": "USD",
+        "per": "once"
+      },
+      {
+        "label": "Family bundle",
+        "amount": 3000,
+        "currency": "USD",
+        "per": "once"
+      }
+    ],
+    "documents": [
+      "Passport-sized photo of main applicant and family over 18",
+      "Passport bio page",
+      "Proof of relationship for family"
+    ],
+    "processing": "Usually approved within 7 business days. Fee due within 28 days of approval.",
+    "where": "online"
+  }
+]

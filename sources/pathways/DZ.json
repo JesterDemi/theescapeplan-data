@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dz-tourist-visa",
+    "country": "DZ",
+    "name": "Algeria entry visa (tourist, business, family, transit)",
+    "kind": "visa",
+    "purposes": ["tourism", "business", "family", "transit"],
+    "summary": "Most foreigners need a visa from an Algerian embassy or consulate. Validity can be 90 days, 180 days, 1 year or 2 years, with up to 90 days per stay and 180 days per year.",
+    "eligibility": { "other": ["Some nationals are exempt from the visa, but the page doesn't list them. Ask the embassy.", "Tourists need a hotel booking plus agency confirmation or a legalized host invitation.", "Business visas need an invitation letter from an Algerian company.", "Passport valid at least 6 months. Travel insurance required."] },
+    "stay": { "maxDays": 90, "perDays": 180, "note": "Max 90 days per entry, extension not beyond 90 days. Cumulative stay no more than 180 days per year. Transit visa stay is 7 days." },
+    "rights": { "work": "none" },
+    "where": "embassy",
+    "documents": ["Passport valid 6+ months and copy", "Two application forms", "Two passport photos on white background", "Flight itinerary", "Travel insurance", "Hotel booking or invitation, depending on visa type"],
+    "fees": [{ "label": "Tourism, business, family, transit, student, medical, press (US applicants)", "amount": 160, "currency": "USD", "per": "once" }],
+    "processing": "About 5 to 8 business days on average, varies by nationality.",
+    "sources": [{ "label": "Embassy of Algeria in Washington: entry visa to Algeria", "url": "https://embwashington.mfa.gov.dz/services-for-foreigners/entry-visa-to-algeria-1" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "dz-work-visa",
+    "country": "DZ",
+    "name": "Algeria work and temporary work visa",
+    "kind": "visa",
+    "purposes": ["work"],
+    "summary": "For foreigners with a job in Algeria. Needs paperwork from the Algerian Ministry of Labor. Temporary work can use a service contract.",
+    "eligibility": { "jobOffer": true, "other": ["Work: work contract, foreign worker list, temporary work authorization and repatriation commitment from the Ministry of Labor.", "Temporary work: service contract, or employment contract with provisional work authorization and repatriation commitment."] },
+    "rights": { "work": "employer" },
+    "where": "embassy",
+    "fees": [{ "label": "Work visa (US applicants)", "amount": 190, "currency": "USD", "per": "once" }],
+    "sources": [{ "label": "Embassy of Algeria in Washington: entry visa to Algeria", "url": "https://embwashington.mfa.gov.dz/services-for-foreigners/entry-visa-to-algeria-1" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "dz-student-visa",
+    "country": "DZ",
+    "name": "Algeria student visa",
+    "kind": "visa",
+    "purposes": ["study"],
+    "summary": "For enrolled students. Needs an enrollment letter from an accredited institution and proof of financial support.",
+    "eligibility": { "other": ["Enrollment letter from an accredited institution.", "Proof of financial support."] },
+    "rights": { "work": "none" },
+    "where": "embassy",
+    "fees": [{ "label": "Student visa (US applicants)", "amount": 160, "currency": "USD", "per": "once" }],
+    "sources": [{ "label": "Embassy of Algeria in Washington: entry visa to Algeria", "url": "https://embwashington.mfa.gov.dz/services-for-foreigners/entry-visa-to-algeria-1" }],
+    "checked": "2026-11-10",
+    "confidence": "needs_review"
+  }
+]

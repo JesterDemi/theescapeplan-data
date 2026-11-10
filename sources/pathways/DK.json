@@ -1,0 +1,848 @@
+[
+ {
+  "id": "dk-visa-free",
+  "name": "Visa-free short stay",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Citizens of visa-free countries can visit for up to 90 days in any 180 days across the Schengen area, Greenland and the Faroe Islands. Check the official list for your passport.",
+  "eligibility": {
+   "other": [
+    "Passport valid 3 months past departure and issued in the last 10 years",
+    "Enough money for the trip, roughly DKK 350 per day or DKK 500 per day in a hotel",
+    "Not on any entry ban or sanctions list",
+    "Citizens of Australia, Canada, Chile, Israel, Japan, Malaysia, New Zealand, Singapore, South Korea and the US have separate stay rules (90 days or 3 months) that can be affected by earlier Nordic stays"
+   ]
+  },
+  "stay": {
+   "maxDays": 90,
+   "perDays": 180,
+   "note": "Same limit applies to Schengen, Greenland and the Faroe Islands combined."
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "Visa-free travel (nyidanmark.dk)",
+    "url": "https://www.nyidanmark.dk/pl-PL/You-want-to-apply/Short-stay-visa/Visa-free-visits"
+   },
+   {
+    "label": "List of visa-free and visa-required countries",
+    "url": "https://www.nyidanmark.dk/pl-PL/Words-and-concepts/US/Visum/Countries-with-a-visa-requirement-and-visa-free-countries/"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-tourist-visa",
+  "name": "Short-stay visa for private and tourist visits",
+  "kind": "visa",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "Schengen visa for people from visa-required countries. Stay up to 90 days in any 180 days. Apply at a Danish mission or visa center, or online.",
+  "eligibility": {
+   "other": [
+    "Passport valid 3 months past visa expiry, issued in the last 10 years, 2 blank pages",
+    "Travel insurance covering all Schengen countries, at least EUR 30,000",
+    "Enough funds, roughly DKK 350 per day or DKK 500 per day in a hotel",
+    "Some nationalities need a host in Denmark, who fills out an invitation (VU2 form recommended)"
+   ]
+  },
+  "stay": {
+   "maxDays": 90,
+   "perDays": 180
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "embassy",
+  "steps": [
+   "Host in Denmark completes the invitation if needed",
+   "Gather documents",
+   "Apply in person at the Danish mission or visa center, or online at ApplyVisa.um.dk",
+   "Pay the fee and give fingerprints"
+  ],
+  "fees": [
+   {
+    "label": "Adult visa fee",
+    "amount": 90,
+    "currency": "EUR"
+   },
+   {
+    "label": "Child 6 to under 12",
+    "amount": 45,
+    "currency": "EUR"
+   }
+  ],
+  "sources": [
+   {
+    "label": "Private and tourist visits (nyidanmark.dk)",
+    "url": "https://nyidanmark.dk/en-GB/You-want-to-apply/Short-stay-visa/Private-visits-and-tourist-visits-"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-business-visa",
+  "name": "Short-stay visa for business visits",
+  "kind": "visa",
+  "purposes": [
+   "business"
+  ],
+  "summary": "Schengen visa for business trips to a Danish company. Up to 90 days in any 180 days. You cannot do paid work.",
+  "eligibility": {
+   "other": [
+    "Host company must be registered in the Danish CVR and the business relationship must already exist",
+    "Travel insurance with at least EUR 30,000 cover and enough funds",
+    "Paid trainees normally need a work permit instead"
+   ]
+  },
+  "stay": {
+   "maxDays": 90,
+   "perDays": 180
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "embassy",
+  "fees": [
+   {
+    "label": "Adult visa fee",
+    "amount": 90,
+    "currency": "EUR"
+   },
+   {
+    "label": "Child 6 to under 12",
+    "amount": 45,
+    "currency": "EUR"
+   }
+  ],
+  "sources": [
+   {
+    "label": "Business visits (nyidanmark.dk)",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Short-stay-visa/Business-visits"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-pay-limit",
+  "name": "Pay Limit Scheme",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Work and residence permit for any job paying at least DKK 552,000 a year (2026). No specific education or field needed.",
+  "eligibility": {
+   "income": {
+    "amount": 552000,
+    "currency": "DKK",
+    "per": "year"
+   },
+   "jobOffer": true,
+   "other": [
+    "At least 30 hours a week",
+    "Pay and terms must meet Danish standards",
+    "Salary paid into a Danish bank account in your name, opened within 180 days",
+    "Amount is adjusted each 1 January"
+   ]
+  },
+  "stay": {
+   "durationMonths": 48,
+   "renewable": true,
+   "note": "Normally 4 years if the job lasts that long, otherwise the length of the job plus an automatic 6-month job-seeking permit with no work rights."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-permanent-residence",
+    "afterYears": 8
+   },
+   {
+    "pathway": "dk-citizenship-naturalization",
+    "afterYears": 9
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 6810,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Normally 1 month, up to 3 months if more information is needed.",
+  "sources": [
+   {
+    "label": "Pay Limit Scheme",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Pay-Limit-Scheme"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-supplementary-pay-limit",
+  "name": "Supplementary Pay Limit Scheme",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Work permit for any job paying at least DKK 446,000 a year (2026). No specific education needed.",
+  "eligibility": {
+   "income": {
+    "amount": 446000,
+    "currency": "DKK",
+    "per": "year"
+   },
+   "jobOffer": true,
+   "other": [
+    "Amount is adjusted each 1 January"
+   ]
+  },
+  "stay": {
+   "durationMonths": 60,
+   "renewable": true,
+   "note": "Normally 5 years if the job lasts that long, otherwise the length of the job."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-permanent-residence",
+    "afterYears": 8
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 6810,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Normally 2 months, up to 5 months if more information is needed.",
+  "sources": [
+   {
+    "label": "Supplementary Pay Limit Scheme",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/The-Pay-Limit-Schemes/Supplementary-Pay-Limit-scheme"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-positive-list-higher-education",
+  "name": "Positive List for People with a Higher Education",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Work permit for jobs on the Positive List when you have a matching higher education. Titles can come off the list, so check the current list.",
+  "eligibility": {
+   "education": "Higher education matching the job title (bachelor's, professional bachelor's or master's)",
+   "jobOffer": true,
+   "other": [
+    "Job title must be on the Positive List",
+    "Usually full time, about 37 hours a week, with a Denmark-registered employer",
+    "Pay must not be below normal for the field. No fixed amount is set.",
+    "Some jobs need Danish authorization"
+   ]
+  },
+  "stay": {
+   "durationMonths": 48,
+   "renewable": true,
+   "note": "Length of the job if under 4 years, otherwise normally 4 years. A 6-month job-seeking permit may follow, with no work rights."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-permanent-residence",
+    "afterYears": 8
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 6810,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Normally 1 month, up to 3 months if more information is needed.",
+  "sources": [
+   {
+    "label": "Positive List, higher education",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Positive-List-Higher-Education"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-positive-list-skilled-work",
+  "name": "Positive List for Skilled Work",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Work permit for skilled jobs on the Positive List (updated each 1 January and 1 July). The employer must meet apprentice training targets.",
+  "eligibility": {
+   "jobOffer": true,
+   "other": [
+    "Job must be on the list (DISCO-08 codes)",
+    "Employer registered in Denmark and meeting its Laereplads-AUB apprentice targets",
+    "Pay and terms must meet Danish standards",
+    "Salary paid into a Danish bank account in your name, opened within 180 days"
+   ]
+  },
+  "stay": {
+   "durationMonths": 48,
+   "renewable": true,
+   "note": "Length of the job if under 4 years, otherwise normally 4 years. Tied to one job and company."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-permanent-residence",
+    "afterYears": 8
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 6810,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Normally 3 months, up to 4 months if more information is needed.",
+  "sources": [
+   {
+    "label": "Positive List for skilled work",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/The-Positive-Lists/Positive-List-for-skilled-work"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-fast-track",
+  "name": "Fast-Track Scheme",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Faster work permits through employers certified by SIRI. Tracks: pay limit, supplementary pay limit, short-term, researcher and educational.",
+  "eligibility": {
+   "jobOffer": true,
+   "income": {
+    "amount": 552000,
+    "currency": "DKK",
+    "per": "year"
+   },
+   "other": [
+    "Employer must be SIRI-certified",
+    "Pay limit track needs DKK 552,000 a year, supplementary pay limit track DKK 446,000 a year (2026)",
+    "Short-term track allows up to 90 days in any 365 days, applied for stay by stay"
+   ]
+  },
+  "stay": {
+   "durationMonths": 48,
+   "renewable": true,
+   "note": "Pay limit and educational tracks up to 4 years. Supplementary track up to 5 years."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-permanent-residence",
+    "afterYears": 8
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 6810,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Standard about 1 month. Quick job start normally about 10 days. Supplementary track 2 months, up to 4.",
+  "sources": [
+   {
+    "label": "Fast-Track Scheme",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Fast-track"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-start-up-denmark",
+  "name": "Start-up Denmark",
+  "kind": "temporary_residence",
+  "purposes": [
+   "entrepreneur",
+   "work"
+  ],
+  "summary": "Residence and work permit to run an innovative start-up. Your idea must first be approved by an expert panel. Up to 75 people a year, up to 3 per team.",
+  "eligibility": {
+   "other": [
+    "Business idea approved by the Danish Business Authority expert panel before applying",
+    "Must own part of the business and run it actively",
+    "Self-support (2025 levels): DKK 153,240 alone, DKK 306,480 with spouse, DKK 356,904 with spouse and children, DKK 203,664 with children only",
+    "Restaurants, retail and small trades generally do not qualify"
+   ]
+  },
+  "stay": {
+   "durationMonths": 24,
+   "renewable": true,
+   "note": "First permit up to 2 years, extensions up to 3 years at a time."
+  },
+  "rights": {
+   "work": "self",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-permanent-residence",
+    "afterYears": 8
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 3060,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Normally 2 months, up to 4 months if more information is needed.",
+  "sources": [
+   {
+    "label": "Start-up Denmark",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-study-higher-education",
+  "name": "Residence permit for higher education",
+  "kind": "temporary_residence",
+  "purposes": [
+   "study"
+  ],
+  "summary": "Study permit for full-time state-approved or accredited higher education. Part-time study does not qualify.",
+  "eligibility": {
+   "savings": {
+    "amount": 7426,
+    "currency": "DKK",
+    "per": "month",
+    "note": "For stays over one year, 12 months of funds, up to DKK 89,112 (2026)."
+   },
+   "other": [
+    "Admitted to a full-time programme at an accredited or state-approved institution",
+    "Language skills to follow the course"
+   ]
+  },
+  "stay": {
+   "renewable": true,
+   "note": "Work up to 90 hours a month September to May and full time June to August on state-approved programmes."
+  },
+  "rights": {
+   "work": "any",
+   "family": false
+  },
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 3060,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Normally 2 months, up to 3 months if more information is needed.",
+  "sources": [
+   {
+    "label": "Higher education study permit",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-Education"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-working-holiday",
+  "name": "Working Holiday",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "tourism"
+  ],
+  "summary": "One-year working holiday permit for young people from partner countries. Salaried work only, not permanent, no family along.",
+  "eligibility": {
+   "passports": [
+    "AU",
+    "CA",
+    "NZ",
+    "KR"
+   ],
+   "minAge": 18,
+   "maxAge": 35,
+   "savings": {
+    "amount": 15000,
+    "currency": "DKK",
+    "per": "once",
+    "note": "Plus a return ticket. Varies by country, up to DKK 24,000 for New Zealand."
+   },
+   "other": [
+    "Age limits: Australia and Canada under 36, South Korea under 35, New Zealand under 31",
+    "Work up to 6 months within the year (9 for South Korea)",
+    "The page also lists Argentina, Chile and Japan as partners. Their rules were not confirmed here, so check the official pages."
+   ]
+  },
+  "stay": {
+   "durationMonths": 12,
+   "renewable": false
+  },
+  "rights": {
+   "work": "employer",
+   "family": false
+  },
+  "where": "embassy",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 3060,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Normally 3 months.",
+  "sources": [
+   {
+    "label": "Working Holiday (nyidanmark.dk)",
+    "url": "https://nyidanmark.dk/en-GB/You-want-to-apply/Working-Holiday/Working-Holiday"
+   }
+  ],
+  "confidence": "needs_review",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-eu-free-movement",
+  "name": "EU/EEA, Swiss and Nordic citizens: right to reside",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "study",
+   "retirement",
+   "family"
+  ],
+  "summary": "EU/EEA, Swiss and Nordic citizens can live and work in Denmark without a work permit. Stays over 3 months need an EU residence document, which has no fee. UK citizens cannot use this route.",
+  "eligibility": {
+   "passports": [
+    "bloc:EU",
+    "bloc:EEA",
+    "CH"
+   ],
+   "other": [
+    "Workers, students and people with enough funds qualify",
+    "Self-supporting: funds at least equal to the cash benefit rate, DKK 7,095 a month for a single person (2026), documented for 12 months",
+    "Job seekers can stay up to 6 months without a document",
+    "Stays under 3 months need no application"
+   ]
+  },
+  "stay": {
+   "renewable": true
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-eu-permanent-residence",
+    "afterYears": 5
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "EU residence document",
+    "amount": 0,
+    "currency": "DKK"
+   }
+  ],
+  "sources": [
+   {
+    "label": "Residence as EU/EEA, Swiss or Nordic citizen",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Residence-as-a-Nordic-citizen-or-EU-or-EEA-citizen"
+   },
+   {
+    "label": "EU residence as self-supporting",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Residence-as-a-Nordic-citizen-or-EU-or-EEA-citizen/EU-Self-support"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-eu-permanent-residence",
+  "name": "Permanent residence under EU rules",
+  "kind": "permanent_residence",
+  "purposes": [
+   "work",
+   "family"
+  ],
+  "summary": "After 5 consecutive years of real residence under EU rules, EU/EEA/Nordic citizens and their non-EU family members can get permanent residence.",
+  "eligibility": {
+   "other": [
+    "5 years of actual residence, not just a registered address",
+    "Short absences under 6 months a year are fine",
+    "Non-EU family members must apply themselves, no earlier than one month before 5 years"
+   ]
+  },
+  "stay": {
+   "renewable": true,
+   "note": "Right is kept until you leave Denmark for 2 years or more."
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-citizenship-naturalization",
+    "afterYears": 9
+   }
+  ],
+  "sources": [
+   {
+    "label": "Permanent residence under EU rules",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Residence-as-a-Nordic-citizen-or-EU-or-EEA-citizen/EU-TUB"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-family-spouse-partner",
+  "name": "Family reunification: spouse or partner",
+  "kind": "temporary_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "Residence permit to join a spouse or partner in Denmark who is a Danish citizen, permanent resident or refugee. Strict conditions on age, housing, language and a financial guarantee.",
+  "eligibility": {
+   "minAge": 24,
+   "other": [
+    "Both partners normally 24 or older",
+    "Valid marriage, or 18 months of living together",
+    "Couple must meet 4 of 6 integration conditions, including a mandatory one for the partner in Denmark",
+    "Partner in Denmark needs own suitable home, self-support and a financial guarantee of DKK 61,709.34 (2026)",
+    "Pass Danish A1 within 6 months and A2 within 9 months of the permit",
+    "Other family members such as children and parents have separate rules not covered here"
+   ]
+  },
+  "stay": {
+   "durationMonths": 24,
+   "renewable": true
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-permanent-residence",
+    "afterYears": 8
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Application fee",
+    "amount": 8490,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Expected maximum 10 months.",
+  "sources": [
+   {
+    "label": "Family reunification as a spouse",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Family/Family-reunification/Spouse-or-cohabiting-partner"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-permanent-residence",
+  "name": "Permanent residence permit",
+  "kind": "permanent_residence",
+  "purposes": [
+   "work",
+   "family"
+  ],
+  "summary": "Normally 8 years of legal residence. It can be 4 years if you meet all four extra requirements, and you need Danish and steady work.",
+  "eligibility": {
+   "language": "Prøve i Dansk 2 (Prøve i Dansk 3 counts as an extra requirement)",
+   "other": [
+    "Over 18 and still meet your current permit conditions",
+    "Full-time work or self-employment for 3 years 6 months of the past 4 years",
+    "Currently working at least 15 hours a week",
+    "No overdue public debt, no certain benefits in the past 4 years, no disqualifying criminal record",
+    "Need 2 of 4 extra requirements for the 8-year route, all 4 for the 4-year route: Dansk 3, 4 years full-time work, active citizen exam, average taxable income of DKK 346,155.57 a year over 2 years (2026)",
+    "Exemptions exist, for example for pensioners and people with disabilities"
+   ]
+  },
+  "stay": {
+   "renewable": true
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "dk-citizenship-naturalization",
+    "afterYears": 9
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "Fee for work or study",
+    "amount": 7570,
+    "currency": "DKK"
+   },
+   {
+    "label": "Fee for family reunification or asylum",
+    "amount": 4970,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "Expected maximum 12 months.",
+  "sources": [
+   {
+    "label": "Permanent residence permit",
+    "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Permanent-residence-permit/Permanent-residence"
+   }
+  ],
+  "confidence": "verified",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-citizenship-naturalization",
+  "name": "Danish citizenship by naturalization",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "Normally 9 years of residence, Danish language test, a citizenship test and steady work. Parliament passes a naturalization bill twice a year. Shorter periods apply to some groups.",
+  "eligibility": {
+   "language": "Danish test 3 (Dansk 3), or Dansk 2 if you have not received certain social assistance",
+   "other": [
+    "9 years of continuous residence normally. 8 for refugees and stateless people, 2 for Nordic citizens, 6 to 8 for spouses of Danish citizens",
+    "Permanent residence for at least 2 years (1 for refugees and stateless people)",
+    "Pass the 2021 naturalization test",
+    "Full-time work or self-employment for 3 years 6 months of the past 4 years",
+    "Self-sufficient, no certain overdue debts, no disqualifying criminal record",
+    "Dual citizenship was not confirmed on the pages read. Applicants resident in Greenland must give up their previous citizenship."
+   ]
+  },
+  "citizenship": {
+   "residenceYears": 9,
+   "route": "naturalization",
+   "note": "Bills go to Parliament in April and October. Greenland and the Faroe Islands are separate for some rules."
+  },
+  "fees": [
+   {
+    "label": "First application fee",
+    "amount": 6270,
+    "currency": "DKK"
+   }
+  ],
+  "processing": "About 14 months on average for 2021 cases, then Parliament takes 2 to 3 months.",
+  "where": "online",
+  "sources": [
+   {
+    "label": "Conditions for citizenship (lifeindenmark.dk)",
+    "url": "https://lifeindenmark.borger.dk/settle-in-denmark/danish-citizenship/conditions-for-foreign-citizens--acquisition-of-danish-citizenship"
+   },
+   {
+    "label": "How to apply for citizenship",
+    "url": "https://lifeindenmark.borger.dk/settle-in-denmark/danish-citizenship/guidance-on-how-to-apply-for-danish-citizenship"
+   }
+  ],
+  "confidence": "needs_review",
+  "country": "DK",
+  "checked": "2026-11-10"
+ },
+ {
+  "id": "dk-citizenship-descent",
+  "name": "Danish citizenship by descent",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "A child born on or after 1 July 2014 automatically gets Danish citizenship if the father, mother or co-mother is Danish. Older births follow the rules in force at the time.",
+  "eligibility": {
+   "other": [
+    "Children born abroad who become Danish before 22 fall under special retention rules. Details were not confirmed here.",
+    "Rules for children born outside marriage between 11 October 1993 and 30 June 2014 are on the official page"
+   ]
+  },
+  "citizenship": {
+   "route": "descent",
+   "note": "Only the parent generation was confirmed. Dual citizenship rules not confirmed."
+  },
+  "sources": [
+   {
+    "label": "Citizenship by children (lifeindenmark.dk)",
+    "url": "https://lifeindenmark.borger.dk/settle-in-denmark/danish-citizenship/the-acquisition-of-danish-citizenship-by-children"
+   }
+  ],
+  "confidence": "needs_review",
+  "country": "DK",
+  "checked": "2026-11-10"
+ }
+]
