@@ -1,0 +1,293 @@
+[
+ {
+  "id": "mc-short-stay-visa",
+  "country": "MC",
+  "name": "Short stay and Schengen visa",
+  "kind": "visa",
+  "purposes": [
+   "tourism",
+   "business",
+   "transit"
+  ],
+  "summary": "Monaco has no border checks with France. Some nationalities need a Schengen short stay visa (visa C) to visit. Check the official list linked on the residence and travel page.",
+  "eligibility": {
+   "other": [
+    "Which nationalities need a visa was not listed on the page. Check the linked official list."
+   ]
+  },
+  "sources": [
+   {
+    "label": "Residence permit and travel, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency/residents/residence-permit-and-travel"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "needs_review",
+  "where": "embassy"
+ },
+ {
+  "id": "mc-temporary-residence",
+  "country": "MC",
+  "name": "Temporary residence permit (carte de sejour temporaire)",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "retirement",
+   "family",
+   "investment"
+  ],
+  "summary": "First permit for new residents aged 16 and over. Valid one year. Housing, income and other conditions were not on the page read.",
+  "eligibility": {
+   "minAge": 16,
+   "other": [
+    "Conditions such as housing and financial resources were not confirmed on the page. Check the application procedure on MonServicePublic."
+   ]
+  },
+  "sources": [
+   {
+    "label": "The residence permit, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency/residents/the-residence-permit"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "needs_review",
+  "stay": {
+   "durationMonths": 12,
+   "renewable": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "mc-ordinary-residence",
+    "afterYears": 3
+   }
+  ],
+  "where": "in_country",
+  "fees": [
+   {
+    "label": "First issue",
+    "amount": 80,
+    "currency": "EUR",
+    "per": "once"
+   },
+   {
+    "label": "Renewal",
+    "amount": 40,
+    "currency": "EUR",
+    "per": "once"
+   }
+  ]
+ },
+ {
+  "id": "mc-ordinary-residence",
+  "country": "MC",
+  "name": "Ordinary residence permit (carte de sejour ordinaire)",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "retirement",
+   "family"
+  ],
+  "summary": "For people who have lived in Monaco for three years. Valid three years.",
+  "eligibility": {
+   "other": [
+    "Three years of residence in Monaco."
+   ]
+  },
+  "sources": [
+   {
+    "label": "The residence permit, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency/residents/the-residence-permit"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "stay": {
+   "durationMonths": 36,
+   "renewable": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "mc-privilege-residence",
+    "afterYears": 10
+   }
+  ],
+  "fees": [
+   {
+    "label": "First issue",
+    "amount": 100,
+    "currency": "EUR",
+    "per": "once"
+   },
+   {
+    "label": "Renewal",
+    "amount": 50,
+    "currency": "EUR",
+    "per": "once"
+   }
+  ]
+ },
+ {
+  "id": "mc-privilege-residence",
+  "country": "MC",
+  "name": "Privilege residence permit (carte de sejour privilegiee)",
+  "kind": "permanent_residence",
+  "purposes": [
+   "work",
+   "retirement",
+   "family"
+  ],
+  "summary": "Long-term card for people with ten years of genuine residence. Valid ten years. The wait can be cut to one year in special cases.",
+  "eligibility": {
+   "other": [
+    "Ten years of genuine residence, can be reduced to one year in special cases."
+   ]
+  },
+  "sources": [
+   {
+    "label": "The residence permit, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency/residents/the-residence-permit"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "stay": {
+   "durationMonths": 120,
+   "renewable": true
+  },
+  "fees": [
+   {
+    "label": "First issue",
+    "amount": 160,
+    "currency": "EUR",
+    "per": "once"
+   },
+   {
+    "label": "Renewal",
+    "amount": 80,
+    "currency": "EUR",
+    "per": "once"
+   }
+  ]
+ },
+ {
+  "id": "mc-spouse-residence",
+  "country": "MC",
+  "name": "Residence permit for spouse of a Monegasque national",
+  "kind": "temporary_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "For spouses of Monegasque nationals who have lived in the Principality at least one year. Valid five years.",
+  "eligibility": {
+   "other": [
+    "Married to a Monegasque national.",
+    "At least one year living in Monaco."
+   ]
+  },
+  "sources": [
+   {
+    "label": "The residence permit, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency/residents/the-residence-permit"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "stay": {
+   "durationMonths": 60,
+   "renewable": true
+  },
+  "fees": [
+   {
+    "label": "First issue",
+    "amount": 80,
+    "currency": "EUR",
+    "per": "once"
+   },
+   {
+    "label": "Renewal",
+    "amount": 40,
+    "currency": "EUR",
+    "per": "once"
+   }
+  ]
+ },
+ {
+  "id": "mc-naturalization",
+  "country": "MC",
+  "name": "Naturalization by Sovereign Ordinance",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "Granted at the Prince's discretion. Normally needs 10 years of ordinary residence after age 18, though the Prince can waive it. You must renounce your old nationality.",
+  "eligibility": {},
+  "sources": [
+   {
+    "label": "Acquiring Monegasque nationality, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/monegasque-nationality/acquisition-and-loss-of-nationality/acquiring-monegasque-nationality"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "citizenship": {
+   "route": "naturalization",
+   "residenceYears": 10,
+   "dualAllowed": false,
+   "note": "Must be exempt from military service at home and renounce previous nationality. Children under 18 are included."
+  }
+ },
+ {
+  "id": "mc-citizenship-marriage",
+  "country": "MC",
+  "name": "Nationality by declaration after marriage",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship",
+   "family"
+  ],
+  "summary": "A spouse can claim nationality by declaration after 20 years of marriage (10 years if you married before 1 July 2022).",
+  "eligibility": {
+   "other": [
+    "Still living together, unless widowed and not remarried.",
+    "Spouse did not get nationality through a previous marriage.",
+    "Taking Monegasque nationality must not cost you your original one under foreign law."
+   ]
+  },
+  "sources": [
+   {
+    "label": "Acquiring Monegasque nationality, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/monegasque-nationality/acquisition-and-loss-of-nationality/acquiring-monegasque-nationality"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "citizenship": {
+   "route": "marriage",
+   "residenceYears": 20,
+   "note": "10 years if married before 1 July 2022."
+  }
+ },
+ {
+  "id": "mc-citizenship-descent",
+  "country": "MC",
+  "name": "Nationality by descent",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "A child of a Monegasque father is Monegasque. Through the mother, rules depend on how she held nationality. Being born in Monaco does not give nationality.",
+  "eligibility": {},
+  "sources": [
+   {
+    "label": "Acquiring Monegasque nationality, MonServicePublic",
+    "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/monegasque-nationality/acquisition-and-loss-of-nationality/acquiring-monegasque-nationality"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "needs_review",
+  "citizenship": {
+   "route": "descent",
+   "note": "Maternal descent has several conditions. Read the official page."
+  }
+ }
+]

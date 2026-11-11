@@ -9,22 +9,37 @@
    "business",
    "transit"
   ],
-  "summary": "Online travel authorization that visa-exempt visitors apply for before flying to Israel. Apply on the official PIBA site.",
+  "summary": "Online travel authorization that visitors from visa-exempt countries need before flying to Israel (required since January 2025). Lets you stay up to 90 days per visit for tourism or business.",
   "eligibility": {
    "other": [
-    "For nationalities that do not need a visa. Exact list, fee, validity and stay length not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "Must be a citizen of a visa-exempt country.",
+    "Passport valid at least 3 months from arrival.",
+    "Visit of 90 days or less, no work or medical purpose.",
+    "Not needed for Israeli citizens, holders of an Israeli ID number, or holders of Israeli visas B1, B3, B4, A1, A2, A3, A4, A5.",
+    "Approval does not guarantee entry. Border control makes the final call."
    ]
   },
   "sources": [
    {
-    "label": "Israel Population and Immigration Authority, entry info and ETA-IL",
-    "url": "https://israel-entry.piba.gov.il/"
+    "label": "PIBA, About ETA-IL",
+    "url": "https://israel-entry.piba.gov.il/learn-about"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
-  "where": "online"
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "where": "online",
+  "stay": {
+   "maxDays": 90,
+   "note": "Per visit. Authorization valid up to 2 years or until the passport expires, whichever is first."
+  },
+  "fees": [
+   {
+    "label": "Application fee, non-refundable",
+    "amount": 25,
+    "currency": "ILS",
+    "per": "once"
+   }
+  ]
  },
  {
   "id": "il-evisa-b2",
@@ -34,22 +49,35 @@
   "purposes": [
    "tourism"
   ],
-  "summary": "The official entry site lists an eVisa B/2 option for tourists who need a visa. Check the site for who qualifies.",
+  "summary": "Online B/2 tourist visa for citizens of visa-required countries. Approval comes by email, and some people may be asked to visit the nearest Israeli consulate.",
   "eligibility": {
    "other": [
-    "Eligible nationalities, fee and stay length not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "Must be a citizen of a country that needs a visa for Israel.",
+    "Needs passport copy, recent photo, round trip ticket, health insurance valid in Israel, proof of where you will stay, and proof of funds (3 months of bank statements or similar).",
+    "Approval does not guarantee entry."
    ]
   },
   "sources": [
    {
-    "label": "Israel Population and Immigration Authority, entry info and ETA-IL",
-    "url": "https://israel-entry.piba.gov.il/"
+    "label": "PIBA, About eVisa-B2",
+    "url": "https://israel-entry.piba.gov.il/learn-about-evisa-b2"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
-  "where": "online"
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "where": "online",
+  "stay": {
+   "maxDays": 90,
+   "note": "Visa validity up to 90 days per the consul. Stay length set by border control on arrival."
+  },
+  "fees": [
+   {
+    "label": "Handling fee, non-refundable",
+    "amount": 105,
+    "currency": "ILS",
+    "per": "once"
+   }
+  ]
  },
  {
   "id": "il-b2-tourist",
@@ -59,22 +87,29 @@
   "purposes": [
    "tourism"
   ],
-  "summary": "Short tourist visa for nationalities that need one, normally applied for before travel.",
+  "summary": "Tourist visa for tourism, medical tourism, business meetings or short non-academic study. Usually single entry and valid three months from issue. No work allowed.",
   "eligibility": {
    "other": [
-    "Duration, fee and who needs it not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "For nationalities that need a visa. Visa-exempt citizens use the ETA-IL instead.",
+    "Former foreign workers in agriculture, construction or caregiving can apply for a B/2 only one year after leaving Israel, even from a visa-exempt country."
    ]
   },
   "sources": [
    {
-    "label": "Israel Population and Immigration Authority, entry info and ETA-IL",
-    "url": "https://israel-entry.piba.gov.il/"
+    "label": "PIBA, Visa types for Israel",
+    "url": "https://israel-entry.piba.gov.il/visa-option"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
-  "where": "embassy"
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "where": "embassy",
+  "rights": {
+   "work": "none"
+  },
+  "stay": {
+   "durationMonths": 3,
+   "note": "Usually single entry, valid three months from the day granted."
+  }
  },
  {
   "id": "il-b1-work",
@@ -84,20 +119,22 @@
   "purposes": [
    "work"
   ],
-  "summary": "Work visa tied to a specific employer, with approval from the Population and Immigration Authority.",
+  "summary": "B/1 work visas for foreign workers in industry, welfare, construction and agriculture, plus a separate B/1 foreign expert visa. Your employer applies in Israel and approval is sent to the consulate.",
   "eligibility": {
+   "jobOffer": true,
    "other": [
-    "Rules vary by sector. Details not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "Request is submitted in Israel to the Interior Ministry (PIBA) by the employer, not by you.",
+    "Visa is for a limited period of work.",
+    "Fees, durations and expert criteria not confirmed. gov.il pages were blocked by a bot check."
    ]
   },
   "sources": [
    {
-    "label": "Israel Population and Immigration Authority, entry info and ETA-IL",
-    "url": "https://israel-entry.piba.gov.il/"
+    "label": "PIBA, Visa types for Israel",
+    "url": "https://israel-entry.piba.gov.il/visa-option"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "employer",
   "rights": {
@@ -112,20 +149,20 @@
   "purposes": [
    "study"
   ],
-  "summary": "Student visa for full-time study at a recognized institution in Israel.",
+  "summary": "Student visa for study at an institution recognized by the Council for Higher Education, the VOLCANY Centre program, or the BA in Business Administration at the China-Israel Institute.",
   "eligibility": {
    "other": [
-    "Needs acceptance at a recognized institution. Details not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "Needs acceptance at one of the institutions or programs named above.",
+    "Fees, duration and documents not confirmed. gov.il pages were blocked by a bot check."
    ]
   },
   "sources": [
    {
-    "label": "Israel Population and Immigration Authority, entry info and ETA-IL",
-    "url": "https://israel-entry.piba.gov.il/"
+    "label": "PIBA, Visa types for Israel",
+    "url": "https://israel-entry.piba.gov.il/visa-option"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "embassy"
  },
@@ -142,7 +179,7 @@
    "other": [
     "Needs documents proving Jewish status in line with the Law of Return, plus birth certificates and proof of family status.",
     "Exact family-tie rules (children, grandchildren, spouses) and dual citizenship rules not confirmed from an official page.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "The Ministry guide PDF would not load as text in the browser pass on 2026-11-11, so this was not re-confirmed."
    ]
   },
   "sources": [
@@ -151,7 +188,7 @@
     "url": "https://www.gov.il/BlobFolder/generalpage/information_olim_tuota/he/guide-for-the-new-immigrant-en.pdf"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "embassy",
   "citizenship": {
@@ -170,7 +207,7 @@
   "eligibility": {
    "other": [
     "Based on the Ministry's new immigrant guide. Full conditions not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "The Ministry guide PDF would not load as text in the browser pass on 2026-11-11, so this was not re-confirmed."
    ]
   },
   "sources": [
@@ -179,7 +216,7 @@
     "url": "https://www.gov.il/BlobFolder/generalpage/information_olim_tuota/he/guide-for-the-new-immigrant-en.pdf"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "in_country"
  },
@@ -195,16 +232,16 @@
   "eligibility": {
    "other": [
     "Stage lengths and conditions not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "Official gov.il page was blocked by a bot check in the browser pass on 2026-11-11, so this was not confirmed. Check the Population and Immigration Authority on gov.il."
    ]
   },
   "sources": [
    {
-    "label": "Israel Population and Immigration Authority, entry info and ETA-IL",
+    "label": "Israel Population and Immigration Authority, entry portal",
     "url": "https://israel-entry.piba.gov.il/"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "in_country",
   "rights": {
@@ -223,16 +260,16 @@
   "eligibility": {
    "other": [
     "Years of residence, language and renunciation rules not confirmed.",
-    "Official page could not be fully read in this pass (site is script-based or blocks bots). Check the official source for numbers and conditions."
+    "Official gov.il page was blocked by a bot check in the browser pass on 2026-11-11, so this was not confirmed. Check the Population and Immigration Authority on gov.il."
    ]
   },
   "sources": [
    {
-    "label": "Israel Population and Immigration Authority, entry info and ETA-IL",
+    "label": "Israel Population and Immigration Authority, entry portal",
     "url": "https://israel-entry.piba.gov.il/"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "citizenship": {
    "route": "naturalization"

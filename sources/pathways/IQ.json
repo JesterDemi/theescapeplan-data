@@ -1,0 +1,251 @@
+[
+ {
+  "id": "iq-evisa",
+  "country": "IQ",
+  "name": "Iraq e-Visa",
+  "kind": "evisa",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Official portal issues an electronic visa for single or multiple entry, valid 30 days. Eligible nationalities and fees are not listed on the page I could read.",
+  "eligibility": {
+   "other": [
+    "Eligible nationalities not confirmed. Check the portal.",
+    "Valid passport and a digital photo with a white background.",
+    "Fees are paid online. Amounts not confirmed."
+   ]
+  },
+  "stay": {
+   "note": "Visa valid 30 days per the portal. Length of stay not stated."
+  },
+  "where": "online",
+  "steps": [
+   "Fill in the online form on the official portal.",
+   "Pay online.",
+   "Receive the visa by email and print it for entry."
+  ],
+  "sources": [
+   {
+    "label": "Iraq e-Visa portal",
+    "url": "https://evisa.iq"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "iq-tourist-visa",
+  "country": "IQ",
+  "name": "Tourist and Visiting Visa",
+  "kind": "visa",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "Under the residence law, a tourist visa allows one entry and a 30-day stay, no work. A visiting visa also allows 30 days. Groups usually need a licensed tourism company.",
+  "eligibility": {
+   "other": [
+    "Passport valid at least 6 months, proof of funds, health clearance, no security or public health obstacle.",
+    "Individual and family tourists do not need a sponsoring company.",
+    "MOFA page is dated 2019 and mentions fees of 30 to 40 USD. Not confirmed as current."
+   ]
+  },
+  "stay": {
+   "maxDays": 30,
+   "renewable": false
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "Iraq Ministry of Justice: Foreigners Residence Law No. 76 of 2017",
+    "url": "https://moj.gov.iq/upload/pdf/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A5%D9%82%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AC%D8%A7%D9%86%D8%A8.pdf"
+   },
+   {
+    "label": "Iraq MOFA: visa types",
+    "url": "https://mofa.gov.iq/?p=554"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "iq-regular-visa",
+  "country": "IQ",
+  "name": "Regular (Normal) Entry Visa",
+  "kind": "visa",
+  "purposes": [
+   "business",
+   "work",
+   "family"
+  ],
+  "summary": "One entry, stay up to 60 days under the 2017 law. Needed as the first step for most work and family stays.",
+  "eligibility": {
+   "other": [
+    "Passport valid at least 6 months, proof of funds, stated purpose, Iraqi address and a guarantor.",
+    "Foreign workers generally need a Ministry of Labour work permit first.",
+    "The 2019 MOFA page says 3 months. The 2017 law says 60 days. Confirm with an Iraqi mission."
+   ]
+  },
+  "stay": {
+   "maxDays": 60
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "Iraq Ministry of Justice: Foreigners Residence Law No. 76 of 2017",
+    "url": "https://moj.gov.iq/upload/pdf/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A5%D9%82%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AC%D8%A7%D9%86%D8%A8.pdf"
+   },
+   {
+    "label": "Iraq MOFA: visa types",
+    "url": "https://mofa.gov.iq/?p=554"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "iq-transit-visa",
+  "country": "IQ",
+  "name": "Transit Visa",
+  "kind": "visa",
+  "purposes": [
+   "transit"
+  ],
+  "summary": "Transit visa allows one entry and up to 7 days. A non-stop transit visa covers crossing Iraq without stopping.",
+  "eligibility": {
+   "other": [
+    "Airside transit rules not confirmed."
+   ]
+  },
+  "stay": {
+   "maxDays": 7
+  },
+  "where": "embassy",
+  "sources": [
+   {
+    "label": "Iraq Ministry of Justice: Foreigners Residence Law No. 76 of 2017",
+    "url": "https://moj.gov.iq/upload/pdf/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A5%D9%82%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AC%D8%A7%D9%86%D8%A8.pdf"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "iq-work-residence",
+  "country": "IQ",
+  "name": "Work Visa and Residence Card",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Foreign workers need a work permit from the Ministry of Labour and Social Affairs, then a visa and a residence card, usually up to one year and renewable. An employer or guarantor is required.",
+  "eligibility": {
+   "jobOffer": true,
+   "other": [
+    "Guarantor ensures the worker leaves when required. Changing employers needs approval of old and new guarantors.",
+    "Exceptions to the work permit exist for diplomatic missions, international organizations and some government contracts.",
+    "Kurdistan Region may run its own entry and residence rules. Not researched."
+   ]
+  },
+  "stay": {
+   "durationMonths": 12,
+   "renewable": true
+  },
+  "rights": {
+   "work": "employer"
+  },
+  "where": "employer",
+  "sources": [
+   {
+    "label": "Iraq Ministry of Justice: Foreigners Residence Law No. 76 of 2017",
+    "url": "https://moj.gov.iq/upload/pdf/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A5%D9%82%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AC%D8%A7%D9%86%D8%A8.pdf"
+   },
+   {
+    "label": "Iraq MOFA: visa types",
+    "url": "https://mofa.gov.iq/?p=554"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "iq-family-study-residence",
+  "country": "IQ",
+  "name": "Family, Study and Marriage Residence",
+  "kind": "temporary_residence",
+  "purposes": [
+   "family",
+   "study"
+  ],
+  "summary": "One-year renewable residence for joining family, studying (including religious seminary), widows or divorcees of Iraqis, and spouses and children of Iraqis who hold foreign passports.",
+  "eligibility": {
+   "other": [
+    "Renewal can be requested 30 days before expiry while the basis continues."
+   ]
+  },
+  "stay": {
+   "durationMonths": 12,
+   "renewable": true
+  },
+  "rights": {
+   "family": true
+  },
+  "where": "in_country",
+  "leadsTo": [
+   {
+    "pathway": "iq-long-term-residence",
+    "afterYears": 15
+   }
+  ],
+  "sources": [
+   {
+    "label": "Iraq Ministry of Justice: Foreigners Residence Law No. 76 of 2017",
+    "url": "https://moj.gov.iq/upload/pdf/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A5%D9%82%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AC%D8%A7%D9%86%D8%A8.pdf"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ },
+ {
+  "id": "iq-long-term-residence",
+  "country": "IQ",
+  "name": "Long-Term Residence (Article 21)",
+  "kind": "permanent_residence",
+  "purposes": [
+   "work",
+   "family",
+   "investment"
+  ],
+  "summary": "Renewable 3-year residence for people born in Iraq and still living there, 15 years of continuous residence, 6 years on a government contract, active investors, and spouses of Iraqis.",
+  "eligibility": {
+   "other": [
+    "Born in Iraq and still residing there, or 15 years of continuous legal residence.",
+    "3 years of residence with a scientific, cultural or artistic contribution.",
+    "6 years or more under a government work contract.",
+    "Investors and businesspeople with active investments, or spouses of Iraqis while the marriage continues.",
+    "Absences up to 6 months a year do not break continuity.",
+    "The law does not use the term permanent residence. Citizenship rules not found on an official page."
+   ]
+  },
+  "stay": {
+   "durationMonths": 36,
+   "renewable": true
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "where": "in_country",
+  "sources": [
+   {
+    "label": "Iraq Ministry of Justice: Foreigners Residence Law No. 76 of 2017",
+    "url": "https://moj.gov.iq/upload/pdf/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A5%D9%82%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AC%D8%A7%D9%86%D8%A8.pdf"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review"
+ }
+]

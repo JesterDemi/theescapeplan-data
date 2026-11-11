@@ -39,7 +39,8 @@
    "other": [
     "Applies to visa-free nationalities. People with a valid Korean visa don't need one.",
     "Embassy pages say exemptions include UN passport holders, ABTC holders, USFK personnel, crew, transfer passengers, and diplomatic or official passports.",
-    "Some pages say age 17 and under and 65 and over are exempt from July 2023. Embassy pages conflict on validity (2 vs 3 years), and temporary country exemptions have changed over time. Confirm the current list on k-eta.go.kr."
+    "Some pages say age 17 and under and 65 and over are exempt from July 2023. Embassy pages conflict on validity (2 vs 3 years), and temporary country exemptions have changed over time. Confirm the current list on k-eta.go.kr.",
+    "The official site lists a notice on extending the K-ETA temporary exemption (posted 2026-03-20). Details were not readable, so check which nationalities are exempt right now."
    ]
   },
   "where": "online",
@@ -48,12 +49,17 @@
     "label": "K-ETA application",
     "amount": 10000,
     "currency": "KRW",
-    "per": "once"
+    "per": "once",
+    "note": "Official site says KRW 10,000, about USD 7 to 8. Apply only on k-eta.go.kr or the K-ETA app, not through agencies."
    }
   ],
-  "processing": "Embassy pages say to apply at least 72 hours before travel. Approval is often quick but can take longer.",
+  "processing": "The official K-ETA site says assessment generally takes within 72 hours.",
   "confidence": "needs_review",
   "sources": [
+   {
+    "label": "K-ETA official site (Ministry of Justice)",
+    "url": "https://www.k-eta.go.kr/portal/newapply/index.do"
+   },
    {
     "label": "Korean Embassy in Ireland, K-ETA notice (MOFA)",
     "url": "https://overseas.mofa.go.kr/ie-en/brd/m_23773/view.do?seq=761699"
@@ -63,7 +69,7 @@
     "url": "https://overseas.mofa.go.kr/us-atlanta-en/brd/m_4849/view.do?seq=8"
    }
   ],
-  "checked": "2026-11-10"
+  "checked": "2026-11-11"
  },
  {
   "id": "kr-visa-on-arrival",
