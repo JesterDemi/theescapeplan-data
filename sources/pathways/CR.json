@@ -68,5 +68,45 @@
    "Pay the USD 100 fee",
    "DGME runs security checks"
   ]
+ },
+ {
+  "id": "cr-tourist-entry",
+  "country": "CR",
+  "name": "Tourist entry (visa-free or visa by country group)",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Costa Rica sorts countries into four groups. The border officer sets your stay. Group one gets up to 180 days, not extendable. Groups two, three and four get up to 30 days, and groups three and four can extend. Some nationalities need a visa first.",
+  "eligibility": {
+   "savings": {
+    "amount": 100,
+    "currency": "USD",
+    "per": "month",
+    "note": "Proof of funds per month or partial month of stay"
+   },
+   "other": [
+    "Passport readable by machine and valid for the period in the rules.",
+    "Return or onward ticket (flight, bus or cruise). Required if you arrive on a one-way ticket, a return more than 90 days out, or leave from a different country.",
+    "Which group your country is in, and who needs a visa, is set by the official immigration lists. Check them before you go."
+   ]
+  },
+  "stay": {
+   "maxDays": 180,
+   "note": "Up to 180 days for group one, up to 30 days for groups two to four. Set by the immigration officer at entry."
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "Costa Rica Tourism Board, entry requirements",
+    "url": "https://www.visitcostarica.com/planning-your-trip/entry-requirements"
+   }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "needs_review"
  }
 ]

@@ -25,7 +25,7 @@
     "url": "https://www.moi.gov.jo"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "on_arrival",
   "fees": [
@@ -35,7 +35,12 @@
     "currency": "JOD",
     "per": "once"
    }
-  ]
+  ],
+  "stay": {
+   "durationMonths": 1,
+   "renewable": true,
+   "note": "Single entry visa is valid 1 month. Extend at a police station (40 JOD for 2 more months) or pay 3 JOD per extra day at the airport."
+  }
  },
  {
   "id": "jo-jordan-pass",
@@ -45,13 +50,12 @@
   "purposes": [
    "tourism"
   ],
-  "summary": "Buy Jordan Pass before you arrive and the single-entry visa fee is waived if you stay at least 2 consecutive nights. Immigration checks when you leave. If you stay less, you pay the fee.",
+  "summary": "Buy Jordan Pass before you arrive and the single-entry visa fee (40 JOD) is waived if you stay at least 2 consecutive nights. Immigration checks when you leave. If you stay less, you pay the fee.",
   "eligibility": {
    "other": [
     "Must be bought before arrival.",
     "Covers single-entry visas only.",
-    "Arab nationalities are not eligible.",
-    "Pass price not confirmed on the page read."
+    "Arab nationalities are not eligible."
    ]
   },
   "sources": [
@@ -60,12 +64,20 @@
     "url": "https://jordanpass.jo/Contents/FAQs.aspx"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "online",
   "stay": {
    "note": "Minimum 2 consecutive nights"
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa fee waived with the pass",
+    "amount": 40,
+    "currency": "JOD",
+    "per": "once"
+   }
+  ]
  },
  {
   "id": "jo-visa-fee-exempt",
@@ -75,7 +87,7 @@
   "purposes": [
    "tourism"
   ],
-  "summary": "Per Jordan Pass, South Africa, Malaysia, Hong Kong, Japan, and Vatican City are exempt from visa fees. The official exemption list was not fully confirmed.",
+  "summary": "Per the Ministry of Tourism, citizens of South Africa, Malaysia, Hong Kong, Japan and the Vatican are exempt from the visa fee.",
   "eligibility": {
    "passports": [
     "ZA",
@@ -91,8 +103,8 @@
     "url": "https://jordanpass.jo/Contents/FAQs.aspx"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review"
+  "checked": "2026-11-11",
+  "confidence": "verified"
  },
  {
   "id": "jo-transit-visa",
