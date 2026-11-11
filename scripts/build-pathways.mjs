@@ -29,7 +29,7 @@ function check(p, cc, ids) {
   if (!Array.isArray(p.purposes) || !p.purposes.length || p.purposes.some((x) => !PURPOSES.has(x))) bad.push('purposes missing or unknown');
   if (!p.summary) bad.push('summary missing');
   if (!Array.isArray(p.sources) || !p.sources.length) bad.push('needs an official source');
-  for (const s of p.sources ?? []) if (!/^https:\/\//.test(s?.url ?? '')) bad.push(`source not https: ${s?.url}`);
+  for (const s of p.sources ?? []) if (!/^https?:\/\/[^/]+\.[^/]+/.test(s?.url ?? '')) bad.push(`source is not a web link: ${s?.url}`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(p.checked ?? '')) bad.push('checked must be YYYY-MM-DD');
   else if (p.checked > today) bad.push('checked is in the future');
   if (!['verified', 'needs_review'].includes(p.confidence)) bad.push('confidence must be verified or needs_review');
