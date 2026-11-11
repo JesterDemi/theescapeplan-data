@@ -1,0 +1,35 @@
+[
+ {
+  "id": "tv-visit-free",
+  "country": "TV",
+  "name": "Short visit and extensions",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "UK government advice says British citizens can visit visa-free for up to one month. Longer stays, work or study need an extension from the Department of Immigration in Funafuti. Other nationalities not confirmed.",
+  "eligibility": {
+   "passports": [
+    "GB"
+   ],
+   "other": [
+    "Passport valid 6+ months after arrival",
+    "No Tuvalu government page could be reached, confirm with Tuvalu immigration"
+   ]
+  },
+  "sources": [
+   {
+    "label": "UK FCDO Tuvalu entry requirements (government page, not Tuvalu's)",
+    "url": "https://gov.uk/foreign-travel-advice/tuvalu/entry-requirements"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "stay": {
+   "durationMonths": 1,
+   "renewable": true,
+   "note": "Extension from Department of Immigration, Funafuti"
+  },
+  "where": "on_arrival"
+ }
+]

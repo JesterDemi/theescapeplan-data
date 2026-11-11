@@ -1,0 +1,196 @@
+[
+ {
+  "id": "ws-visitor-permit",
+  "name": "Visitor Permit",
+  "kind": "visa_on_arrival",
+  "purposes": [
+   "tourism"
+  ],
+  "summary": "Visitor permits are issued on arrival to many nationalities. The embassy page confirms 90 days for Japanese citizens, while Samoa Immigration says under 60 days. Check your nationality. Need passport valid 6 months, onward ticket, funds and an address. No work.",
+  "eligibility": {
+   "other": [
+    "Passport valid 6 months beyond stay",
+    "Return or onward ticket",
+    "Sufficient funds and a confirmed address"
+   ]
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival",
+  "sources": [
+   {
+    "label": "Samoa Embassy Japan: visa information (official embassy)",
+    "url": "https://www.samoaembassyjapan.jp/?p=57"
+   },
+   {
+    "label": "Samoa Immigration",
+    "url": "https://www.samoaimmigration.gov.ws"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "country": "WS"
+ },
+ {
+  "id": "ws-business-visitor",
+  "name": "Business Visitor Permit",
+  "kind": "visa",
+  "purposes": [
+   "business"
+  ],
+  "summary": "For people paid offshore on short trips, like meetings with a Samoan company or conferences.",
+  "rights": {
+   "work": "none"
+  },
+  "sources": [
+   {
+    "label": "Samoa Embassy Japan: visa information (official embassy)",
+    "url": "https://www.samoaembassyjapan.jp/?p=57"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "eligibility": {},
+  "country": "WS"
+ },
+ {
+  "id": "ws-temp-employment",
+  "name": "Temporary Residence Permit: Employment",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Employer-sponsored. Needs form MPMC100, sponsorship form MPMC101, medical and police reports and qualifications. The permit covers only the named employer. Validity and fees aren't stated.",
+  "eligibility": {
+   "jobOffer": true
+  },
+  "rights": {
+   "work": "employer"
+  },
+  "where": "employer",
+  "sources": [
+   {
+    "label": "Samoa Embassy Japan: visa information (official embassy)",
+    "url": "https://www.samoaembassyjapan.jp/?p=57"
+   },
+   {
+    "label": "Samoa Immigration",
+    "url": "https://www.samoaimmigration.gov.ws"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "country": "WS"
+ },
+ {
+  "id": "ws-temp-business-investment",
+  "name": "Temporary Residence Permit: Business and Investment",
+  "kind": "temporary_residence",
+  "purposes": [
+   "investment",
+   "entrepreneur"
+  ],
+  "summary": "Needs an Investment Certificate, a Business License and company registration, plus MPMC100 and medical and police reports.",
+  "rights": {
+   "work": "self"
+  },
+  "sources": [
+   {
+    "label": "Samoa Embassy Japan: visa information (official embassy)",
+    "url": "https://www.samoaembassyjapan.jp/?p=57"
+   },
+   {
+    "label": "Samoa Immigration",
+    "url": "https://www.samoaimmigration.gov.ws"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "eligibility": {},
+  "country": "WS"
+ },
+ {
+  "id": "ws-temp-study",
+  "name": "Temporary Residence Permit: Study",
+  "kind": "temporary_residence",
+  "purposes": [
+   "study"
+  ],
+  "summary": "Needs an enrollment letter, proof of funds, and a scholarship letter or proof of accommodation. Part-time work may be authorized.",
+  "sources": [
+   {
+    "label": "Samoa Embassy Japan: visa information (official embassy)",
+    "url": "https://www.samoaembassyjapan.jp/?p=57"
+   },
+   {
+    "label": "Samoa Immigration",
+    "url": "https://www.samoaimmigration.gov.ws"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "eligibility": {},
+  "country": "WS"
+ },
+ {
+  "id": "ws-temp-research",
+  "name": "Temporary Residence Permit: Academic Research",
+  "kind": "temporary_residence",
+  "purposes": [
+   "study"
+  ],
+  "summary": "Needs letters from sponsoring and Samoan institutions, proof of funds and onward travel. Must be approved before you travel. No work.",
+  "rights": {
+   "work": "none"
+  },
+  "sources": [
+   {
+    "label": "Samoa Embassy Japan: visa information (official embassy)",
+    "url": "https://www.samoaembassyjapan.jp/?p=57"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "eligibility": {},
+  "country": "WS"
+ },
+ {
+  "id": "ws-temp-family",
+  "name": "Temporary Residence Permit: Family Support or Reunion",
+  "kind": "temporary_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "For family support or reunion. Needs host letter, proof of funds, and medical and police reports.",
+  "sources": [
+   {
+    "label": "Samoa Embassy Japan: visa information (official embassy)",
+    "url": "https://www.samoaembassyjapan.jp/?p=57"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "eligibility": {},
+  "country": "WS"
+ },
+ {
+  "id": "ws-citizenship",
+  "name": "Citizenship Applications",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "Samoa Immigration processes citizenship applications from foreign citizens. Residence years, language and dual citizenship rules weren't available on the pages I could read.",
+  "sources": [
+   {
+    "label": "Samoa Immigration",
+    "url": "https://www.samoaimmigration.gov.ws"
+   }
+  ],
+  "confidence": "needs_review",
+  "checked": "2026-11-10",
+  "eligibility": {},
+  "country": "WS"
+ }
+]

@@ -1,0 +1,55 @@
+[
+ {
+  "id": "sn-visa-free-90",
+  "country": "SN",
+  "name": "Visa-Free Entry (under 3 months)",
+  "kind": "visa_free",
+  "purposes": ["tourism", "business"],
+  "summary": "Citizens of 20 African countries, 27 European countries (including France, Germany, Spain, Italy and the UK) and 12 others (Brazil, Canada, China, South Korea, Djibouti, UAE, US, Mauritius, India, Japan, Malaysia, Singapore) can stay under 3 months without a visa. Anyone not on the list needs a visa.",
+  "eligibility": {
+    "passports": ["BJ","BF","CV","CG","CI","GM","GH","GW","GN","KE","LR","ML","MA","MR","NE","NG","CF","SL","TG","TN","FR","DE","AT","BE","BG","CY","HR","DK","ES","EE","FI","GR","HU","IT","LV","LT","LU","MT","NL","PL","PT","CZ","RO","GB","SK","SI","SE","BR","CA","CN","KR","DJ","AE","US","MU","IN","JP","MY","SG"],
+    "other": [
+      "Passport or laissez-passer from your country, valid at least 6 months",
+      "Refugee travel document holders need a visa",
+      "The ministry page dates this rule from 1 May 2015"
+    ]
+  },
+  "stay": { "maxDays": 90, "note": "The ministry says a stay of less than 3 months." },
+  "where": "on_arrival",
+  "sources": [
+    { "label": "Senegal Foreign Ministry: Visit Senegal", "url": "https://www.diplomatie.gouv.sn/visiter-le-senegal" },
+    { "label": "Senegal Foreign Ministry: visa application", "url": "https://diplomatie.gouv.sn/index.php/demande-de-visa" }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "verified"
+ },
+ {
+  "id": "sn-visa",
+  "country": "SN",
+  "name": "Senegal Entry Visa (consulate)",
+  "kind": "visa",
+  "purposes": ["tourism", "business", "work", "study", "family"],
+  "summary": "If your country isn't on the visa-free list, you get a visa at a Senegalese embassy or consulate. Processing times vary, so ask before buying a ticket. Senegal sorts countries into three groups: visa-free, visa without Interior Ministry check, and visa with a required Interior Ministry check.",
+  "eligibility": {
+    "other": [
+      "Passport valid at least 6 months, plus a copy of the photo page",
+      "Other documents may be requested depending on your case",
+      "Fees and visa categories (tourist, work, study) are not listed on the official pages we read. Ask the consulate."
+    ]
+  },
+  "where": "embassy",
+  "steps": [
+    "Download and fill in the visa form",
+    "Go to the consulate with your passport and a copy of the photo page",
+    "Bring any other documents your case needs",
+    "Collect the visa at the consulate"
+  ],
+  "processing": "Varies by consulate. Ask the consulate before buying a ticket.",
+  "sources": [
+    { "label": "Senegal Foreign Ministry: visa application", "url": "https://diplomatie.gouv.sn/index.php/demande-de-visa" },
+    { "label": "Consulate General of Senegal, Paris: visa rules", "url": "https://consulsen-paris.gouv.sn/demande-de-visa/" }
+  ],
+  "checked": "2026-11-11",
+  "confidence": "needs_review"
+ }
+]

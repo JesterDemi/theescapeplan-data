@@ -1,0 +1,462 @@
+[
+ {
+  "id": "si-visa-free-schengen",
+  "country": "SI",
+  "name": "Short stay without a visa (Schengen rules)",
+  "kind": "visa_free",
+  "purposes": [
+   "tourism",
+   "business",
+   "transit"
+  ],
+  "summary": "EU citizens need no visa. Some other nationalities are visa-exempt under the EU list, and others need a visa before entry. Stays are limited to 90 days in any 180.",
+  "eligibility": {
+   "other": [
+    "The exact visa-exempt country list and the 90 day rule for exempt nationals were not confirmed on the page. Check the EU list linked from gov.si."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si Entry and residence",
+    "url": "https://www.gov.si/en/topics/entry-and-residence/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "stay": {
+   "maxDays": 90,
+   "perDays": 180
+  },
+  "rights": {
+   "work": "none"
+  },
+  "where": "on_arrival"
+ },
+ {
+  "id": "si-eu-free-movement",
+  "country": "SI",
+  "name": "EU citizen right to live in Slovenia",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work",
+   "study",
+   "family",
+   "retirement"
+  ],
+  "summary": "EU citizens enter with an ID card or passport and need no visa or residence permit. For longer stays they register for a residence registration certificate.",
+  "eligibility": {
+   "passports": [
+    "bloc:EU"
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si Entry and residence",
+    "url": "https://www.gov.si/en/topics/entry-and-residence/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "where": "in_country"
+ },
+ {
+  "id": "si-short-stay-visa",
+  "country": "SI",
+  "name": "Short stay visa (type C)",
+  "kind": "visa",
+  "purposes": [
+   "tourism",
+   "business"
+  ],
+  "summary": "Third-country nationals who are not visa-exempt need a visa or residence permit before entering Slovenia for tourism, business or personal visits. Holders of a Schengen visa or residence permit from another Schengen country can enter within the 90 in 180 day limit.",
+  "eligibility": {
+   "other": [
+    "Fees, documents and processing times were not read. Check a Slovenian embassy."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si Entry and residence",
+    "url": "https://www.gov.si/en/topics/entry-and-residence/"
+   },
+   {
+    "label": "gov.si Embassy London visa information",
+    "url": "https://www.gov.si/en/representations/embassy-london/visa-information-of-the-embassy-london/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "stay": {
+   "maxDays": 90,
+   "perDays": 180
+  },
+  "where": "embassy"
+ },
+ {
+  "id": "si-digital-nomad",
+  "country": "SI",
+  "name": "Temporary residence permit for digital nomads",
+  "kind": "temporary_residence",
+  "purposes": [
+   "remote_work"
+  ],
+  "summary": "A one year permit for non-EU remote workers employed by or contracting with a business outside Slovenia, or self-employed abroad. Available since 21 November 2025. It can't be extended, but you can reapply six months after it expires.",
+  "eligibility": {
+   "excludePassports": [
+    "bloc:EU",
+    "bloc:EEA"
+   ],
+   "other": [
+    "Work remotely for a business based outside Slovenia, or be self-employed abroad.",
+    "You may not work on the Slovenian labor market.",
+    "Monthly funds of at least twice the average monthly net salary in Slovenia (euro figure not on the page). Any lawful income source counts."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si digital nomad permit",
+    "url": "https://www.gov.si/en/news/2025-11-21-temporary-residence-permit-for-digital-nomads/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "stay": {
+   "durationMonths": 12,
+   "renewable": false,
+   "note": "Reapply six months after expiry. You can apply for another permit type at any time while valid."
+  },
+  "rights": {
+   "work": "none",
+   "family": true
+  },
+  "where": "embassy",
+  "steps": [
+   "Apply at a Slovenian embassy or consulate, or at an administrative unit if you are already legally in Slovenia.",
+   "Prove income of at least twice the average monthly net salary."
+  ]
+ },
+ {
+  "id": "si-single-permit",
+  "country": "SI",
+  "name": "Single permit for residence and work",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Combined residence and work permit tied to an employer. Valid for the contract length, up to two years, with extensions up to three years in total.",
+  "eligibility": {
+   "jobOffer": true,
+   "education": "Education or qualifications matching the job",
+   "other": [
+    "Valid passport, health insurance, sufficient means and a clean criminal record certificate.",
+    "Employment Service of Slovenia consent where required.",
+    "Listed shortage occupations get a fast-track procedure."
+   ]
+  },
+  "sources": [
+   {
+    "label": "Infotujci single permit",
+    "url": "https://infotujci.si/en/vsebina/non-eu-citizens/temporary-residence-permit/based-on-employment/enotno-dovoljenje-za-prebivanje-in-delo-drzavljanov-tretjih-drzav/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "stay": {
+   "durationMonths": 24,
+   "renewable": true,
+   "note": "Extensions up to three years in total."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "si-permanent-residence",
+    "afterYears": 5
+   }
+  ],
+  "where": "embassy",
+  "steps": [
+   "You or your employer apply at a Slovenian mission abroad or an administrative unit if lawfully in Slovenia.",
+   "Give fingerprints.",
+   "Employment Service consent is obtained and a decision is issued.",
+   "Collect the card in person.",
+   "Employer registers you for insurance within 15 days of collection.",
+   "Register your address at the administrative unit."
+  ],
+  "documents": [
+   "Application form",
+   "Photo",
+   "Valid passport",
+   "Health insurance",
+   "Proof of means",
+   "Criminal record certificate",
+   "Signed employment contract",
+   "Proof of education or qualifications",
+   "Employer statement on accommodation",
+   "Employer statement on business-reason dismissals in the last six months"
+  ]
+ },
+ {
+  "id": "si-eu-blue-card",
+  "country": "SI",
+  "name": "EU Blue Card",
+  "kind": "temporary_residence",
+  "purposes": [
+   "work"
+  ],
+  "summary": "Residence and work permit for highly qualified employees. Issued for the contract length plus three months, up to two years, and extendable up to three years.",
+  "eligibility": {
+   "jobOffer": true,
+   "other": [
+    "Salary and education thresholds were not on the page. Check infotujci.si."
+   ]
+  },
+  "sources": [
+   {
+    "label": "Infotujci EU Blue Card",
+    "url": "https://infotujci.si/en/third-country-nationals/purposes-of-residence/purpose-of-residence-eu-blue-card"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "stay": {
+   "durationMonths": 24,
+   "renewable": true,
+   "note": "Contract length plus three months, max two years, extendable up to three."
+  },
+  "rights": {
+   "work": "employer",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "si-permanent-residence",
+    "afterYears": 5
+   }
+  ],
+  "where": "embassy"
+ },
+ {
+  "id": "si-family-eu-citizen",
+  "country": "SI",
+  "name": "Residence for family of EU or Slovenian citizens",
+  "kind": "temporary_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "Non-EU spouses, registered partners, children up to 21 and some dependants of EU or Slovenian citizens can stay 90 days without a permit. For longer, apply for a residence permit before the 90 days end.",
+  "eligibility": {
+   "other": [
+    "Covers spouse or partner, children up to 21 and certain dependants. Fees and documents not confirmed."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si Entry and residence",
+    "url": "https://www.gov.si/en/topics/entry-and-residence/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "stay": {
+   "maxDays": 90
+  },
+  "rights": {
+   "family": true
+  },
+  "where": "in_country"
+ },
+ {
+  "id": "si-family-nomad",
+  "country": "SI",
+  "name": "Family reunification with a digital nomad",
+  "kind": "temporary_residence",
+  "purposes": [
+   "family"
+  ],
+  "summary": "Family of a digital nomad permit holder can join right away. There is no waiting period tied to how long the holder has been in Slovenia.",
+  "eligibility": {
+   "other": [
+    "Sponsor must hold the Slovenian digital nomad permit."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si digital nomad permit",
+    "url": "https://www.gov.si/en/news/2025-11-21-temporary-residence-permit-for-digital-nomads/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "verified",
+  "rights": {
+   "family": true
+  },
+  "where": "embassy"
+ },
+ {
+  "id": "si-study",
+  "country": "SI",
+  "name": "Residence for study",
+  "kind": "temporary_residence",
+  "purposes": [
+   "study"
+  ],
+  "summary": "Third-country nationals who study in Slovenia need a visa or residence permit before entering. Study time counts for half toward permanent residence.",
+  "eligibility": {
+   "other": [
+    "Admission, funds and fee details were not read."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si Entry and residence",
+    "url": "https://www.gov.si/en/topics/entry-and-residence/"
+   },
+   {
+    "label": "Infotujci permanent residence conditions",
+    "url": "https://infotujci.si/en/terms-and-conditions-for-issuing-permanent-residence-permit"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "where": "embassy",
+  "leadsTo": [
+   {
+    "pathway": "si-permanent-residence",
+    "afterYears": 5
+   }
+  ]
+ },
+ {
+  "id": "si-permanent-residence",
+  "country": "SI",
+  "name": "Permanent residence permit",
+  "kind": "permanent_residence",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "Standard route is five years of continuous legal residence on a temporary permit with regular sufficient income. Blue Card holders need five years in the EU, the last two in Slovenia. Family of permanent residents need two years.",
+  "eligibility": {
+   "other": [
+    "Valid travel document and regular sufficient income.",
+    "Seasonal work, posted work, intra-company transfers and temporary protection do not count toward the period.",
+    "Language requirement was not on the page. Check infotujci.si."
+   ]
+  },
+  "sources": [
+   {
+    "label": "Infotujci permanent residence conditions",
+    "url": "https://infotujci.si/en/terms-and-conditions-for-issuing-permanent-residence-permit"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "stay": {
+   "renewable": true
+  },
+  "rights": {
+   "work": "any",
+   "family": true
+  },
+  "leadsTo": [
+   {
+    "pathway": "si-citizenship-naturalization",
+    "afterYears": 10
+   }
+  ],
+  "where": "in_country"
+ },
+ {
+  "id": "si-citizenship-naturalization",
+  "country": "SI",
+  "name": "Citizenship by naturalization",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "General rule is 10 years in Slovenia, including 5 continuous years right before applying. Shorter periods apply to refugees, graduates of Slovenian higher education and some others.",
+  "eligibility": {
+   "language": "Slovenian language exam (details not on the page)",
+   "other": [
+    "Stateless people and refugees: 5 continuous years.",
+    "Higher education in Slovenia: 7 years including 1 continuous year."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si Citizenship",
+    "url": "https://www.gov.si/en/topics/citizenship/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "citizenship": {
+   "dualAllowed": "conditional",
+   "residenceYears": 10,
+   "route": "naturalization",
+   "note": "Slovenia doesn't automatically revoke citizenship when someone gains another, but proof of release from the old citizenship is generally required. EU citizens with reciprocity, stateless people and minors are exempt."
+  }
+ },
+ {
+  "id": "si-citizenship-marriage",
+  "country": "SI",
+  "name": "Citizenship by marriage",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship",
+   "family"
+  ],
+  "summary": "Spouse of a Slovenian citizen: married at least 3 years and at least 1 continuous year of residence in Slovenia before applying.",
+  "eligibility": {
+   "language": "Slovenian language exam (details not on the page)"
+  },
+  "sources": [
+   {
+    "label": "gov.si Citizenship",
+    "url": "https://www.gov.si/en/topics/citizenship/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "citizenship": {
+   "dualAllowed": "conditional",
+   "residenceYears": 1,
+   "route": "marriage"
+  }
+ },
+ {
+  "id": "si-citizenship-descent",
+  "country": "SI",
+  "name": "Citizenship for Slovenian descendants",
+  "kind": "citizenship",
+  "purposes": [
+   "citizenship"
+  ],
+  "summary": "Slovenian expatriates and descendants up to the fourth degree in a direct line need 1 continuous year of residence. Those up to the second degree who meet extra conditions may skip the residence requirement.",
+  "eligibility": {
+   "other": [
+    "Second degree route needs several years of personal ties to Slovenia and at least five years of involvement in Slovenian organizations abroad."
+   ]
+  },
+  "sources": [
+   {
+    "label": "gov.si Citizenship",
+    "url": "https://www.gov.si/en/topics/citizenship/"
+   }
+  ],
+  "checked": "2026-11-10",
+  "confidence": "needs_review",
+  "citizenship": {
+   "dualAllowed": "conditional",
+   "residenceYears": 1,
+   "route": "descent",
+   "note": "Up to the fourth degree in a direct line."
+  }
+ }
+]

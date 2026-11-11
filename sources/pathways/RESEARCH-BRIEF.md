@@ -28,3 +28,11 @@ A JSON array of Pathway records matching `shared/pathways.ts` (read it first). W
 
 ## When done
 Reply with: number of records, how many verified vs needs_review, and anything you couldn't confirm. Keep it under 150 words.
+
+## Browser pass (for sites that block bots)
+- Use the built-in browser tools (load with ToolSearch query "mcp__remote-devices__Claude_Browser__", max_results 20). Open your OWN tab with Claude_Browser__preview_start(url) and pass that tabId to every call. Never touch other tabs. Close your tab with tabs_close when done.
+- Read pages with get_page_text (not screenshots). Navigate within your tab with navigate(tabId, url).
+- Never sign in, submit forms, accept payments or click "apply". Reading only. Decline cookie banners if one blocks the text.
+- Improve the existing <CC>.json: upgrade records to verified when the official page confirms every number, fix wrong facts, add missing main routes. Never downgrade a verified record without a reason from an official page.
+- If a site asks for access approval and it is not granted, skip that site.
+- Other agents may be using the browser at the same time. ALWAYS pass your own tabId, and before using any page text check that the URL shown in the get_page_text result is on the domain you asked for. If it is not, discard it and re-open your own tab.

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "zw-visa-free-voa",
+    "country": "ZW",
+    "name": "Visa-free entry and visa on arrival",
+    "kind": "visa_on_arrival",
+    "purposes": ["tourism", "business", "transit"],
+    "summary": "Some nationalities (for example South Africa, Kenya, Botswana) enter without a visa. Others, like the UK, US, Canada, China and India, pay for a visa on arrival. Nationals of countries such as Nigeria, Pakistan, the Philippines and Thailand must get a visa before travel.",
+    "eligibility": { "other": ["Which category you fall in depends on your passport. Check the eVisa site.", "Maximum stay per visit was not stated on the page."] },
+    "where": "on_arrival",
+    "fees": [{ "label": "Ordinary single-entry visa (online or at port of entry)", "amount": 30, "currency": "USD", "per": "once" }],
+    "sources": [
+      { "label": "Zimbabwe eVisa: FAQ", "url": "https://www.evisa.gov.zw/faq.html" },
+      { "label": "Zimbabwe Immigration: Fees", "url": "https://www.zimimmigration.gov.zw/?page_id=6958" }
+    ],
+    "checked": "2026-11-11",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "zw-evisa",
+    "country": "ZW",
+    "name": "eVisa (single, double, multiple entry, KAZA UNIVISA)",
+    "kind": "evisa",
+    "purposes": ["tourism", "business"],
+    "summary": "Apply online for a single entry (valid 3 months), double entry (6 months), multiple entry (6 months) or KAZA UNIVISA (3 months, covers Zambia and Zimbabwe). Processing is about 7 working days, so apply at least 3 weeks before you go.",
+    "eligibility": { "other": ["Multiple entry visa on arrival is only for UK, US and Canadian citizens.", "Fees are non-refundable, even if the application is denied.", "Fee schedule lists UK single entry USD 55, UK double entry USD 70, Chinese single entry USD 60, multiple entry USD 55, emergency USD 100. The eVisa site says the actual cost appears in your approval response, so confirm."] },
+    "where": "online",
+    "fees": [
+      { "label": "Ordinary single entry", "amount": 30, "currency": "USD", "per": "once" },
+      { "label": "Multiple entry", "amount": 55, "currency": "USD", "per": "once" }
+    ],
+    "processing": "About 7 working days on average, per the eVisa FAQ.",
+    "sources": [
+      { "label": "Zimbabwe eVisa: FAQ", "url": "https://www.evisa.gov.zw/faq.html" },
+      { "label": "Zimbabwe Immigration: Fees", "url": "https://www.zimimmigration.gov.zw/?page_id=6958" }
+    ],
+    "checked": "2026-11-11",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "zw-business-visa",
+    "country": "ZW",
+    "name": "Business visa",
+    "kind": "visa",
+    "purposes": ["business"],
+    "summary": "Visa for business trips. You need an invitation letter or business profile and a letter from your company.",
+    "eligibility": { "other": ["Passport photo, passport bio-data page, proof of residence, invitation letter or business profile, business letter from the sending company, previous Zimbabwe visa if you have one.", "Allowed stay and fee were not stated on the page."] },
+    "rights": { "work": "none" },
+    "where": "online",
+    "sources": [{ "label": "Zimbabwe Immigration: Business visa requirements", "url": "https://www.zimimmigration.gov.zw/?p=7112" }],
+    "checked": "2026-11-11",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "zw-temporary-employment-permit",
+    "country": "ZW",
+    "name": "Temporary Employment Permit",
+    "kind": "temporary_residence",
+    "purposes": ["work"],
+    "summary": "Work permit for foreigners employed in Zimbabwe. Employers must show they advertised the job and name an understudy for the role.",
+    "eligibility": {
+      "jobOffer": true,
+      "education": "Notarized academic and professional certificates",
+      "other": ["Employment contract, CV, radiological certificate, police clearance dated within 6 months.", "Newspaper advertisement and CVs of shortlisted candidates, plus an understudy's CV and qualifications.", "Company documents: certificate of incorporation, ZIDA licence, ZIMRA tax clearance.", "Permit length was not stated on the page."]
+    },
+    "rights": { "work": "employer", "family": true },
+    "where": "in_country",
+    "fees": [
+      { "label": "Application and extension", "amount": 500, "currency": "USD", "per": "once" },
+      { "label": "Per dependent", "amount": 300, "currency": "USD", "per": "once" }
+    ],
+    "sources": [
+      { "label": "Zimbabwe Immigration: Temporary employment permit requirements", "url": "https://www.zimimmigration.gov.zw/?p=7338" },
+      { "label": "Zimbabwe Immigration: Fees", "url": "https://www.zimimmigration.gov.zw/?page_id=6958" }
+    ],
+    "checked": "2026-11-11",
+    "confidence": "verified"
+  },
+  {
+    "id": "zw-investor-permit",
+    "country": "ZW",
+    "name": "Investor Residence Permit",
+    "kind": "temporary_residence",
+    "purposes": ["investment", "entrepreneur"],
+    "summary": "Residence permit for investors. You submit a project proposal, bank history and proof of funds available for transfer.",
+    "eligibility": { "other": ["Project proposal, police clearance within 6 months, radiological certificate, banking history, proof of funds, list of employees.", "Minimum investment amount and permit length are not on the official page. Ask the Department of Immigration."] },
+    "rights": { "work": "self", "family": true },
+    "where": "in_country",
+    "fees": [
+      { "label": "Application", "amount": 500, "currency": "USD", "per": "once" },
+      { "label": "Per dependent", "amount": 300, "currency": "USD", "per": "once" }
+    ],
+    "sources": [{ "label": "Zimbabwe Immigration: Investor residence permit requirements", "url": "https://www.zimimmigration.gov.zw/?p=7282" }],
+    "checked": "2026-11-11",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "zw-spouse-permit",
+    "country": "ZW",
+    "name": "Spouse Residence Permit",
+    "kind": "temporary_residence",
+    "purposes": ["family"],
+    "summary": "Residence permit for spouses. The Department lists the permit and its fee, but the requirements page was not readable.",
+    "eligibility": { "other": ["Requirements not confirmed. Ask the Department of Immigration."] },
+    "rights": { "family": true },
+    "where": "in_country",
+    "fees": [{ "label": "Spouse residence permit", "amount": 300, "currency": "USD", "per": "once" }],
+    "sources": [
+      { "label": "Zimbabwe Immigration: Permits", "url": "https://www.zimimmigration.gov.zw/?page_id=6980" },
+      { "label": "Zimbabwe Immigration: Fees", "url": "https://www.zimimmigration.gov.zw/?page_id=6958" }
+    ],
+    "checked": "2026-11-11",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "zw-student-permit",
+    "country": "ZW",
+    "name": "Student and Scholar's Permit",
+    "kind": "temporary_residence",
+    "purposes": ["study"],
+    "summary": "Permits for students and scholars. A scholar's permit needs an acceptance letter from the school and a clearance letter from the Ministry of Education.",
+    "eligibility": { "other": ["Scholar: application form I.F.5, letter to the Chief Director of Immigration, school acceptance letter, Ministry of Education clearance, certified passport page and two photos.", "Student permit requirements were not confirmed."] },
+    "where": "in_country",
+    "fees": [
+      { "label": "Student's permit", "amount": 200, "currency": "USD", "per": "once" },
+      { "label": "Scholar's permit", "amount": 100, "currency": "USD", "per": "once" }
+    ],
+    "sources": [
+      { "label": "Zimbabwe Immigration: Permits", "url": "https://www.zimimmigration.gov.zw/?page_id=6980" },
+      { "label": "Zimbabwe Immigration: Fees", "url": "https://www.zimimmigration.gov.zw/?page_id=6958" }
+    ],
+    "checked": "2026-11-11",
+    "confidence": "needs_review"
+  },
+  {
+    "id": "zw-permanent-residence",
+    "country": "ZW",
+    "name": "Permanent Residence Permit",
+    "kind": "permanent_residence",
+    "purposes": ["work", "investment"],
+    "summary": "The Department lists a permanent residence permit for investors and non-investors. Eligibility rules and years required were not on a page we could read.",
+    "eligibility": { "other": ["Requirements and years of residence not confirmed. Ask the Department of Immigration."] },
+    "where": "in_country",
+    "fees": [
+      { "label": "Non-investor", "amount": 500, "currency": "USD", "per": "once" },
+      { "label": "Investor", "amount": 1000, "currency": "USD", "per": "once" }
+    ],
+    "sources": [{ "label": "Zimbabwe Immigration: Fees", "url": "https://www.zimimmigration.gov.zw/?page_id=6958" }],
+    "checked": "2026-11-11",
+    "confidence": "needs_review"
+  }
+]
