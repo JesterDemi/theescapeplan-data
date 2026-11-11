@@ -41,8 +41,9 @@ function check(p, cc, ids) {
 
 mkdirSync(OUT, { recursive: true });
 const index = { generatedAt: new Date().toISOString(), countries: {} };
+const finder = []; // one compact row per route, so the app's "What can I do?" finder works without downloading every country
 const problems = [];
-const wanted = new Set(['index.json', 'problems.json']);
+const wanted = new Set(['index.json', 'problems.json', 'finder.json']);
 
 for (const file of (existsSync(SRC) ? readdirSync(SRC) : []).filter((f) => /^[A-Z]{2}\.json$/.test(f)).sort()) {
   const cc = file.slice(0, 2);
@@ -65,6 +66,16 @@ for (const file of (existsSync(SRC) ? readdirSync(SRC) : []).filter((f) => /^[A-
   const kept = new Set(good.map((p) => p.id));
   for (const p of good) if (p.leadsTo) p.leadsTo = p.leadsTo.filter((l) => kept.has(l.pathway));
   if (!good.length) continue;
+  for (const p of good) {
+    const e = p.eligibility ?? {};
+    const row = { c: cc, id: p.id, n: p.name, k: p.kind, p: p.purposes, v: p.confidence === 'verified' ? 1 : 0 };
+    const pp = (e.passports ?? []).filter((x) => /^[A-Z]{2}$/.test(x));
+    if (pp.length) row.pp = pp;
+    if (e.excludePassports?.length) row.ex = e.excludePassports;
+    if (row.v && e.income) row.inc = e.income;
+    if (row.v && e.investment) row.inv = e.investment;
+    finder.push(row);
+  }
   const verified = good.filter((p) => p.confidence === 'verified').length;
   const oldest = good.map((p) => p.checked).sort()[0];
   index.countries[cc] = { routes: good.length, verified, checked: oldest };
@@ -78,6 +89,7 @@ for (const file of (existsSync(SRC) ? readdirSync(SRC) : []).filter((f) => /^[A-
 
 for (const f of readdirSync(OUT)) if (!wanted.has(f)) unlinkSync(join(OUT, f));
 writeFileSync(join(OUT, 'index.json'), JSON.stringify(index));
+writeFileSync(join(OUT, 'finder.json'), JSON.stringify({ generatedAt: index.generatedAt, routes: finder }));
 writeFileSync(join(OUT, 'problems.json'), JSON.stringify(problems, null, 1) + '\n');
 
 const n = Object.keys(index.countries).length;
