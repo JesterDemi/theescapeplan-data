@@ -8,7 +8,7 @@
    "tourism",
    "business"
   ],
-  "summary": "Brazil brought back a visa requirement for US, Canadian and Australian citizens in 2025. Visits now need an e-Visa applied for online. Other details were not confirmed from an official page.",
+  "summary": "Since April 10, 2025, US, Canadian and Australian citizens need a visa to visit Brazil. The e-Visa is applied for 100% online through the VFS portal, for tourism, business, transit, or sports and artistic activities, up to 90 days.",
   "eligibility": {
    "passports": [
     "US",
@@ -16,18 +16,40 @@
     "AU"
    ],
    "other": [
-    "Official page was blocked to our reader. Stay length, validity, fee and date not confirmed. Check the MRE e-Visa page before publishing any numbers."
+    "Only for tourism, business, transit, and sports or artistic activities.",
+    "Holders of a valid traditional visa do not need an e-visa.",
+    "Other nationalities cannot use the e-Visa and apply for a regular visit visa (VIVIS)."
    ]
   },
   "where": "online",
   "sources": [
    {
-    "label": "Brazilian Consulate in New York: e-Visa page (could not be opened, blocked)",
+    "label": "Brazilian Consulate in New York: e-Visa page",
     "url": "https://www.gov.br/mre/pt-br/consulado-nova-york/servicos-consulares/visto-visa-2/eVisa"
+   },
+   {
+    "label": "Brazilian Consulate in New York: visa fees",
+    "url": "https://www.gov.br/mre/pt-br/consulado-nova-york/servicos-consulares/visto-visa-2/visa-fees-taxas-do-visto"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review"
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "stay": {
+   "maxDays": 90
+  },
+  "fees": [
+   {
+    "label": "e-Visa fee",
+    "amount": 80,
+    "currency": "USD",
+    "per": "once"
+   }
+  ],
+  "steps": [
+   "Apply online on the VFS e-Visa portal",
+   "Upload documents and pay the fee",
+   "Receive the e-Visa by email"
+  ]
  },
  {
   "id": "br-digital-nomad-vitem-xiv",
@@ -52,9 +74,10 @@
     "note": "Bank funds, as an alternative to the income proof."
    },
    "other": [
-    "Must work remotely for a foreign employer or foreign clients.",
+    "Must work remotely for a foreign employer or foreign clients. Not available to business owners.",
     "Valid health insurance in Brazil is required for the consular visa application.",
-    "Criminal record certificate required."
+    "Criminal record certificate required (FBI check for US applicants).",
+    "Signed employer statement that the work can be done remotely, plus the applicant's own statement."
    ]
   },
   "stay": {
@@ -81,6 +104,10 @@
   ],
   "sources": [
    {
+    "label": "Brazilian Consulate in New York: digital nomad visa",
+    "url": "https://www.gov.br/mre/pt-br/consulado-nova-york/servicos-consulares/visto-visa-2/VITEM/nomad_XIV"
+   },
+   {
     "label": "CNIg/MJSP Resolution 45/2021 (digital nomads)",
     "url": "https://portaldeimigracao.mj.gov.br/images/resolucoes_normativas/RESOLU%C3%87%C3%83O_CNIG_MJSP_N%C2%BA_45_DE_9_DE_SETEMBRO_DE_2021.pdf"
    },
@@ -89,8 +116,16 @@
     "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/migracoes/portal-de-imigracao-laboral/autorizacao-de-residencia-laboral-1/normas-de-imigracao-laboral/resolucoes-normativas"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "verified"
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "fees": [
+   {
+    "label": "Consular fee for US passport holders",
+    "amount": 290,
+    "currency": "USD",
+    "per": "once"
+   }
+  ]
  },
  {
   "id": "br-retiree-residence",
@@ -100,20 +135,47 @@
   "purposes": [
    "retirement"
   ],
-  "summary": "Brazil has a visa and residence route based on retirement or a survivor pension (CNIg Resolution 40 of 2019). Income minimums and terms were not confirmed from an official page.",
+  "summary": "Retirees or pensioners who will live in Brazil and transfer at least US$ 2,000 a month can get a temporary VITEM XIV visa.",
   "eligibility": {
+   "income": {
+    "amount": 2000,
+    "currency": "USD",
+    "per": "month",
+    "note": "Proof of monthly retirement income or pension."
+   },
    "other": [
-    "Resolution text was blocked to our reader. Income threshold, term and family rules not confirmed."
+    "Valid health insurance in Brazil required.",
+    "Criminal background check required (FBI check for US applicants).",
+    "Term and renewal rules not read on an official page."
    ]
   },
   "sources": [
+   {
+    "label": "Brazilian Consulate in New York: retirement visa",
+    "url": "https://www.gov.br/mre/pt-br/consulado-nova-york/servicos-consulares/visto-visa-2/VITEM/retirement_XIV"
+   },
    {
     "label": "Ministry of Justice: list of CNIg normative resolutions",
     "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/migracoes/portal-de-imigracao-laboral/autorizacao-de-residencia-laboral-1/normas-de-imigracao-laboral/resolucoes-normativas"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review"
+  "checked": "2026-11-11",
+  "confidence": "needs_review",
+  "fees": [
+   {
+    "label": "Consular fee for US passport holders",
+    "amount": 290,
+    "currency": "USD",
+    "per": "once"
+   },
+   {
+    "label": "Consular fee for other nationalities (New York consulate)",
+    "amount": 100,
+    "currency": "USD",
+    "per": "once"
+   }
+  ],
+  "where": "embassy"
  },
  {
   "id": "br-work-residence",
@@ -159,7 +221,7 @@
     "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/migracoes/portal-de-imigracao-laboral/autorizacao-de-residencia-laboral-1/normas-de-imigracao-laboral/resolucoes-normativas"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review"
  },
  {
@@ -189,7 +251,7 @@
     "url": "https://portaldeimigracao.mj.gov.br/images/resolucoes_normativas/RESOLU%C3%87%C3%83O_CNIG.MJSP_N%C2%BA_49_DE_25_DE_JUNHO_DE_2024.pdf"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review"
  },
  {
@@ -201,20 +263,31 @@
    "investment",
    "entrepreneur"
   ],
-  "summary": "Foreign investors in a Brazilian company can get residence tied to the investment or business plan. The amount thresholds were not cleanly confirmed.",
+  "summary": "Individuals can get temporary residence by investing at least R$ 500,000 in a Brazilian company, or R$ 150,000 in a Brazilian startup. The applicant's company files first in Brazil, then the consular visa follows.",
   "eligibility": {
+   "investment": {
+    "amount": 500000,
+    "currency": "BRL",
+    "per": "once",
+    "note": "Brazilian company. R$ 150,000 minimum for a Brazilian startup."
+   },
    "other": [
-    "Amending text mentions a R$ 150,000 minimum for innovation or research entrepreneurs, but it contains a typo. Base resolution was blocked. Confirm amounts before use."
+    "Process starts in Brazil: the Brazilian company files with the Ministry of Justice, then the consulate issues the visa."
    ]
   },
   "sources": [
+   {
+    "label": "Brazilian Consulate in New York: investor visa (VITEM IX)",
+    "url": "https://www.gov.br/mre/pt-br/consulado-nova-york/servicos-consulares/visto-visa-2/VITEM/IX"
+   },
    {
     "label": "CNIg/MJSP Resolution 49/2024 (amends RN 13)",
     "url": "https://portaldeimigracao.mj.gov.br/images/resolucoes_normativas/RESOLU%C3%87%C3%83O_CNIG.MJSP_N%C2%BA_49_DE_25_DE_JUNHO_DE_2024.pdf"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review"
+  "checked": "2026-11-11",
+  "confidence": "needs_review",
+  "where": "employer"
  },
  {
   "id": "br-real-estate-investor",
@@ -235,7 +308,8 @@
    "other": [
     "Funds must be personal and of foreign origin.",
     "Must stay in Brazil at least 14 days in every two-year period.",
-    "Financing allowed only for the part above the minimum."
+    "Financing allowed only for the part above the minimum.",
+    "The consulate lists R$ 1,000,000 in the Center-West, Southeast and South, and R$ 700,000 in the North and Northeast."
    ]
   },
   "stay": {
@@ -258,9 +332,13 @@
    {
     "label": "Ministry of Justice: RN 36/2018",
     "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/migracoes/portal-de-imigracao-laboral/navegacao-guiada-1/possui-autorizacao-de-residencia/o-que-deseja/qual-a-finalidade-desejada-1/investidor-pessoa-fisica/rn-36-2018"
+   },
+   {
+    "label": "Brazilian Consulate in New York: investor visa (VITEM IX)",
+    "url": "https://www.gov.br/mre/pt-br/consulado-nova-york/servicos-consulares/visto-visa-2/VITEM/IX"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "verified"
  },
  {
@@ -283,7 +361,7 @@
     "url": "https://www.gov.br/pf/pt-br/assuntos/imigracao/duvidas-frequentes"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review"
  },
  {
@@ -309,7 +387,7 @@
     "url": "https://www.gov.br/pf/pt-br/assuntos/imigracao/duvidas-frequentes"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review"
  },
  {
@@ -346,7 +424,7 @@
     "url": "https://www.gov.br/pf/pt-br/assuntos/imigracao/duvidas-frequentes"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "verified"
  },
  {
@@ -369,7 +447,7 @@
     "url": "https://www.gov.br/pf/pt-br/assuntos/imigracao/duvidas-frequentes"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "verified"
  },
  {
@@ -385,8 +463,9 @@
   "summary": "Temporary residence can be converted to an indefinite term through the residence authorization service. Years needed depend on the original ground and were not confirmed.",
   "eligibility": {
    "other": [
-    "Years required by ground not confirmed. Residence is lost after an absence of more than two years without justification (Decree 9,199, art. 135).",
-    "Residence card (CRNM) is valid for 9 years for indefinite-term holders, and with no expiry for people 60 or older."
+    "Years required by ground not confirmed on an official page.",
+    "Residence is lost after an absence of more than two years without justification (Decree 9,199, art. 135).",
+    "Residence card (CRNM) is valid for 9 years for indefinite-term holders (art. 74)."
    ]
   },
   "leadsTo": [
@@ -405,7 +484,7 @@
     "url": "https://legis.senado.leg.br/norma/26286550/publicacao/26286559"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review"
  },
  {
@@ -416,26 +495,36 @@
   "purposes": [
    "citizenship"
   ],
-  "summary": "Brazil has ordinary, definitive, special and provisional naturalization. Residence years, reduced periods and the Portuguese language rule could not be confirmed from an official page. Dual citizenship was also not confirmed.",
+  "summary": "Ordinary naturalization needs 4 years of residence right before applying, Portuguese ability, and a clean criminal record. It drops to 1 year with a Brazilian child or spouse, or for people from Portuguese-speaking countries, and to 2 years for relevant service or professional merit.",
   "eligibility": {
-   "language": "Portuguese (level not confirmed)",
+   "language": "Able to communicate in Portuguese (level set by Ministry of Justice rules)",
    "other": [
-    "Years of residence and reduced periods not confirmed.",
-    "Gov.br service pages for naturalization require login."
+    "4 years of residence right before the application. Trips abroad totaling over 12 months can block approval.",
+    "1 year if you have a Brazilian child, or a Brazilian spouse or partner you are not separated from.",
+    "2 years if you gave or can give relevant service to Brazil, or are recommended for professional, scientific or artistic ability.",
+    "1 year of uninterrupted residence plus good moral standing for people from Portuguese-speaking countries.",
+    "No criminal conviction, or rehabilitation. Apply at the Federal Police.",
+    "Extraordinary naturalization: more than 15 years of uninterrupted residence and no conviction, any nationality."
    ]
   },
   "citizenship": {
    "route": "naturalization",
-   "note": "Dual citizenship not confirmed from an official page."
+   "residenceYears": 4,
+   "dualAllowed": true,
+   "note": "Brazil does not ask you to give up your old nationality. Per Decree 9,199 art. 249, a Brazilian loses nationality only on acquiring another one in cases that are not exceptions (original nationality recognized abroad, or naturalization imposed by the foreign state). Years count from indefinite-term residence per art. 221. Decision deadline is 180 days."
   },
   "where": "in_country",
   "sources": [
+   {
+    "label": "Decree 9,199/2017 (Senate copy)",
+    "url": "https://legis.senado.leg.br/norma/26286550/publicacao/26286559"
+   },
    {
     "label": "gov.br: services for immigrants",
     "url": "https://www.gov.br/pt-br/temas/servicos-para-imigrantes"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review"
  },
  {
@@ -463,7 +552,7 @@
     "url": "https://legis.senado.leg.br/norma/26286550/publicacao/26286559"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "verified"
  },
  {
@@ -489,7 +578,7 @@
     "url": "https://www.gov.br/pt-br/temas/servicos-para-imigrantes"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review"
  }
 ]

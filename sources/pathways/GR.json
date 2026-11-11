@@ -63,52 +63,6 @@
   "where": "embassy"
  },
  {
-  "id": "gr-digital-nomad",
-  "country": "GR",
-  "name": "Digital Nomad Visa and Residence Permit",
-  "kind": "visa",
-  "purposes": [
-   "remote_work"
-  ],
-  "summary": "For non-EU remote workers with employers or clients outside Greece. The visa gives legal residence for up to one year. Then you can apply for a residence permit of up to two years, renewable for two more.",
-  "eligibility": {
-   "income": {
-    "amount": 3500,
-    "currency": "EUR",
-    "per": "month",
-    "note": "Net salary after taxes. Add 20% for a spouse or cohabitant and 15% per child. Sufficient resources for the stay is the alternative."
-   },
-   "other": [
-    "Remote work for employers or clients outside Greece only.",
-    "No work for a Greek company, even as a freelancer.",
-    "Fees not listed on the official page."
-   ]
-  },
-  "sources": [
-   {
-    "label": "Work from Greece FAQ",
-    "url": "https://workfromgreece.gr/faq"
-   }
-  ],
-  "checked": "2026-11-10",
-  "confidence": "verified",
-  "stay": {
-   "durationMonths": 12,
-   "renewable": true,
-   "note": "Then a permit of up to 2 years, renewable for 2 more"
-  },
-  "rights": {
-   "work": "self"
-  },
-  "where": "embassy",
-  "steps": [
-   "Apply at the Greek consulate in your country of main residence (fast track, by email or registered letter).",
-   "The consulate responds within 10 days.",
-   "The Migration Ministry issues the residence permit."
-  ],
-  "processing": "Consulate must respond within 10 days. Ministry time not stated."
- },
- {
   "id": "gr-financially-independent",
   "country": "GR",
   "name": "Financially Independent Person Residence Permit (Article 20)",
@@ -447,10 +401,6 @@
    ]
   },
   "sources": [
-   {
-    "label": "Work from Greece FAQ",
-    "url": "https://workfromgreece.gr/faq"
-   },
    {
     "label": "Migration Ministry: residence permit categories",
     "url": "https://migration.gov.gr/en/migration-policy/metanasteusi-stin-ellada/katigories-adeion-diamonis-politon-triton-choron-dikaiologitika%e2%80%8b/"

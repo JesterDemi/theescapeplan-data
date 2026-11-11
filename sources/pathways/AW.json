@@ -13,7 +13,8 @@
         "The page gives no full visa-free list. Check with DIMAS or the Netherlands Worldwide Caribbean visa pages.",
         "Everyone needs an approved online ED Card, up to 7 days before departure.",
         "Passport must be valid for the whole stay and issued within the last 10 years.",
-        "Admission is decided by immigration at the port of entry."
+        "Admission is decided by immigration at the port of entry.",
+        "The ED Card is not a visa and does not guarantee entry, per the official ED Card site."
       ]
     },
     "stay": {
@@ -39,9 +40,13 @@
       {
         "label": "Aruba Tourism Authority: Entry requirements and visas",
         "url": "https://www.visitaruba.com/traveling-to-aruba/entry-requirements-and-visas/"
+      },
+      {
+        "label": "Aruba Online ED Card (official)",
+        "url": "https://www.edcardaruba.aw/welcome"
       }
     ],
-    "checked": "2026-11-10",
+    "checked": "2026-11-11",
     "confidence": "needs_review"
   },
   {
@@ -107,10 +112,11 @@
       "work",
       "entrepreneur"
     ],
-    "summary": "DIMAS handles residence and work permits under the National Ordinance on Admission and Expulsion. Directors of companies who don't meet the conditions for living, working and starting a business in Aruba need a work permit. Permit types, fees and PR timelines were not confirmed.",
+    "summary": "Foreigners who want to work in Aruba first need a positive advice from DPL, then a work permit from DIMAS. You can't work for an Aruban employer on a tourist stay. Business owners who don't meet the conditions for residing, working and starting a business also need a permit. Fees and PR timelines were not confirmed.",
     "eligibility": {
       "other": [
-        "Details not confirmed on an official page. See the gobierno.aw Work and residence permit page and DIMAS."
+        "Positive DPL advice is required before the work permit from DIMAS.",
+        "Fees, permit types and PR timelines not confirmed on an official page."
       ]
     },
     "where": "in_country",
@@ -118,9 +124,16 @@
       {
         "label": "Government of Aruba: Work and residence for foreign nationals",
         "url": "https://gobierno.aw/en/work-and-residence-for-foreign-nationals"
+      },
+      {
+        "label": "Government of Aruba: Work and residence permit",
+        "url": "https://www.gobierno.aw/en/work-and-residence-permit"
       }
     ],
-    "checked": "2026-11-10",
-    "confidence": "needs_review"
+    "checked": "2026-11-11",
+    "confidence": "needs_review",
+    "rights": {
+      "work": "employer"
+    }
   }
 ]

@@ -74,6 +74,10 @@
   },
   "sources": [
    {
+    "label": "MFA Consular Services: FAQs on Visa-free Entry into China",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/cjwd/"
+   },
+   {
     "label": "Chinese Embassy in Sweden: FAQs on Visa-free Entry (updated 2026-05-25)",
     "url": "https://se.china-embassy.gov.cn/eng/lsyfw/202511/t20251110_11750037.htm"
    },
@@ -86,7 +90,7 @@
     "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202602/t20260215_11860467.html"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "verified",
   "stay": {
    "maxDays": 30,
@@ -112,7 +116,7 @@
    "tourism",
    "business"
   ],
-  "summary": "Citizens of 57 countries can enter visa-free for up to 10 days if they have a confirmed onward ticket to a third country or region. Work, study and news reporting are not allowed.",
+  "summary": "Citizens of 57 countries can enter visa-free through any of 65 open ports in 24 provinces and regions and stay up to 10 days in permitted areas with an onward ticket to a third country or region. Work, study and news reporting are not allowed.",
   "eligibility": {
    "passports": [
     "AL",
@@ -182,7 +186,7 @@
   },
   "sources": [
    {
-    "label": "NIA: 240-Hour Visa-Free Transit Policy",
+    "label": "NIA: Visa-Free Transit Policies (updated 2026-08-20)",
     "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
    },
    {
@@ -194,7 +198,7 @@
     "url": "https://en.nia.gov.cn/n147413/c187308/content.html"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "verified",
   "stay": {
    "maxDays": 10,
@@ -213,14 +217,18 @@
   "purposes": [
    "transit"
   ],
-  "summary": "Anyone with a connecting ticket to a third country or region can pass through China without a visa for up to 24 hours if they stay in the port area. About 10 more airports were added in late 2025.",
+  "summary": "Nationals of any country can transit through China visa-free for up to 24 hours at any open port if they hold valid travel documents and an onward ticket with a confirmed seat. Stay in the restricted area of the port, or get a temporary entry permit first.",
   "eligibility": {
    "other": [
-    "Applies to all nationalities per NIA.",
-    "Must not leave the port of entry."
+    "Needs valid travel documents and an onward international flight, ship or train ticket with a confirmed seat.",
+    "Leaving the port's restricted area needs a temporary entry permit from port immigration."
    ]
   },
   "sources": [
+   {
+    "label": "NIA: Visa-Free Transit Policies (updated 2026-08-20)",
+    "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+   },
    {
     "label": "NIA: 10 new measures",
     "url": "https://en.nia.gov.cn/n147413/c187308/content.html"
@@ -230,7 +238,7 @@
     "url": "https://mv.china-embassy.gov.cn/eng/lsfw/vfc/202604/t20260430_11903535.htm"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "verified",
   "stay": {
    "maxDays": 1
@@ -366,24 +374,39 @@
   "purposes": [
    "tourism"
   ],
-  "summary": "Regular tourist visa for travelers who need a visa and are not covered by a visa-free policy. Apply online through the MFA visa system and then at an embassy or visa center.",
+  "summary": "Tourist visa for people who want to visit China and are not covered by a visa-free policy. Apply online at consular.mfa.gov.cn/VISA/ and then at an embassy or visa center.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Needs travel documents like round-trip flight and hotel bookings, or an invitation letter from a person or company in China.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "rights": {
    "work": "none"
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-m-business",
@@ -393,25 +416,39 @@
   "purposes": [
    "business"
   ],
-  "summary": "Visa for short business trips like trade, meetings and fairs. Usually needs an invitation from a Chinese company or organization.",
+  "summary": "Visa for commercial and trade activities. You need an invitation from a business partner in China, like business documents or a trade fair invite.",
   "eligibility": {
    "other": [
-    "Invitation letter normally required.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Invitation must list your details, reason for the trip, dates, place, your link to the inviter and who pays.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "rights": {
    "work": "none"
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-f-visit",
@@ -421,24 +458,39 @@
   "purposes": [
    "business"
   ],
-  "summary": "Visa for exchanges, visits and non-commercial activities, usually with an invitation from a Chinese unit. Not for paid work.",
+  "summary": "Visa for exchanges, visits, study tours and similar activities. You need an invitation letter from a person or organization in China. Not for paid work.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Invitation letter required with your details, reason, dates, place and who pays.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "rights": {
    "work": "none"
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-z-work",
@@ -448,21 +500,28 @@
   "purposes": [
    "work"
   ],
-  "summary": "Entry visa for foreigners who will work in China. You need a work permit notification first, then convert to a residence permit after arrival.",
+  "summary": "Visa for people who will work in China. Most applicants need the Notice for the Work Permit for Foreigners from the local human resources authority. After arrival you apply for a residence permit within 30 days.",
   "eligibility": {
    "other": [
-    "Needs a Chinese employer and work permit approval.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "One of these is required: Notice for the Work Permit for Foreigners; registration certificate of a foreign company representative office; approval for commercial performances plus Certificate of Short-term Work; or an offshore petroleum operations invitation letter from CNOOC.",
+    "Work of 90 days or less: apply before the start date on the notice.",
+    "Holders must apply for a residence permit within 30 days of entry, unless the visa says 30 days stay after entry.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "employer",
   "rights": {
    "work": "employer",
@@ -475,9 +534,18 @@
    }
   ],
   "steps": [
-   "Employer applies for the work permit notification.",
+   "Employer gets the Notice for the Work Permit for Foreigners.",
    "Apply for the Z visa abroad.",
-   "Enter China and apply for a work residence permit within 30 days."
+   "Enter China and apply for a work residence permit within 30 days, unless your visa says 30 days stay after entry."
+  ],
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
   ]
  },
  {
@@ -488,20 +556,27 @@
   "purposes": [
    "work"
   ],
-  "summary": "China sorts foreign workers into three tiers: A for top talent, B for professionals, C for other and seasonal work. Higher tiers get easier approval.",
+  "summary": "China sorts foreign workers into categories A (high-level talent), B (specialized talent) and C (other). Under the points route you need 85 or more points for A, and 60 to 84 for B.",
   "eligibility": {
    "other": [
-    "Tier criteria and points were not confirmed from an official page.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Category A includes talent from national programs, scientists, young talent, and anyone scoring 85 points or more. A gets green-channel service.",
+    "Category B covers specialized talent, like a bachelor's degree plus 2 years of relevant work experience, plus language teachers and skilled workers.",
+    "Points are scored on salary (up to 20), work experience (up to 20), education (up to 20), Chinese language (up to 5), age and extras (up to 5).",
+    "Category C rules were not confirmed from an official page.",
+    "Rules are applied locally. Check your city's foreigner work permit office."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "Shanghai government: Understanding China's work permit points system (Aug 2026)",
+    "url": "https://english.shanghai.gov.cn/en-Latest-TalentsinShanghai/20260813/52568cc4e18c4c4cb45037ec81dab201.html"
+   },
+   {
+    "label": "Tianjin government: Evaluation criteria for foreigners employed in China",
+    "url": "https://en.tj.gov.cn/services/ForeignServiceChecklist/WorkPermit/GUIDELINES_FOR_WORK_PERMITS/CHAPTER_TWO_EVALUATION_CRITERIA/202403/t20240301_6549822.html"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "employer",
   "rights": {
@@ -522,19 +597,20 @@
   "purposes": [
    "work"
   ],
-  "summary": "Residence permit issued after entering on a Z visa. Lets you live and work in China for the term of the permit.",
+  "summary": "Residence permit you apply for within 30 days of entering China on a Z visa. It lets you live and work in China for the permit term.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Apply at the local exit-entry administration of the public security bureau within 30 days of entry, unless your Z visa says 30 days stay after entry.",
+    "Permit length and renewal rules were not confirmed from an official page."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "in_country",
   "rights": {
@@ -559,25 +635,41 @@
   "purposes": [
    "study"
   ],
-  "summary": "Visa for study over 180 days. After arrival you apply for a study residence permit.",
+  "summary": "Visa for study longer than 180 days. You need an admission letter from the school and the JW201 or JW202 form. Apply for a residence permit within 30 days of arrival.",
   "eligibility": {
    "other": [
-    "Usually needs an admission letter and JW201 or JW202 form from the school.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Admission letter from a school or other admitting entity in China.",
+    "Study confirmation form JW201 or JW202.",
+    "Residence permit application within 30 days of entry.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "rights": {
    "work": "none"
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-x2-short-study",
@@ -587,27 +679,42 @@
   "purposes": [
    "study"
   ],
-  "summary": "Visa for study of 180 days or less. Needs an admission letter from the school.",
+  "summary": "Visa for study of 180 days or less. You need an admission letter from the school.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Admission letter from a school or other admitting entity in China.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "rights": {
    "work": "none"
   },
   "stay": {
    "maxDays": 180
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-q1-family-long",
@@ -617,24 +724,41 @@
   "purposes": [
    "family"
   ],
-  "summary": "For family members of Chinese citizens or of foreigners with Chinese permanent residence who want to stay over 180 days. Convert to a residence permit after arrival.",
+  "summary": "For family of Chinese citizens or of foreigners with Chinese permanent residence who want to live in China. Also covers foster care cases. Apply for a residence permit within 30 days of arrival.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Covers spouses, parents, children, children's spouses, siblings, grandparents, grandchildren and parents-in-law.",
+    "Needs an invitation letter from the family member in China and proof of the family tie, like a marriage or birth certificate.",
+    "Residence permit application within 30 days of entry.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "rights": {
    "family": true
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-q2-family-short",
@@ -644,24 +768,39 @@
   "purposes": [
    "family"
   ],
-  "summary": "For visiting relatives who are Chinese citizens or foreign permanent residents of China, for up to 180 days.",
+  "summary": "For visiting relatives who are Chinese citizens living in China or foreigners with Chinese permanent residence, for 180 days or less.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Needs an invitation letter from the relative and a copy of their Chinese ID or passport and permanent residence permit.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "stay": {
    "maxDays": 180
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-s1-s2-dependent",
@@ -671,21 +810,40 @@
   "purposes": [
    "family"
   ],
-  "summary": "S1 is for long stays over 180 days with family members of foreigners working or studying in China. S2 is for short visits of 180 days or less.",
+  "summary": "S1 is for family of foreigners working or studying in China who need to stay over 180 days (spouse, parents, children under 18, parents-in-law). S2 is for family visits of 180 days or less, and wider family can use it.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Needs an invitation letter from the foreigner in China, copies of their passport and residence permit, and proof of the family tie.",
+    "S1 must apply for a residence permit within 30 days of entry.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
-  "where": "embassy"
+  "checked": "2026-11-11",
+  "confidence": "verified",
+  "where": "embassy",
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ],
+  "stay": {
+   "note": "S1 is for stays over 180 days. S2 is for stays of 180 days or less."
+  }
  },
  {
   "id": "cn-r-talent",
@@ -695,25 +853,39 @@
   "purposes": [
    "work"
   ],
-  "summary": "Visa for foreigners in short supply or top talent China wants to attract. Typically processed on a fast track.",
+  "summary": "Visa for high-level foreign talent and specialists China urgently needs. You must meet the conditions set by the relevant Chinese authorities.",
   "eligibility": {
    "other": [
-    "Criteria set by Chinese authorities, not confirmed here.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Must meet the introduction conditions for high-level talent and urgently needed specialists and submit the matching proof.",
+    "Consular officers decide validity, length of stay and number of entries case by case.",
+    "Fees are set by passport nationality and number of entries, not by visa category, and vary by embassy. US passport holders applying in the US pay USD 140 for a single entry (reduced rate valid until Dec 31, 2026). Check your local embassy."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
+   },
+   {
+    "label": "Chinese Embassy in the US: reduced visa fees until Dec 31, 2026 (US citizen, single entry, regular service)",
+    "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241227_11519914.htm"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "rights": {
    "work": "employer"
-  }
+  },
+  "fees": [
+   {
+    "label": "Single-entry visa, US citizen, regular service (US embassy)",
+    "amount": 140,
+    "currency": "USD",
+    "per": "once",
+    "note": "Nationality-based; other nationalities and entry counts differ."
+   }
+  ]
  },
  {
   "id": "cn-k-youth-science",
@@ -727,17 +899,16 @@
   "summary": "A newer visa category for young foreign science and technology talent. Announced as a new category. Details were not confirmed from an official page.",
   "eligibility": {
    "other": [
-    "Rules and start date not confirmed.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "The current MFA visa category list does not include a K visa, so the rules and start date are not confirmed. Check consular.mfa.gov.cn/VISA/ before relying on this."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "embassy"
  },
@@ -750,20 +921,21 @@
    "family",
    "work"
   ],
-  "summary": "Visa for people who have been approved for Chinese permanent residence. Lets them enter and get the permanent resident ID card.",
+  "summary": "Visa for people approved for Chinese permanent residence. You need the Confirmation Form for Foreigner's Permanent Residence Status from the Ministry of Public Security. Apply for a residence permit within 30 days of arrival.",
   "eligibility": {
    "other": [
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Needs the original and a copy of the Confirmation Form for Foreigner's Permanent Residence Status.",
+    "Residence permit application within 30 days of entry."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Visa Application Instructions",
+    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzxz/202608/t20260806_11999100.html"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "leadsTo": [
    {
@@ -782,20 +954,22 @@
    "family",
    "investment"
   ],
-  "summary": "Known as the Chinese green card. It is hard to get and is granted for high-level talent, major investors, and some family ties. Years needed and thresholds could not be confirmed.",
+  "summary": "Known as the Chinese green card. The Ministry of Public Security approves it for foreigners who made a remarkable contribution to China or meet other set conditions. Years needed and thresholds were not confirmed.",
   "eligibility": {
    "other": [
-    "Years of residence and thresholds not confirmed from an official page.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Exit and Entry Administration Law, Art. 47: permanent residence goes to foreigners who made a remarkable contribution to China's economic and social development or meet other set conditions, approved by the Ministry of Public Security.",
+    "Holders can live and work in China and enter and leave with their passport and permanent residence permit.",
+    "Status can be canceled if you fail to reside in China for the prescribed time, among other reasons.",
+    "Years of residence and thresholds not confirmed from an official page."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "MFA Consular Services: Exit and Entry Administration Law",
+    "url": "https://cs.mfa.gov.cn/lh/flxy/202607/t20260716_11984066.html"
    }
   ],
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "confidence": "needs_review",
   "where": "in_country",
   "rights": {
@@ -813,26 +987,27 @@
   "purposes": [
    "citizenship"
   ],
-  "summary": "Foreigners can apply if they have close relatives who are Chinese citizens, settled in China, or have other legitimate reasons. Approval is rare.",
+  "summary": "Foreigners and stateless people who respect China's Constitution and laws can be naturalized if they are near relatives of Chinese nationals, have settled in China, or have other legitimate reasons. The Ministry of Public Security approves it.",
   "eligibility": {
    "other": [
-    "Official nationality law text not opened. Years and language requirements not confirmed.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Must be willing to abide by China's Constitution and other laws.",
+    "The law sets no minimum years or language test. Approval is case by case.",
+    "Apply through the local public security bureau in China, or a Chinese embassy or consulate abroad."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "NIA: Nationality Law of the PRC",
+    "url": "https://en.nia.gov.cn/n147418/n147458/c155976/content.html"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "in_country",
   "citizenship": {
    "dualAllowed": false,
    "route": "naturalization",
-   "note": "China does not recognize dual nationality. Naturalizing means giving up your old nationality."
+   "note": "China does not recognize dual nationality (Art. 3). A person naturalized as Chinese cannot keep foreign nationality (Art. 8)."
   }
  },
  {
@@ -843,26 +1018,26 @@
   "purposes": [
    "citizenship"
   ],
-  "summary": "A child with at least one Chinese citizen parent is generally Chinese if born in China. Abroad, the rule depends on whether the parent has settled abroad.",
+  "summary": "A child born in China with at least one Chinese national parent is Chinese. Born abroad to a Chinese parent also counts, unless that parent has settled abroad and the child got foreign nationality at birth.",
   "eligibility": {
    "other": [
-    "Based on the nationality law, not confirmed on an opened official page.",
-    "Official category details could not be opened. Check the MFA visa portal at consular.mfa.gov.cn/VISA/ before relying on this."
+    "Born in China to stateless parents or parents of uncertain nationality who settled in China: also Chinese.",
+    "Born abroad: not Chinese if the Chinese parent(s) settled abroad and the child acquired foreign nationality at birth."
    ]
   },
   "sources": [
    {
-    "label": "MFA Consular Services: Chinese Visa (cs.mfa.gov.cn)",
-    "url": "https://cs.mfa.gov.cn/lh/lhqz_149493/qzsq/202607/t20260713_11981382.html"
+    "label": "NIA: Nationality Law of the PRC",
+    "url": "https://en.nia.gov.cn/n147418/n147458/c155976/content.html"
    }
   ],
-  "checked": "2026-11-10",
-  "confidence": "needs_review",
+  "checked": "2026-11-11",
+  "confidence": "verified",
   "where": "embassy",
   "citizenship": {
    "dualAllowed": false,
    "route": "descent",
-   "note": "No dual nationality."
+   "note": "No dual nationality (Art. 3). Chinese nationals who settle abroad and take foreign nationality automatically lose Chinese nationality (Art. 9)."
   }
  },
  {
