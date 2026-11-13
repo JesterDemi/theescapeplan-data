@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-12T15:23:48.735Z",
+  "checkedAt": "2026-11-13T14:45:09.869Z",
   "feedGeneratedAt": "2026-11-12T15:17:27.523Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
@@ -35,28 +35,23 @@
       "level": "warning",
       "area": "links",
       "message": "Link check failed (HTTP 404): https://mvr.gov.mk/default"
-    },
-    {
-      "level": "warning",
-      "area": "links",
-      "message": "Link check failed (HTTP 404): https://www.saime.gob.ve/extranjeria-2-2/"
     }
   ],
   "notes": [
     {
       "level": "note",
       "area": "passports",
-      "message": "Passport dataset is 268 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
-    },
-    {
-      "level": "note",
-      "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/. Usually a regional block; check it opens in a browser."
+      "message": "Passport dataset is 269 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
     },
     {
       "level": "note",
       "area": "links",
       "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -76,22 +71,12 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: fetch failed): https://www.evisa.gov.kh. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
-      "message": "Could not connect from GitHub's servers (error: fetch failed): https://evisa.mfa.ir/en/. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
       "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://investorvisa.mise.gov.it/index.php/en/. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: fetch failed): https://en.mfa.ir. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: fetch failed): https://www.evisa.gov.kh. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -101,7 +86,12 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: ETIMEDOUT): https://passport.govmu.org. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: fetch failed): https://evisa.mfa.ir/en/. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: fetch failed): https://en.mfa.ir. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -111,12 +101,17 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://digitalnomads.gov.me/article/legal-status-for-nomads. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: ETIMEDOUT): https://passport.govmu.org. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
       "area": "links",
       "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.gov.me/en/mup. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://digitalnomads.gov.me/article/legal-status-for-nomads. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -146,27 +141,7 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.edbmauritius.org/. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
       "message": "Could not connect from GitHub's servers (error: ENOTFOUND): https://www.gov.tv. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
-      "message": "Could not connect from GitHub's servers (error: ENOTFOUND): https://m.mfa.uz/en/consular/visa/. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
-      "message": "Could not connect from GitHub's servers (error: ENOTFOUND): https://www.samoaimmigration.gov.ws/. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -176,7 +151,27 @@
     {
       "level": "note",
       "area": "links",
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: ENOTFOUND): https://m.mfa.uz/en/consular/visa/. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
       "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://e-ikamet.goc.gov.tr. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: ENOTFOUND): https://www.samoaimmigration.gov.ws/. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.dha.gov.za/index.php/immigration-services/types-of-visas. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
