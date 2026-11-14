@@ -97,8 +97,21 @@ let fetched = 0;
 let changed = 0;
 let skippedCap = 0;
 
+// Download pages 8 at a time (some government sites are slow), then compare one by one.
+const pages = new Map();
+{
+  const queue = [...urls];
+  const worker = async () => {
+    while (queue.length) {
+      const u = queue.shift();
+      pages.set(u, await getPage(u));
+    }
+  };
+  await Promise.all(Array.from({ length: 8 }, worker));
+}
+
 for (const url of urls) {
-  const text = await getPage(url);
+  const text = pages.get(url);
   if (!text) continue;
   fetched++;
   const fp = fingerprint(text);
