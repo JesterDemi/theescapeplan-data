@@ -18,6 +18,7 @@ import { fileURLToPath } from 'node:url';
 import { LEVEL_LABEL, SOURCE_NAME, aggregate, levelChanges, parseAU, parseCA, parseUK, parseUS } from '../shared/advisoryParse.ts';
 import { UK_SLUG } from '../shared/advisorySnapshot.ts';
 import { COUNTRIES, countryName } from '../shared/countries.ts';
+import { MODELS, askClaude, hasClaude, htmlToText } from './claude.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'alerts');
@@ -161,6 +162,33 @@ if (massChange) {
 // Never post the same change twice, and forget old ones.
 events = events.filter((e, i, all) => all.findIndex((x) => x.id === e.id) === i).filter((e) => daysAgo(e.date) <= KEEP_DAYS);
 
+// ---------- one plain-English line on why the advice changed (Claude, from the official page only) ----------
+// Only for fresh changes, at most 15 per run. No API key, or no clear reason on the page: the post just goes out without it.
+if (hasClaude()) {
+  let asked = 0;
+  for (const e of events) {
+    if (e.type !== 'advisory' || e.why !== undefined || daysAgo(e.date) > 1 || asked >= 15) continue;
+    asked++;
+    let page = '';
+    try {
+      const res = await fetch(e.link, { headers: { 'User-Agent': UA, Accept: 'text/html' }, signal: AbortSignal.timeout(25000) });
+      if (res.ok) page = htmlToText(await res.text()).slice(0, 30000);
+    } catch {}
+    if (page.length < 300) {
+      e.why = '';
+      continue;
+    }
+    const reply = await askClaude({
+      model: MODELS.quick,
+      maxTokens: 120,
+      system: 'You summarize official government travel advice. Use only the page text you are given. Never add facts, numbers or advice that are not on the page.',
+      prompt: `${e.title}. ${e.body}\n\nIn one plain sentence under 25 words, say the main reason this official page gives for its current advice. If the page gives no clear reason, reply NONE.\n\nPage (${e.link}):\n${page}`,
+    });
+    if (reply === null) continue; // API trouble: try again next run
+    e.why = /^none\b/i.test(reply) ? '' : reply.replace(/\s+/g, ' ').replace(/^["']|["']$/g, '').slice(0, 220);
+  }
+}
+
 // ---------- entry-rule notices, the same ones the app shows ----------
 const feed = JSON.parse(readFileSync(join(ROOT, 'feed.json'), 'utf8'));
 const notices = (feed.notices ?? [])
@@ -223,7 +251,7 @@ function rss(title, description, selfUrl, items) {
         `<guid isPermaLink="false">${esc(e.id)}</guid>`,
         `<pubDate>${new Date(e.date).toUTCString()}</pubDate>`,
         `<category>${e.type === 'advisory' ? 'Travel advice' : 'Entry rules'}</category>`,
-        `<description>${esc(`${e.body} ${FOOTER}`)}</description>`,
+        `<description>${esc(`${e.body}${e.why ? ` In short: ${e.why}` : ''} ${FOOTER}`)}</description>`,
         '</item>',
       ].join('')
     ),
