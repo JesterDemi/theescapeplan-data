@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
 <title>The Escape Plan: Togo travel alerts</title>
 <link>https://theescapeplan.org</link>
 <description>Travel advisory changes and entry-rule updates for Togo.</description>
 <language>en-us</language>
 <atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/tg.xml" rel="self" type="application/rss+xml"/>
-<item><title>Official entry info for Togo was updated (Nov 4, 2026)</title><link>https://www.gov.uk/foreign-travel-advice/togo/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-tg-2026-11-04</guid><pubDate>Wed, 04 Nov 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;Updated information about applying for a visa (see 'Visa requirements' on the 'Entry requirements' page).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
+<item><title>Official entry info for Togo was updated (Nov 4, 2026). Travel advice: Level 2 🟡 Increased caution</title><dc:creator>🇹🇬 Togo</dc:creator><link>https://www.gov.uk/foreign-travel-advice/togo/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-tg-2026-11-04</guid><pubDate>Wed, 04 Nov 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;Updated information about applying for a visa (see 'Visa requirements' on the 'Entry requirements' page).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
 </channel>
 </rss>
