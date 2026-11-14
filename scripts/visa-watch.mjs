@@ -90,6 +90,9 @@ const SYSTEM = [
   'Use "unrelated" when the page is not about these routes (a moved page, a login wall, an error page).',
 ].join(' ');
 
+// Quick health check of the key, so a revoked key or a hit spending limit gets noticed.
+const keyOk = hasClaude() ? !!(await askClaude({ model: MODELS.quick, system: 'Reply with OK.', prompt: 'ping', maxTokens: 5 })) : null;
+
 let calls = 0;
 const findings = [];
 const unrelated = [];
@@ -120,7 +123,10 @@ for (const url of urls) {
   const waiting = state.pending.includes(url);
   if (!prev || (prev.fp === fp && !waiting)) continue; // first sighting, or nothing changed
   changed++;
-  if (!hasClaude()) continue;
+  if (!keyOk) {
+    if (keyOk === false && !waiting) state.pending.push(url); // compare once the key works again
+    continue;
+  }
   if (calls >= MAX_CLAUDE_CALLS) {
     if (!waiting) state.pending.push(url); // compared first thing tomorrow
     skippedCap++;
@@ -150,7 +156,7 @@ const lines = [
   `# Visa watch, ${today}`,
   '',
   `Pages checked today: ${fetched} (${watch.size} watched in total, each one weekly). Changed since their last check: ${changed}. Compared by Claude: ${calls}.`,
-  hasClaude() ? '' : '\nThe ANTHROPIC_API_KEY secret is not set, so changed pages were noted but not compared.',
+  keyOk === null ? '\nThe ANTHROPIC_API_KEY secret is not set, so changed pages were noted but not compared.' : keyOk ? '\nClaude key: working.' : '\n**The Claude key is not working** (revoked, expired, or the monthly spending limit was reached). Changed pages were noted but not compared. Make a new key at platform.claude.com and update the ANTHROPIC_API_KEY secret.',
   skippedCap ? `\n${skippedCap} changed page(s) will be compared first thing tomorrow (daily limit of ${MAX_CLAUDE_CALLS} comparisons).` : '',
   '',
 ];
@@ -169,6 +175,6 @@ if (unrelated.length) {
 writeFileSync(REPORT, lines.join('\n').replace(/\n{3,}/g, '\n\n') + '\n');
 
 // For the workflow: how many things need a person.
-writeFileSync(join(ROOT, 'state', 'visa-watch-count.txt'), String(findings.length + unrelated.length));
+writeFileSync(join(ROOT, 'state', 'visa-watch-count.txt'), String(findings.length + unrelated.length + (keyOk === false ? 1 : 0)));
 console.log(lines.slice(0, 3).join('\n'));
 console.log(`Findings: ${findings.length}, pages that look wrong: ${unrelated.length}`);
