@@ -151,6 +151,8 @@ if (massChange) {
         title,
         body: lines.join(' ') || `Overall level is now ${agg.level}.`,
         link: first?.url ?? SITE,
+        ...(overall ? { overallFrom: overall.from, overallTo: overall.to } : {}),
+        levelNow: agg.level,
       });
     }
   }
@@ -177,11 +179,35 @@ const notices = (feed.notices ?? [])
 // ---------- write RSS ----------
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const FOOTER = 'From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.';
+// How a post reads in Discord: the country (with its flag) on top, then what changed, with the
+// calculated level (the most cautious of the four governments, same as the app and channel colors).
+const DOT = { 1: '🟢', 2: '🟡', 3: '🟠', 4: '🔴' };
+const flagOf = (code) => (/^[A-Z]{2}$/.test(code ?? '') && code !== 'XK' ? [...code].map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65)).join('') : '🌍');
+const lvl = (n) => (n ? `Level ${n} ${DOT[n]} ${LEVEL_LABEL[n]}` : null);
+function whoFor(e) {
+  const codes = e.code ? [e.code] : (e.codes ?? []);
+  if (codes.length === 1) return `${flagOf(codes[0])} ${countryName(codes[0])}`;
+  if (codes.length && codes.length <= 3) return codes.map((c) => `${flagOf(c)} ${countryName(c)}`).join(', ');
+  return codes.length ? `🌍 ${codes.length} countries` : '🌍 Travel update';
+}
+function headlineFor(e) {
+  const code = e.code ?? (e.codes?.length === 1 ? e.codes[0] : null);
+  const now = code ? state.levels[code]?.overall : undefined;
+  if (e.type === 'advisory') {
+    if (e.overallFrom && e.overallTo) return `Travel advice ${e.overallTo > e.overallFrom ? 'raised' : 'lowered'}: now ${lvl(e.overallTo)} (was Level ${e.overallFrom} ${DOT[e.overallFrom]})`;
+    const old = e.title.match(/^Travel advice (raised|lowered) for [^:]+: now Level ([1-4])/);
+    if (old) return `Travel advice ${old[1]}: now ${lvl(+old[2])}`;
+    const stays = now ? ` Overall level stays ${lvl(now)}.` : '';
+    const what = /^Travel advice updated/.test(e.title) ? 'Travel advice updated' : e.title.replace(/ its advice for .+? \(/, ' its advice (');
+    return `${what}.${stays}`;
+  }
+  return `${e.title}${now ? `. Travel advice: ${lvl(now)}` : ''}`;
+}
 function rss(title, description, selfUrl, items) {
   const list = items.sort((a, b) => b.date.localeCompare(a.date)).slice(0, MAX_ITEMS);
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+    '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">',
     '<channel>',
     `<title>${esc(title)}</title>`,
     `<link>${SITE}</link>`,
@@ -191,7 +217,8 @@ function rss(title, description, selfUrl, items) {
     ...list.map((e) =>
       [
         '<item>',
-        `<title>${esc(e.title)}</title>`,
+        `<title>${esc(headlineFor(e).slice(0, 250))}</title>`,
+        `<dc:creator>${esc(whoFor(e))}</dc:creator>`,
         `<link>${esc(e.link)}</link>`,
         `<guid isPermaLink="false">${esc(e.id)}</guid>`,
         `<pubDate>${new Date(e.date).toUTCString()}</pubDate>`,
