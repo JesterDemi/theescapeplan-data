@@ -174,6 +174,18 @@ if (unrelated.length) {
 }
 writeFileSync(REPORT, lines.join('\n').replace(/\n{3,}/g, '\n\n') + '\n');
 
+// Alert list for Discord: the Escape Plan Advisories bot posts each new entry in the staff channel.
+// Kept for 30 days; ids are stable so a finding is never posted twice.
+const ALERTS = join(ROOT, 'state', 'visa-alerts.json');
+const oldAlerts = existsSync(ALERTS) ? JSON.parse(readFileSync(ALERTS, 'utf8')) : [];
+const newAlerts = [
+  ...findings.map((f) => ({ id: `diff-${hash(f.url + f.ref + f.page)}`, kind: 'difference', date: today, country: f.country, why: f.why ?? 'Possible difference', where: f.ref, app: f.app, page: f.page, url: f.url })),
+  ...unrelated.map((u) => ({ id: `moved-${hash(u.url)}-${today.slice(0, 7)}`, kind: 'moved', date: today, country: u.country, url: u.url })),
+  ...(keyOk === false ? [{ id: `key-${today}`, kind: 'key', date: today }] : []),
+];
+const keep = [...oldAlerts, ...newAlerts.filter((a) => !oldAlerts.some((o) => o.id === a.id))].filter((a) => (Date.parse(today) - Date.parse(a.date)) / 86400000 <= 30);
+writeFileSync(ALERTS, JSON.stringify(keep, null, 1) + '\n');
+
 // For the workflow: how many things need a person.
 writeFileSync(join(ROOT, 'state', 'visa-watch-count.txt'), String(findings.length + unrelated.length + (keyOk === false ? 1 : 0)));
 console.log(lines.slice(0, 3).join('\n'));
