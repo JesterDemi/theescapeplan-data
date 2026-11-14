@@ -1,0 +1,49 @@
+name: Visa watch
+
+on:
+  schedule:
+    - cron: '43 7 * * *'   # every day, 07:43 UTC (each source page gets checked once a week)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: visa-watch
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check official pages against the visa guides
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/visa-watch.mjs
+
+      - name: Save page fingerprints and report
+        run: |
+          git config user.name "escape-plan-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state VISA-CHECK.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Visa watch $(date -u +%F) [skip ci]"
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
+
+      - name: Open or update the "Visa guide check" issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count=$(cat state/visa-watch-count.txt 2>/dev/null || echo 0)
+          [ "$count" -gt 0 ] || exit 0
+          gh label create visa-check --color 1F6F78 --force >/dev/null 2>&1 || true
+          existing=$(gh issue list --label visa-check --state open --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file VISA-CHECK.md
+          else
+            gh issue create --title "Visa guide check" --label visa-check --body-file VISA-CHECK.md
+          fi

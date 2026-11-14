@@ -22,6 +22,8 @@ jobs:
           node-version: 22
 
       - name: Build alert feeds (same advisory rules as the app)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node --experimental-strip-types scripts/build-alerts.mjs
 
       - name: Commit alert feeds
