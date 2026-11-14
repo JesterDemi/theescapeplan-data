@@ -65,3 +65,10 @@ the first run only saves current levels, a feed that is down never counts as a c
 more than 40 countries move at once nothing is posted (that means a feed broke, not the world).
 When the app's `src/lib/advisoryParse.ts`, `src/data/advisorySnapshot.ts` or `src/data/countries.ts`
 change, copy them into `shared/` (only the two import paths at the top of advisoryParse differ).
+
+## Claude checks (optional, needs the ANTHROPIC_API_KEY secret)
+
+- **Visa watch** (`scripts/visa-watch.mjs`, daily): every official page behind a visa guide or route is checked once a week. When a page's text changed, Claude compares it with what the app says and lists real differences (with an exact quote from the page) in `VISA-CHECK.md` and a GitHub issue called **Visa guide check**. Nothing is edited automatically: you confirm on the official page, then fix the file named in the finding. Capped at 20 comparisons a day.
+- **Advisory alerts**: each new advisory change in the Discord feeds gets one plain line ("In short: ...") summarizing the reason given on the official page. If the page gives no clear reason, the line is left out.
+
+Without the secret both jobs still run; they just skip the Claude parts. Models can be changed with the `CLAUDE_CHECK_MODEL` and `CLAUDE_QUICK_MODEL` environment variables.
