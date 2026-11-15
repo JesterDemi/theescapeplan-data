@@ -1,6 +1,6 @@
-# Visa watch, 2026-11-14
+# Visa watch, 2026-11-15
 
-Pages checked today: 186 (1845 watched in total, each one weekly). Changed since their last check: 10. Compared by Claude: 10.
+Pages checked today: 178 (1845 watched in total, each one weekly). Changed since their last check: 0. Compared by Claude: 0.
 
 Claude key: working.
 

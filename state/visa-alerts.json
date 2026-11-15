@@ -1,1 +1,7 @@
-[{"id":"hello-1","kind":"hello","date":"2026-11-14"}]
+[
+ {
+  "id": "hello-1",
+  "kind": "hello",
+  "date": "2026-11-14"
+ }
+]
