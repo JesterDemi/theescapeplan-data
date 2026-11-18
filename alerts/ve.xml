@@ -6,5 +6,6 @@
 <description>Travel advisory changes and entry-rule updates for Venezuela.</description>
 <language>en-us</language>
 <atom:link href="https://raw.githubusercontent.com/JesterDemi/theescapeplan-data/main/alerts/ve.xml" rel="self" type="application/rss+xml"/>
+<item><title>Official entry info for Venezuela was updated (Nov 18, 2026). Travel advice: Level 4 🔴 Do not travel</title><dc:creator>🇻🇪 Venezuela</dc:creator><link>https://www.gov.uk/foreign-travel-advice/venezuela/entry-requirements</link><guid isPermaLink="false">entry-auto-uk-ve-2026-11-18</guid><pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate><category>Entry rules</category><description>UK government note: &quot;Updated information about documents you must show to immigration authorities upon arrival and the ban on any vaping device, including those that do not contain nicotine (‘Entry requirements’ page).&quot; Updates like this can affect other passports too, so check the official entry rules for your passport before you book or travel. From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.</description></item>
 </channel>
 </rss>
