@@ -3,5 +3,19 @@
   "id": "hello-1",
   "kind": "hello",
   "date": "2026-11-14"
+ },
+ {
+  "id": "moved-84f16315b9dfb13b-2026-11",
+  "kind": "moved",
+  "date": "2026-11-21",
+  "country": "TW",
+  "url": "https://www.immigration.gov.tw/5475/"
+ },
+ {
+  "id": "moved-af786a57534abc52-2026-11",
+  "kind": "moved",
+  "date": "2026-11-21",
+  "country": "LU",
+  "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/pays-tiers.html"
  }
 ]
