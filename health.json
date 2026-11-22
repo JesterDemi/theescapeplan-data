@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-11-21T14:48:03.861Z",
-  "feedGeneratedAt": "2026-11-20T15:29:03.006Z",
+  "checkedAt": "2026-11-22T14:44:02.946Z",
+  "feedGeneratedAt": "2026-11-22T14:37:15.685Z",
   "passportsDate": "2026-02-17",
   "passportCount": 199,
   "overrides": 7,
   "notices": 7,
-  "autoNotices": 33,
-  "ukWatch": "202/202 countries read, 33 recent entry-rule changes",
+  "autoNotices": 31,
+  "ukWatch": "202/202 countries read, 31 recent entry-rule changes",
   "visaGuides": 205,
-  "linksChecked": 479,
+  "linksChecked": 477,
   "advisories": {
     "US": "ok",
     "UK": "ok",
@@ -39,12 +39,12 @@
     {
       "level": "warning",
       "area": "links",
-      "message": "Link check failed (HTTP 404): https://oif.gov.hu/factsheets/white-card-residency-for-digital-nomads"
+      "message": "Link check failed (HTTP 404): https://oif.gov.hu/factsheets/residence-permit-for-guest-investor"
     },
     {
       "level": "warning",
       "area": "links",
-      "message": "Link check failed (HTTP 404): https://oif.gov.hu/factsheets/residence-permit-for-guest-investor"
+      "message": "Link check failed (HTTP 404): https://oif.gov.hu/factsheets/white-card-residency-for-digital-nomads"
     },
     {
       "level": "warning",
@@ -59,14 +59,14 @@
     {
       "level": "warning",
       "area": "links",
-      "message": "Link check failed (HTTP 404): http://naurugov.nr/about-nauru/visiting-nauru/visa-requirements.aspx"
+      "message": "Link check failed (HTTP 522): https://www.inm.gob.hn/Ley_de_Migraciones_y_extranjeria_Honduras[1].pdf"
     }
   ],
   "notes": [
     {
       "level": "note",
       "area": "passports",
-      "message": "Passport dataset is 277 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
+      "message": "Passport dataset is 278 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes."
     },
     {
       "level": "note",
@@ -81,7 +81,7 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: ECONNRESET): https://www.gov.br/pf/pt-br/assuntos/imigracao. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.migracion.gob.bo. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -91,7 +91,7 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.migracion.gob.bo. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: ECONNRESET): https://www.gov.br/pf/pt-br/assuntos/imigracao. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -111,6 +111,11 @@
     {
       "level": "note",
       "area": "links",
+      "message": "Could not connect from GitHub's servers (error: fetch failed): https://evisa.mfa.ir/en/. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
       "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://investorvisa.mise.gov.it/index.php/en/. Usually a regional block; check it opens in a browser."
     },
     {
@@ -121,17 +126,7 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: fetch failed): https://evisa.mfa.ir/en/. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
       "message": "Could not connect from GitHub's servers (error: fetch failed): https://www.evisa.gov.kh. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
-      "message": "Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.inm.gob.hn/Ley_de_Migraciones_y_extranjeria_Honduras[1].pdf. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -151,7 +146,7 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://anrpts.gov.mr. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: ENOTFOUND): http://naurugov.nr/about-nauru/visiting-nauru/visa-requirements.aspx. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
@@ -171,11 +166,6 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: ECONNREFUSED): https://portal.moi.gov.qa/qatarvisas. Usually a regional block; check it opens in a browser."
-    },
-    {
-      "level": "note",
-      "area": "links",
       "message": "Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.edbmauritius.org/. Usually a regional block; check it opens in a browser."
     },
     {
@@ -191,12 +181,17 @@
     {
       "level": "note",
       "area": "links",
-      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser."
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.evisa.sy/home-content. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
       "area": "links",
       "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.gov.sz/index.php/services-sp-22242747/visa. Usually a regional block; check it opens in a browser."
+    },
+    {
+      "level": "note",
+      "area": "links",
+      "message": "Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://gov.sz/index.php/visit-eswatini/81-home-affairs/home-affairs/307-immigration. Usually a regional block; check it opens in a browser."
     },
     {
       "level": "note",
