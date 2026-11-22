@@ -17,5 +17,30 @@
   "date": "2026-11-21",
   "country": "LU",
   "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/pays-tiers.html"
+ },
+ {
+  "id": "diff-453109710886a3ad",
+  "kind": "difference",
+  "date": "2026-11-22",
+  "country": "NZ",
+  "why": "Only the EOI is submitted online; if invited, the visa application is made on paper forms, so the app's \"online\" overstates it.",
+  "where": "sources/pathways/NZ.json (nz-parent-resident-visa)",
+  "app": "The route's \"where\" field says the visa is applied for online.",
+  "page": "You cannot apply online for this visa.",
+  "url": "https://www.immigration.govt.nz/visas/parent-resident-visa/"
+ },
+ {
+  "id": "moved-b8a81195a1ac37c8-2026-11",
+  "kind": "moved",
+  "date": "2026-11-22",
+  "country": "SG",
+  "url": "https://www.ica.gov.sg/information-and-e-services/citizenship-and-permanent-residence/citizenship/singapore-citizenship-renunciation"
+ },
+ {
+  "id": "moved-d470edc981456eb9-2026-11",
+  "kind": "moved",
+  "date": "2026-11-22",
+  "country": "SI",
+  "url": "https://www.infotujci.si/en/"
  }
 ]
