@@ -6,6 +6,9 @@
 //     and employee social security (100 minus the net personal average tax rate), 38 countries.
 // All three update about once a year. If a source is down, the last good copy is kept.
 
+import { readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { COUNTRIES } from '../shared/countries.ts';
 
 const UA = 'TheEscapePlan-Data/1.0 (+https://theescapeplan.org)';
@@ -103,6 +106,7 @@ async function oecd() {
     if (!code || !CODES.has(code) || !isFinite(v)) continue;
     if (!res[code] || res[code].year < y) res[code] = { keep: Math.round(100 - v), year: y };
   }
+  for (const k of Object.keys(res)) if (res[k].keep >= 98) delete res[k]; // 0% rates usually mean contributions are counted elsewhere; not useful to show
   return Object.keys(res).length > 25 ? res : null;
 }
 // ISO3 -> ISO2, from the World Bank country list (same source, no extra dependency).
@@ -119,7 +123,15 @@ export async function loadCosts(prev) {
   const ok = { worldBank: !!wb, eurostat: !!es, oecd: !!oe };
   const level = wb ?? prev?.level ?? {};
   const cats = es ?? prev?.cats ?? {};
-  const takeHome = oe ?? prev?.takeHome ?? {};
+  // OECD's API often can't be reached from GitHub's servers. Then: yesterday's copy, else the checked-in snapshot.
+  let takeHome = oe ?? (Object.keys(prev?.takeHome ?? {}).length ? prev.takeHome : null);
+  if (!takeHome) {
+    try {
+      takeHome = JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), '..', 'sources', 'takehome-snapshot.json'), 'utf8')).takeHome;
+    } catch {
+      takeHome = {};
+    }
+  }
   return {
     costs: {
       level,
