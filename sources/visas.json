@@ -1747,15 +1747,15 @@
     "officialLinks": [
       {
         "label": "State Secretariat for Migration (SEM): entry",
-        "url": "https://www.sem.admin.ch/sem/en/home/themen/einreise.html"
+        "url": "https://www.sem.admin.ch/en/entry"
       },
       {
         "label": "SEM: working in Switzerland (non-EU/EFTA)",
-        "url": "https://www.sem.admin.ch/sem/en/home/themen/arbeit/nicht-eu_efta-angehoerige.html"
+        "url": "https://www.sem.admin.ch/en/working-in-ch"
       },
       {
         "label": "SEM: cantonal migration offices",
-        "url": "https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/adressen.html"
+        "url": "https://www.sem.admin.ch/en/cantonal-immigration-and-employment-market-authorities"
       }
     ],
     "reviewed": "2026-10"
@@ -6070,7 +6070,7 @@
       },
       {
         "label": "Ministry of Interior",
-        "url": "https://mvr.gov.mk/default"
+        "url": "https://mvr.gov.mk/en-GB/uslugi/upatstvo-i-postapka-za-oddelni-prava-baranja-na-strancite"
       },
       {
         "label": "UK government: North Macedonia entry requirements",
@@ -8472,7 +8472,7 @@
     "officialLinks": [
       {
         "label": "Info for foreigners (official portal)",
-        "url": "https://www.infotujci.si/en/"
+        "url": "https://www.gov.si/en/topics/entry-and-residence/"
       },
       {
         "label": "Government of Slovenia: digital nomad permit",
