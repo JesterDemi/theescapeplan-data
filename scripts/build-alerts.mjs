@@ -204,6 +204,37 @@ const notices = (feed.notices ?? [])
     link: n.source,
   }));
 
+// ---------- a short "why" in the headline ----------
+// Discord (Physalia's Social alerts) only shows each item's title, so new items carry a short reason
+// right in the headline. Written once per item (cached in alerts/why.json) from the official text only.
+// Items from before this existed keep their old headline, so nothing gets posted twice.
+const WHY_FROM = '2026-11-22';
+const WHY_FILE = join(OUT, 'why.json');
+const whyCache = existsSync(WHY_FILE) ? JSON.parse(readFileSync(WHY_FILE, 'utf8')) : {};
+{
+  let asked = 0;
+  for (const e of [...events, ...notices]) {
+    if (e.date.slice(0, 10) < WHY_FROM || whyCache[e.id] !== undefined) continue;
+    // Travel advice: only the reason Claude read on the official page (the level change is already in the headline).
+    // Entry rules: the official change note itself.
+    if (e.type === 'advisory' && e.why === undefined) continue; // reason not read yet: try next run
+    const src = e.type === 'advisory' ? e.why : e.body || '';
+    if (src.length < 20) { whyCache[e.id] = ''; continue; }
+    if (src.length <= 110) { whyCache[e.id] = src.replace(/\.$/, ''); continue; }
+    if (!hasClaude() || asked >= 20) continue; // try again next run
+    asked++;
+    const reply = await askClaude({
+      model: MODELS.quick,
+      maxTokens: 60,
+      system: 'You shorten official travel notices. Use only the text you are given. Never add facts.',
+      prompt: `In under 15 plain words, say what changed or why. No intro, no quotes, no period at the end. If the text gives no reason or change, reply NONE.\n\nText: ${src}`,
+    });
+    if (reply === null) continue;
+    whyCache[e.id] = /^none\b/i.test(reply) ? '' : reply.replace(/\s+/g, ' ').replace(/^["']|["'.]$/g, '').slice(0, 120);
+  }
+  for (const k of Object.keys(whyCache)) if (![...events, ...notices].some((e) => e.id === k)) delete whyCache[k];
+}
+
 // ---------- write RSS ----------
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const FOOTER = 'From The Escape Plan travel data. General information, not legal advice. Always check the official source before you travel.';
@@ -231,6 +262,13 @@ function headlineFor(e) {
   }
   return `${e.title}${now ? `. Travel advice: ${lvl(now)}` : ''}`;
 }
+function titleFor(e) {
+  const why = whyCache[e.id];
+  if (!why) return headlineFor(e).slice(0, 250); // unchanged, so old items never repost
+  const head = headlineFor(e).replace(/\.$/, '');
+  const room = 250 - head.length - 7;
+  return room > 20 ? `${head}. Why: ${why.length > room ? why.slice(0, room - 1).trimEnd() + '…' : why}` : head.slice(0, 250);
+}
 function rss(title, description, selfUrl, items) {
   const list = items.sort((a, b) => b.date.localeCompare(a.date)).slice(0, MAX_ITEMS);
   return [
@@ -245,7 +283,7 @@ function rss(title, description, selfUrl, items) {
     ...list.map((e) =>
       [
         '<item>',
-        `<title>${esc(headlineFor(e).slice(0, 250))}</title>`,
+        `<title>${esc(titleFor(e))}</title>`,
         `<dc:creator>${esc(whoFor(e))}</dc:creator>`,
         `<link>${esc(e.link)}</link>`,
         `<guid isPermaLink="false">${esc(e.id)}</guid>`,
@@ -279,6 +317,7 @@ for (const { code, name } of COUNTRIES) {
   write(file, rss(`The Escape Plan: ${name} travel alerts`, `Travel advisory changes and entry-rule updates for ${name}.`, `${RAW}/${file}`, forCountry(code)));
 }
 for (const f of readdirSync(OUT)) if (f.endsWith('.xml') && f !== 'all.xml' && !wanted.has(f)) unlinkSync(join(OUT, f));
+write('why.json', JSON.stringify(whyCache, null, 1) + '\n');
 write('events.json', JSON.stringify(events, null, 1) + '\n');
 write('state.json', JSON.stringify(state) + '\n');
 
