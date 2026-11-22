@@ -42,5 +42,34 @@
   "date": "2026-11-22",
   "country": "SI",
   "url": "https://www.infotujci.si/en/"
+ },
+ {
+  "id": "diff-9db1ef1dde28bbfa",
+  "kind": "difference",
+  "date": "2026-11-22",
+  "country": "SE",
+  "why": "The page gives 5 months for 75% of decisions on applications made from inside Sweden, not the 4 months the app states.",
+  "where": "sources/pathways/SE.json (se-visitor-residence-permit)",
+  "app": "About 75% of recent decisions took 3 months if applied from outside Sweden, or 4 months from inside Sweden.",
+  "page": "Visiting Sweden for more than 90 days (applied from Sweden 5",
+  "url": "https://www.migrationsverket.se/en/you-want-to-apply/visiting-sweden/visiting-sweden-for-more-than-90-days.html"
+ },
+ {
+  "id": "diff-9a556b24e7c38932",
+  "kind": "difference",
+  "date": "2026-11-22",
+  "country": "JO",
+  "why": "The page's news item (8.1.2026) says arriving foreigners now get a three-month stay instead of one month, which contradicts the app's 1-month validity.",
+  "where": "sources/pathways/JO.json (jo-visit-visa)",
+  "app": "Single entry visa is valid 1 month, with extensions available for a fee.",
+  "page": "وزارة الداخلية تقرر منح الأجانب القادمين إلى المملكة إقامة لمدة ثلاثة أشهر بدلا من شهر واحد",
+  "url": "https://www.moi.gov.jo"
+ },
+ {
+  "id": "moved-5f87da9fc1e56635-2026-11",
+  "kind": "moved",
+  "date": "2026-11-22",
+  "country": "GD",
+  "url": "https://www.gov.gd/index.php/documents/immigration"
  }
 ]
