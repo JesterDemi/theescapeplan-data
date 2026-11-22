@@ -160,7 +160,7 @@
   "sources": [
    {
     "label": "Infotujci single permit",
-    "url": "https://infotujci.si/en/vsebina/non-eu-citizens/temporary-residence-permit/based-on-employment/enotno-dovoljenje-za-prebivanje-in-delo-drzavljanov-tretjih-drzav/"
+    "url": "https://infotujci.si/en/vsebina/drzavljani-izven-eu/temporary-residence-permit/based-on-employment/enotno-dovoljenje-za-prebivanje-in-delo-drzavljanov-tretjih-drzav/"
    }
   ],
   "checked": "2026-11-10",
@@ -220,7 +220,7 @@
   "sources": [
    {
     "label": "Infotujci EU Blue Card",
-    "url": "https://infotujci.si/en/third-country-nationals/purposes-of-residence/purpose-of-residence-eu-blue-card"
+    "url": "https://infotujci.si/en/pogoji/non-eu-citizens/temporary-residence-permit/based-on-employment/"
    }
   ],
   "checked": "2026-11-10",
@@ -320,7 +320,7 @@
    },
    {
     "label": "Infotujci permanent residence conditions",
-    "url": "https://infotujci.si/en/terms-and-conditions-for-issuing-permanent-residence-permit"
+    "url": "https://www.gov.si/en/topics/entry-and-residence/"
    }
   ],
   "checked": "2026-11-10",
@@ -352,7 +352,7 @@
   "sources": [
    {
     "label": "Infotujci permanent residence conditions",
-    "url": "https://infotujci.si/en/terms-and-conditions-for-issuing-permanent-residence-permit"
+    "url": "https://www.gov.si/en/topics/entry-and-residence/"
    }
   ],
   "checked": "2026-11-10",

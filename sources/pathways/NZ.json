@@ -373,11 +373,10 @@
     },
     "rights": { "work": "any", "family": true },
     "leadsTo": [{ "pathway": "nz-permanent-resident-visa", "afterYears": 10 }, { "pathway": "nz-citizenship-grant", "afterYears": 5 }],
-    "steps": ["Submit an expression of interest and pay the fee within 7 days", "Wait for selection", "If invited, apply within 4 months"],
-    "where": "online",
+    "steps": ["Submit an expression of interest online and pay the fee within 7 days", "Wait for selection (every 3 months, mostly by date, about 10% by ballot)", "If invited, post the paper application form with original or certified documents within 4 months"],
     "fees": [{ "label": "Parent Resident Visa (from)", "amount": 5810, "currency": "NZD", "per": "once" }],
     "sources": [{ "label": "Parent Resident Visa", "url": "https://www.immigration.govt.nz/visas/parent-resident-visa/" }],
-    "checked": "2026-11-10",
+    "checked": "2026-11-22",
     "confidence": "verified"
   },
   {
