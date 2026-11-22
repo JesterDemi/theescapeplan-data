@@ -25,11 +25,15 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/visa-watch.mjs
 
-      - name: Save page fingerprints and report
+      - name: Cross-check passport data with the weekly dataset
+        continue-on-error: true
+        run: node scripts/passport-check.mjs
+
+      - name: Save page fingerprints and reports
         run: |
           git config user.name "escape-plan-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state VISA-CHECK.md
+          git add state VISA-CHECK.md PASSPORT-CHECK.md
           git diff --cached --quiet && exit 0
           git commit -m "Visa watch $(date -u +%F) [skip ci]"
           for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
