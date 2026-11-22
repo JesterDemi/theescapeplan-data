@@ -271,7 +271,23 @@ if (OFFLINE) {
 }
 const allNotices = [...notices, ...autoNotices];
 
-const feed = { schema: 1, generatedAt: new Date().toISOString(), passports, overrides, notices: allNotices, visas, meta };
+// Cost of living and take-home pay (World Bank, Eurostat, OECD). Kept from yesterday if a source is down.
+let costs = prevFeed?.costs;
+let costsStatus = 'skipped (offline)';
+if (!OFFLINE) {
+  try {
+    const { loadCosts } = await import('./costs.mjs');
+    const r = await loadCosts(prevFeed?.costs);
+    costs = r.costs;
+    costsStatus = Object.entries(r.ok).map(([k, v]) => `${k} ${v ? 'ok' : 'down (kept last copy)'}`).join(', ');
+    for (const [k, v] of Object.entries(r.ok)) if (!v) flag('note', 'costs', `Cost data source ${k} could not be read today. The last good copy is still in the feed.`);
+  } catch (e) {
+    costsStatus = `failed: ${e.message}`;
+    flag('note', 'costs', `Cost data step failed (${e.message}). The last good copy is still in the feed.`);
+  }
+}
+
+const feed = { schema: 1, generatedAt: new Date().toISOString(), passports, overrides, notices: allNotices, visas, meta, ...(costs ? { costs } : {}) };
 const errs = validate(feed);
 if (errs.length) {
   console.error('Feed NOT written. Fix these first:\n- ' + errs.join('\n- '));
@@ -295,7 +311,7 @@ if (!OFFLINE) {
 }
 
 writeFileSync(feedPath, JSON.stringify(feed));
-const health = { checkedAt: new Date().toISOString(), feedGeneratedAt: feed.generatedAt, passportsDate: passports.date, passportCount: Object.keys(passports.data).length, overrides: overrides.length, notices: notices.length, autoNotices: autoNotices.length, ukWatch, visaGuides: visas.length, linksChecked, advisories, problems, notes };
+const health = { checkedAt: new Date().toISOString(), feedGeneratedAt: feed.generatedAt, passportsDate: passports.date, passportCount: Object.keys(passports.data).length, overrides: overrides.length, notices: notices.length, autoNotices: autoNotices.length, ukWatch, visaGuides: visas.length, linksChecked, advisories, costs: costsStatus, problems, notes };
 writeFileSync(join(ROOT, 'health.json'), JSON.stringify(health, null, 2) + '\n');
 
 const md = [
@@ -307,6 +323,7 @@ const md = [
   `- Overrides: ${overrides.length}, notices: ${notices.length} hand-written + ${autoNotices.length} automatic, visa guides: ${visas.length}`,
   `- Automatic entry-rule watch (UK gov change log): ${ukWatch}`,
   `- Advisory feeds: ${typeof advisories === 'string' ? advisories : Object.entries(advisories).map(([k, v]) => `${k} ${v}`).join(', ')}`,
+  `- Cost of living data: ${costsStatus}`,
   `- Links checked: ${linksChecked}`,
   '',
   problems.length ? '## Needs attention\n\n' + problems.map((p) => `- **${p.area}**: ${p.message}`).join('\n') : 'Everything looks good.',
