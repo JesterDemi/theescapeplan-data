@@ -23,7 +23,7 @@ jobs:
           node-version: 22
 
       - name: Build feed and run checks
-        run: node scripts/build-feed.mjs
+        run: node --experimental-strip-types scripts/build-feed.mjs
 
       - name: Commit feed and health report
         run: |
