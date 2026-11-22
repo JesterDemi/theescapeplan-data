@@ -15,9 +15,12 @@ const FIRST_YEAR = new Date().getUTCFullYear() - 8; // older figures are too sta
 async function get(url, as = 'json') {
   for (let i = 1; i <= 3; i++) {
     try {
-      const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: as === 'json' ? 'application/json' : 'text/csv' }, signal: AbortSignal.timeout(90000) });
+      const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: as === 'json' ? 'application/json' : '*/*' }, signal: AbortSignal.timeout(90000) });
       if (res.ok) return as === 'json' ? await res.json() : await res.text();
-    } catch {}
+      console.error(`costs: ${res.status} from ${url.slice(0, 90)}`);
+    } catch (e) {
+      console.error(`costs: ${e.cause?.code || e.message} from ${url.slice(0, 90)}`);
+    }
     await new Promise((r) => setTimeout(r, 4000 * i));
   }
   return null;
