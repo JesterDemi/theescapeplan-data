@@ -1,0 +1,154 @@
+{
+ "note": "OECD Taxing Wages 2026 (net personal average tax rate, single, no children, 100% of average wage). Fallback copy used only when the OECD API cannot be reached from GitHub. Fetched 2026-11-22.",
+ "source": "https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/.NPATR.PT_WG_EARN_G.S_C0.AW100..A",
+ "takeHome": {
+  "AU": {
+   "keep": 76,
+   "year": 2025
+  },
+  "AT": {
+   "keep": 68,
+   "year": 2025
+  },
+  "BE": {
+   "keep": 60,
+   "year": 2025
+  },
+  "CA": {
+   "keep": 74,
+   "year": 2025
+  },
+  "CL": {
+   "keep": 93,
+   "year": 2025
+  },
+  "CR": {
+   "keep": 90,
+   "year": 2025
+  },
+  "CZ": {
+   "keep": 79,
+   "year": 2025
+  },
+  "DK": {
+   "keep": 65,
+   "year": 2025
+  },
+  "EE": {
+   "keep": 77,
+   "year": 2025
+  },
+  "FI": {
+   "keep": 69,
+   "year": 2025
+  },
+  "FR": {
+   "keep": 72,
+   "year": 2025
+  },
+  "DE": {
+   "keep": 61,
+   "year": 2025
+  },
+  "GR": {
+   "keep": 74,
+   "year": 2025
+  },
+  "HU": {
+   "keep": 66,
+   "year": 2025
+  },
+  "IS": {
+   "keep": 73,
+   "year": 2025
+  },
+  "IE": {
+   "keep": 75,
+   "year": 2025
+  },
+  "IL": {
+   "keep": 79,
+   "year": 2025
+  },
+  "IT": {
+   "keep": 71,
+   "year": 2025
+  },
+  "JP": {
+   "keep": 77,
+   "year": 2025
+  },
+  "KR": {
+   "keep": 83,
+   "year": 2025
+  },
+  "LV": {
+   "keep": 74,
+   "year": 2025
+  },
+  "LT": {
+   "keep": 61,
+   "year": 2025
+  },
+  "LU": {
+   "keep": 68,
+   "year": 2025
+  },
+  "MX": {
+   "keep": 87,
+   "year": 2025
+  },
+  "NL": {
+   "keep": 72,
+   "year": 2025
+  },
+  "NZ": {
+   "keep": 79,
+   "year": 2025
+  },
+  "NO": {
+   "keep": 72,
+   "year": 2025
+  },
+  "PL": {
+   "keep": 76,
+   "year": 2025
+  },
+  "PT": {
+   "keep": 75,
+   "year": 2025
+  },
+  "SK": {
+   "keep": 76,
+   "year": 2025
+  },
+  "SI": {
+   "keep": 64,
+   "year": 2025
+  },
+  "ES": {
+   "keep": 76,
+   "year": 2025
+  },
+  "SE": {
+   "keep": 77,
+   "year": 2025
+  },
+  "CH": {
+   "keep": 82,
+   "year": 2025
+  },
+  "TR": {
+   "keep": 71,
+   "year": 2025
+  },
+  "GB": {
+   "keep": 77,
+   "year": 2025
+  },
+  "US": {
+   "keep": 76,
+   "year": 2025
+  }
+ }
+}
