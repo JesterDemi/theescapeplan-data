@@ -1,6 +1,6 @@
 # Data health
 
-Checked 2026-11-22 22:44 UTC. Feed generated 2026-11-22 22:24 UTC.
+Checked 2026-11-22 22:52 UTC. Feed generated 2026-11-22 22:45 UTC.
 
 - Passport dataset: 199 passports, dated 2026-02-17
 - Overrides: 7, notices: 7 hand-written + 31 automatic, visa guides: 205
@@ -20,22 +20,21 @@ Checked 2026-11-22 22:44 UTC. Feed generated 2026-11-22 22:24 UTC.
 
 - **costs**: Cost data source oecd could not be read today. The last good copy is still in the feed.
 - **passports**: Passport dataset is 278 days old (dated 2026-02-17). Upstream has not refreshed; add overrides for any known rule changes.
-- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.migracion.gob.bo. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.doi.gov.bt/?p=648. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.barbadoswelcomestamp.bb/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: ECONNRESET): https://doj.gov.fm/justice/fsm_doi.html. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://evisacuba.cu/. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://investorvisa.mise.gov.it/index.php/en/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: fetch failed): https://en.mfa.ir. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: fetch failed): https://evisa.mfa.ir/en/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: fetch failed): https://www.evisa.gov.kh. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.immigration.gov.bn. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.immigration.gov.bn/long-term-pass/. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: The operation was aborted due to timeout): https://www.inm.gob.hn/Ley_de_Migraciones_y_extranjeria_Honduras[1].pdf. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: ETIMEDOUT): https://passport.govmu.org. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://investorvisa.mise.gov.it/index.php/en/. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: ENETUNREACH): https://www.senami.gov.mz/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://digitalnomads.gov.me/article/legal-status-for-nomads. Usually a regional block; check it opens in a browser.
-- **links**: Could not connect from GitHub's servers (error: UND_ERR_CONNECT_TIMEOUT): https://www.gov.me/en/mup. Usually a regional block; check it opens in a browser.
+- **links**: Could not connect from GitHub's servers (error: ENOTFOUND): http://naurugov.nr/about-nauru/visiting-nauru/visa-requirements.aspx. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: ECONNRESET): https://immigration.gov.ph/visas/. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: ECONNREFUSED): https://portal.moi.gov.qa/qatarvisas. Usually a regional block; check it opens in a browser.
 - **links**: Could not connect from GitHub's servers (error: ENOTFOUND): https://www.gov.tv. Usually a regional block; check it opens in a browser.
