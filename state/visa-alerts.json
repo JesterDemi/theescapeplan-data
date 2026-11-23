@@ -71,5 +71,51 @@
   "date": "2026-11-22",
   "country": "GD",
   "url": "https://www.gov.gd/index.php/documents/immigration"
+ },
+ {
+  "id": "moved-4db5282a6dc069c7-2026-11",
+  "kind": "moved",
+  "date": "2026-11-23",
+  "country": "ES",
+  "url": "https://www.exteriores.gob.es"
+ },
+ {
+  "id": "moved-0cd63d0d1044cf8a-2026-11",
+  "kind": "moved",
+  "date": "2026-11-23",
+  "country": "KZ",
+  "url": "https://www.gov.kz/memleket/entities/mfa?lang=en"
+ },
+ {
+  "id": "moved-690344846f07c34e-2026-11",
+  "kind": "moved",
+  "date": "2026-11-23",
+  "country": "LV",
+  "url": "https://www.pmlp.gov.lv/en"
+ },
+ {
+  "id": "moved-7ce9c981e3239f18-2026-11",
+  "kind": "moved",
+  "date": "2026-11-23",
+  "country": "SA",
+  "url": "https://embassies.mofa.gov.sa/sites/canada/EN/Services/ConsulateSection/Visa/Pages/Employment.aspx"
+ },
+ {
+  "id": "moved-45af5206e22c39d1-2026-11",
+  "kind": "moved",
+  "date": "2026-11-23",
+  "country": "SN",
+  "url": "https://www.diplomatie.gouv.sn/"
+ },
+ {
+  "id": "pass-IR-CV-E-2026-11-23",
+  "kind": "difference",
+  "date": "2026-11-23",
+  "country": "CV",
+  "why": "IR passport to Cape Verde: the weekly data changed from visa required to e-visa. The app says visa on arrival",
+  "where": "Passport data for IR passports (add an override in sources/overrides.json if the app is wrong)",
+  "app": "visa on arrival",
+  "page": "e-visa (90 days), \"90 days\"",
+  "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Iranian_citizens"
  }
 ]

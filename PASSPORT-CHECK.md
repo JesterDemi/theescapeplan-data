@@ -1,14 +1,16 @@
-# Passport cross-check, 2026-11-22
+# Passport cross-check, 2026-11-23
 
-Compared 39084 passport and country pairs with the weekly Wikipedia-based dataset (Riedel-David/Visa-requirements). They disagree on 3856 (9.9%). Most long-standing ones are differences in how the two sources label the same rule.
+Compared 39084 passport and country pairs with the weekly Wikipedia-based dataset (Riedel-David/Visa-requirements). They disagree on 3855 (9.9%). Most long-standing ones are differences in how the two sources label the same rule.
 
-First run: saved as the starting point. From the next run on, any pair the weekly data CHANGES, and that then disagrees with the app, is listed below and posted to Discord.
+Changed on their side since the last check and now disagreeing with the app: 1.
 
 Nothing was changed in the app. Check the official source, then add an override in `sources/overrides.json` if the app is wrong.
 
 ## Recent changes (last 60 days)
 
-None yet.
+| Seen | Passport | Going to | App says | Weekly data was | Weekly data now |
+|---|---|---|---|---|---|
+| 2026-11-23 | IR | Cape Verde (CV) | visa on arrival | visa required | e-visa (90 days) |
 
 ## Passports with the most disagreements
 
