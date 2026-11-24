@@ -117,5 +117,12 @@
   "app": "visa on arrival",
   "page": "e-visa (90 days), \"90 days\"",
   "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Iranian_citizens"
+ },
+ {
+  "id": "moved-d409977ba137e164-2026-11",
+  "kind": "moved",
+  "date": "2026-11-24",
+  "country": "YE",
+  "url": "https://www.mofa-ye.org/"
  }
 ]

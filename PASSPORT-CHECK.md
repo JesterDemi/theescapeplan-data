@@ -1,8 +1,8 @@
-# Passport cross-check, 2026-11-23
+# Passport cross-check, 2026-11-24
 
 Compared 39084 passport and country pairs with the weekly Wikipedia-based dataset (Riedel-David/Visa-requirements). They disagree on 3855 (9.9%). Most long-standing ones are differences in how the two sources label the same rule.
 
-Changed on their side since the last check and now disagreeing with the app: 1.
+Changed on their side since the last check and now disagreeing with the app: 0.
 
 Nothing was changed in the app. Check the official source, then add an override in `sources/overrides.json` if the app is wrong.
 
