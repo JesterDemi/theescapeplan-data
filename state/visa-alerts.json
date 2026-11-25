@@ -124,5 +124,34 @@
   "date": "2026-11-24",
   "country": "YE",
   "url": "https://www.mofa-ye.org/"
+ },
+ {
+  "id": "diff-ea78dffc4a9f3e36",
+  "kind": "difference",
+  "date": "2026-11-25",
+  "country": "NZ",
+  "why": "The page describes a resident visa with an indefinite stay, not a temporary residence permit.",
+  "where": "sources/pathways/NZ.json (nz-partner-resident-visa)",
+  "app": "The route is classed as kind \"temporary_residence\".",
+  "page": "A Partner of a New Zealander Resident Visa lets you stay in New Zealand indefinitely.",
+  "url": "https://www.immigration.govt.nz/visas/partner-of-a-new-zealander-resident-visa/"
+ },
+ {
+  "id": "diff-72a6bdc84e34b376",
+  "kind": "difference",
+  "date": "2026-11-25",
+  "country": "NZ",
+  "why": "The page lists 3 SMC pathways and only one is points-based, so the points rules are not required for everyone.",
+  "where": "sources/visas.json (NZ)",
+  "app": "Skilled Migrant Category Resident Visa is for skilled workers who meet the points rules.",
+  "page": "You can qualify through work experience alone, if you have the required relevant work experience and skilled work experience in New Zealand",
+  "url": "https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/skilled-migrant-category-pathway-to-residence/"
+ },
+ {
+  "id": "moved-926399d45e4cc653-2026-11",
+  "kind": "moved",
+  "date": "2026-11-25",
+  "country": "DZ",
+  "url": "https://www.mfa.gov.dz"
  }
 ]

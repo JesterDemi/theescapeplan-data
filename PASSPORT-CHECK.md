@@ -1,4 +1,4 @@
-# Passport cross-check, 2026-11-24
+# Passport cross-check, 2026-11-25
 
 Compared 39084 passport and country pairs with the weekly Wikipedia-based dataset (Riedel-David/Visa-requirements). They disagree on 3855 (9.9%). Most long-standing ones are differences in how the two sources label the same rule.
 
