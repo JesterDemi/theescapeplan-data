@@ -153,5 +153,34 @@
   "date": "2026-11-25",
   "country": "DZ",
   "url": "https://www.mfa.gov.dz"
+ },
+ {
+  "id": "diff-9fd50251a4eb387c",
+  "kind": "difference",
+  "date": "2026-11-26",
+  "country": "NZ",
+  "why": "The page gives the processing time as 80% within 3 weeks, not 2.5 weeks.",
+  "where": "sources/pathways/NZ.json (nz-working-holiday-usa)",
+  "app": "INZ says 80% decided within 2.5 weeks.",
+  "page": "80% within 3 weeks",
+  "url": "https://www.immigration.govt.nz/visas/usa-working-holiday-visa/"
+ },
+ {
+  "id": "diff-885c81434dfdc5aa",
+  "kind": "difference",
+  "date": "2026-11-26",
+  "country": "NZ",
+  "why": "The page says the route is closed to new applications, so the app presents a route that no longer accepts applicants.",
+  "where": "sources/pathways/NZ.json (nz-entrepreneur-work-visa)",
+  "app": "The route is listed as a work visa for people who want to set up or buy a business in New Zealand, implying it is available to apply for.",
+  "page": "The Entrepreneur Work Visa is closed to new applications. If you already hold this visa, you may apply to renew your visa.",
+  "url": "https://www.immigration.govt.nz/visas/entrepreneur-work-visa/"
+ },
+ {
+  "id": "moved-6553bc5d33177170-2026-11",
+  "kind": "moved",
+  "date": "2026-11-26",
+  "country": "VA",
+  "url": "https://www.vaticanstate.va/en/"
  }
 ]

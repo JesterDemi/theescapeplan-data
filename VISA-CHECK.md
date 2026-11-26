@@ -1,29 +1,29 @@
-# Visa watch, 2026-11-25
+# Visa watch, 2026-11-26
 
-Pages checked today: 177 (1843 watched in total, each one weekly). Changed since their last check: 40. Compared by Claude: 20.
+Pages checked today: 193 (1843 watched in total, each one weekly). Changed since their last check: 56. Compared by Claude: 20.
 
 Claude key: working.
 
-20 changed page(s) will be compared first thing tomorrow (daily limit of 20 comparisons).
+36 changed page(s) will be compared first thing tomorrow (daily limit of 20 comparisons).
 
 ## Possible differences to review
 
 Nothing was changed. Open each page, confirm, then fix the file named in **Where** if the app is wrong.
 
-### NZ: The page describes a resident visa with an indefinite stay, not a temporary residence permit.
-- **Where:** sources/pathways/NZ.json (nz-partner-resident-visa)
-- **App says:** The route is classed as kind "temporary_residence".
-- **Page says:** "A Partner of a New Zealander Resident Visa lets you stay in New Zealand indefinitely."
-- **Page:** https://www.immigration.govt.nz/visas/partner-of-a-new-zealander-resident-visa/
+### NZ: The page gives the processing time as 80% within 3 weeks, not 2.5 weeks.
+- **Where:** sources/pathways/NZ.json (nz-working-holiday-usa)
+- **App says:** INZ says 80% decided within 2.5 weeks.
+- **Page says:** "80% within 3 weeks"
+- **Page:** https://www.immigration.govt.nz/visas/usa-working-holiday-visa/
 
-### NZ: The page lists 3 SMC pathways and only one is points-based, so the points rules are not required for everyone.
-- **Where:** sources/visas.json (NZ)
-- **App says:** Skilled Migrant Category Resident Visa is for skilled workers who meet the points rules.
-- **Page says:** "You can qualify through work experience alone, if you have the required relevant work experience and skilled work experience in New Zealand"
-- **Page:** https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/skilled-migrant-category-pathway-to-residence/
+### NZ: The page says the route is closed to new applications, so the app presents a route that no longer accepts applicants.
+- **Where:** sources/pathways/NZ.json (nz-entrepreneur-work-visa)
+- **App says:** The route is listed as a work visa for people who want to set up or buy a business in New Zealand, implying it is available to apply for.
+- **Page says:** "The Entrepreneur Work Visa is closed to new applications. If you already hold this visa, you may apply to renew your visa."
+- **Page:** https://www.immigration.govt.nz/visas/entrepreneur-work-visa/
 
 ## Pages that no longer look right
 
 These links now show something else (moved page, error or login). Find the new official page and update the link.
 
-- DZ: https://www.mfa.gov.dz
+- VA: https://www.vaticanstate.va/en/
