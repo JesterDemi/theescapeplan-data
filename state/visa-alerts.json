@@ -182,5 +182,23 @@
   "date": "2026-11-26",
   "country": "VA",
   "url": "https://www.vaticanstate.va/en/"
+ },
+ {
+  "id": "diff-bc87f42ce0944980",
+  "kind": "difference",
+  "date": "2026-11-27",
+  "country": "HK",
+  "why": "The page says dependants of people admitted to study cannot work without prior permission, so work is not unrestricted for every dependant on this route.",
+  "where": "sources/pathways/HK.json (hk-dependant)",
+  "app": "Work rights for this route are \"any\".",
+  "page": "are prohibited from taking up employment in the HKSAR unless they have obtained prior permission from the Director of Immigration",
+  "url": "https://www.immd.gov.hk/eng/services/visas/residence_as_dependant.html"
+ },
+ {
+  "id": "moved-e115edb2533231ae-2026-11",
+  "kind": "moved",
+  "date": "2026-11-27",
+  "country": "PR",
+  "url": "https://www.uscis.gov/"
  }
 ]
