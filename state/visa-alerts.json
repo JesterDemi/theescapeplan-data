@@ -200,5 +200,23 @@
   "date": "2026-11-27",
   "country": "PR",
   "url": "https://www.uscis.gov/"
+ },
+ {
+  "id": "diff-06cb968ad2c18781",
+  "kind": "difference",
+  "date": "2026-11-28",
+  "country": "ZW",
+  "why": "The page lists US$500 for the initial spouse permit, and US$300 applies only to the extension (and to each dependent).",
+  "where": "sources/pathways/ZW.json (zw-spouse-permit)",
+  "app": "Spouse residence permit fee is USD 300, paid once.",
+  "page": "Statutory non-refundable fee of US$500 and US$300/dependent.",
+  "url": "https://www.zimimmigration.gov.zw/?page_id=6980"
+ },
+ {
+  "id": "moved-d29f2272da3411a3-2026-11",
+  "kind": "moved",
+  "date": "2026-11-28",
+  "country": "AL",
+  "url": "https://e-albania.al"
  }
 ]
